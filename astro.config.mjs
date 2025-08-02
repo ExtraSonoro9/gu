@@ -19,7 +19,7 @@ export default defineConfig({
 					label: 'Guides',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Prueba1111', slug: 'guides/example' },   
+						{ label: 'Prueba1', slug: 'guides/example' },   
 					    { slug: 'guides/example2' },					
 					],
 				},
