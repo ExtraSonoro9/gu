@@ -7,7 +7,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({ 
 	site: 'https://guiauniversal.net',
-  base: 'gu',
+ 
 	integrations: [
 		
 		starlight({
