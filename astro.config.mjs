@@ -5,7 +5,9 @@ import starlight from '@astrojs/starlight';
  import rehypeKatex from 'rehype-katex';
 
 // https://astro.build/config
-export default defineConfig({
+export default defineConfig({ 
+	site: 'https://guiauniversal.net',
+  base: 'gu',
 	integrations: [
 		
 		starlight({
