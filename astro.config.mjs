@@ -3,9 +3,11 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
  import remarkMath from 'remark-math';
  import rehypeKatex from 'rehype-katex';
+ import partytown from '@astrojs/partytown'
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
+		
 		starlight({
 			title: 'Guía Universal',
 			logo: {
@@ -22,10 +24,15 @@ export default defineConfig({
 				},
 		
 			],
-		}),
+		}), partytown({
+            config: {
+              forward: ["dataLayer.push"],
+            },
+        }),
 	],
 	markdown: {
      remarkPlugins: [remarkMath],
      rehypePlugins: [rehypeKatex],
    },
+   
 });

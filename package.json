@@ -28,6 +28,9 @@
   "dependencies": {
   
     
+  "@astrojs/partytown": "^2.1.4",
+  
+    
   "@astrojs/starlight": "^0.32.5",
   
     
