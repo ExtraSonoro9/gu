@@ -22,7 +22,7 @@ export default defineConfig({
        
     }),
  		starlight({
-			favicon: '/favicon.svg',
+			favicon: 'public/favicon.svg',
 			title: 'Guía Universal',
 			logo: {
 				src: './src/assets/logo.svg',
