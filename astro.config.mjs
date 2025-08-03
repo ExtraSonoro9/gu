@@ -1,22 +1,27 @@
 // @ts-check
+
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
  import remarkMath from 'remark-math';
  import rehypeKatex from 'rehype-katex';
+import partytown from '@astrojs/partytown'
+import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({ 
 	site: 'https://guiauniversal.net',
  
 	integrations: [
-		
-		starlight({
+		partytown({ config: { forward: ['dataLayer.push'] } }),
+       
+ 		starlight({
 			title: 'Guía Universal',
 			logo: {
 				src: './src/assets/logo.svg',
 			  },
 			
 			sidebar: [
+				{ label: 'Contacto', slug: 'contacto' },
 				{
 					label: 'Guides',
 					items: [
@@ -25,9 +30,10 @@ export default defineConfig({
 					    { slug: 'guides/example2' },					
 					],
 				},
+				
 		
 			],
-		}), 
+		}), mdx(),
 	],
 	markdown: {
      remarkPlugins: [remarkMath],
