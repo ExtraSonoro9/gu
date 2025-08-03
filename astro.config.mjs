@@ -6,15 +6,23 @@ import starlight from '@astrojs/starlight';
  import rehypeKatex from 'rehype-katex';
 import partytown from '@astrojs/partytown'
 import mdx from '@astrojs/mdx';
-
+import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({ 
 	site: 'https://guiauniversal.net',
  
 	integrations: [
 		partytown({ config: { forward: ['dataLayer.push'] } }),
+            sitemap({
+				entryLimit: 10000,
+      // configuration options
+	        filter: (page) =>
+        page !== 'https://www.guiauniversal.net/guides/example2/' &&
+        page !== 'https://www.guiauniversal.net/guides/example/',
        
+    }),
  		starlight({
+			favicon: '/favicon.svg',
 			title: 'Guía Universal',
 			logo: {
 				src: './src/assets/logo.svg',

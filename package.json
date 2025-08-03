@@ -34,10 +34,10 @@
   "@astrojs/partytown": "^2.1.4",
   
     
-  "@astrojs/starlight": "^0.32.5",
+  "@astrojs/starlight": "^0.35.2",
   
     
-  "astro": "^5.5.3",
+  "astro": "^5.12.8",
   
     
   "katex": "^0.16.22",
