@@ -8,15 +8,16 @@
   
   "scripts": {
       
- 
-
   "dev": "tinacms dev -c \"astro dev\"",
+  "build": "tinacms build && astro build",
+
+
+ 
     
     
   "start": "astro dev",
   
-    
-  "build": "astro build",
+
   
     
   "preview": "astro preview",
