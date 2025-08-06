@@ -17,32 +17,51 @@ export default defineConfig({
 				entryLimit: 10000,
       // configuration options
 	        filter: (page) =>
-        page !== 'https://www.guiauniversal.net/guides/example2/' &&
+       // page !== 'https://www.guiauniversal.net/guides/example2/' &&
         page !== 'https://www.guiauniversal.net/guides/example/',
        
     }),
+
+
+  
+
+
  		starlight({
-			favicon: 'public/favicon.svg',
-			title: 'Guía Universal',
+			  customCss: ['./src/styles/custom.css'],
+			favicon: '/favicon.ico',
+			
 			logo: {
 				src: './src/assets/logo.svg',
 			  },
-			
-			sidebar: [
-				{ label: 'Contacto', slug: 'contacto' },
-				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Prueba1', slug: 'guides/example' },   
-					    { slug: 'guides/example2' },					
-					],
-				},
-				
-		
-			],
+			      title: "Guía Universal",
+				  sidebar: [
+  {
+    label: "Lengua",
+    autogenerate: { directory: "lengua" }, // Genera automáticamente los links
+    collapsed: false,
+  },
+  {
+    label: "Matemática",
+    autogenerate: { directory: "matematica" },
+    collapsed: false,
+  }, 
+       
+       
+
+
+],
+
+      components: {
+        Sidebar: "./src/components/DynamicSidebar.astro",
+        
+      },      
+      
+
+			 
+      
 		}), mdx(),
 	],
+	
 	markdown: {
      remarkPlugins: [remarkMath],
      rehypePlugins: [rehypeKatex],

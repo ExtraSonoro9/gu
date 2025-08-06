@@ -1,0 +1,78 @@
+---
+// src/components/DynamicSidebar.astro
+const { pathname } = Astro.url;
+
+// 1. Define las páginas especiales (ocultarán panel derecho)
+const specialPages = [
+  '/contacto',
+  '/politica-de-privacidad',
+  '/sobre-nosotros',
+  '/advertencia'
+];
+
+// 2. Configuración manual de sidebars
+const sidebars = {
+  informacion: [
+    { label: "Contacto", link: "/contacto" },
+    { label: "Política", link: "/politica-de-privacidad" },
+    { label: "Sobre Nosotros", link: "/sobre-nosotros" },
+    { label: "Advertencia", link: "/advertencia" }
+  ],
+  matematica: [
+    { label: "Álgebra", link: "/matematica/algebra" },
+    { label: "Geometría", link: "/matematica/" }
+  ],
+  lengua: [
+    { label: "Gramática", link: "/lengua/gramatica" },
+    { label: "Literatura", link: "/lengua/" }
+  ]
+};
+
+// 3. Determina qué sidebar mostrar
+let currentSidebar;
+
+ if (pathname.startsWith('/matematica/')) {
+  currentSidebar = 'matematica';
+} else if (pathname.startsWith('/lengua/')) {
+  currentSidebar = 'lengua';
+} else if (pathname.startsWith('/')) {
+  currentSidebar = 'informacion';}
+---
+
+<!-- 4. Sidebar personalizado -->
+<nav class="sidebar-custom">
+  {currentSidebar === 'informacion' && (
+    <div>
+      <h3>Información</h3>
+      <ul>
+        {sidebars.informacion.map(item => (
+          <li><a href={item.link}>{item.label}</a></li>
+        ))}
+      </ul>
+    </div>
+  )}
+  
+  {currentSidebar === 'matematica' && (
+    <div>
+      <h3>Matemática</h3>
+      <ul>
+        {sidebars.matematica.map(item => (
+          <li><a href={item.link}>{item.label}</a></li>
+        ))}
+      </ul>
+    </div>
+  )}
+  
+  {currentSidebar === 'lengua' && (
+    <div>
+      <h3>Lengua</h3>
+      <ul>
+        {sidebars.lengua.map(item => (
+          <li><a href={item.link}>{item.label}</a></li>
+        ))}
+      </ul>
+    </div>
+  )}
+</nav>
+
+<!-- 5. Ocultar panel derecho en páginas especiales -->

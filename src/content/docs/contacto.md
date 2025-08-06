@@ -1,7 +1,8 @@
 ---
 title: Contacto
 description: Página de contacto con formulario
-
+noTOC: true 
+layout: /src/layouts/Layout.astro
 
 ---
 
@@ -66,7 +67,7 @@ description: Página de contacto con formulario
 
 ---
 
-Si quieres, también puedes agregar texto adicional debajo:
+Si encuentras un error o quieres ayudar manda mensaje.
 
 ---
 

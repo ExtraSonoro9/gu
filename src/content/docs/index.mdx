@@ -9,20 +9,31 @@ hero:
   image:
     file: ../../assets/houston.webp
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: len
+      link: /lengua/
       icon: right-arrow
-  
-    - text: contacto inicial
-      link: contacto
+    - text: mat
+      link: /matematica/
+      icon: right-arrow
+    - text: contacto 
+      link: /contacto
+      icon: right-arrow
+    - text: Manejo de datos 
+      link: /politica-de-privacidad
+      icon: right-arrow
+    - text: Quienes somos 
+      link: /sobre-nosotros
+      icon: right-arrow
+    - text: Advertencia 
+      link: /advertencia
       icon: right-arrow
       
 layout: /src/layouts/Layout.astro
 
 ---
 
-Hola esta pagina de prueba
-   
+Hola bienvenido a una especie de "seudo enciclopedia universal" pero de contenido de distintas materias.
+(sí, el nombre es muy exagerdo)   
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
@@ -37,5 +48,4 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 	</Card>
 
 </CardGrid>
-
 
