@@ -37,8 +37,10 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-  name: Build TinaCMS
-  env:
-    TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
-    TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
-  run: npx tinacms build
+      - name: Build TinaCMS
+        env:
+          TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
+          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+        run: yarn build
+        # This assumes that your "build" script in your
+        # package.json is "tinacms build"
