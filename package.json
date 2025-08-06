@@ -7,17 +7,15 @@
   "version": "0.0.1",
   
   "scripts": {
-      
-  "dev": "tinacms dev -c \"astro dev\"",
-  "build": "tinacms build && astro build",
-
-
- 
+  
     
+  "dev": "tinacms dev -c \"astro dev\"",
+  
+    
+  "build": "tinacms build && astro build",
+  
     
   "start": "astro dev",
-  
-
   
     
   "preview": "astro preview",
@@ -70,5 +68,4 @@
   "@types/node": "^24.2.0"
   
   }
-  
 }
