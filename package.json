@@ -12,7 +12,9 @@
   "dev": "tinacms dev -c \"astro dev\"",
   
     
-  "build": "astro build && tinacms build && rm -f admin/.gitignore", 
+  "build": "astro build && tinacms build && rm -f public/admin/.gitignore && rm -f dist/admin/.gitignore",
+  "deploy": "gh-pages -d dist",
+  
     
   "start": "astro dev",
   
@@ -64,7 +66,10 @@
   "@tinacms/cli": "^1.10.2",
   
     
-  "@types/node": "^24.2.0"
+  "@types/node": "^24.2.0",
+  
+    
+  "gh-pages": "^6.3.0"
   
   }
 }

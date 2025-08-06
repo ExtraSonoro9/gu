@@ -9,7 +9,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({ 
-	site: 'https://guiauniversal.net',
+	site: 'https://extrasonoro9.github.io/gu/',
  
 	integrations: [
 		partytown({ config: { forward: ['dataLayer.push'] } }),
