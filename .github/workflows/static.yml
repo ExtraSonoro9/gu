@@ -23,9 +23,13 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
+  
       - name: Build Astro site
-        run: npm run build
+        run: npm run build  
+      - name: Build Tina Admin
+        run: npx tinacms build
+      - name: Copy Tina Admin to dist
+        run: mkdir -p dist/admin && cp -r .tina/public/admin/* dist/admin/
 
       - name: Create .nojekyll file
         run: touch dist/.nojekyll
