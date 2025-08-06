@@ -12,7 +12,7 @@
   "dev": "tinacms dev -c \"astro dev\"",
   
     
-  "build": "astro build && tina build && rm -f admin/.gitignore", 
+  "build": "astro build && tinacms build && rm -f admin/.gitignore", 
     
   "start": "astro dev",
   
