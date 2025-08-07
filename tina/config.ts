@@ -32,7 +32,7 @@ export default defineConfig({
       {
         name: "post",
         label: "Posts",
-        path: "content/posts",
+        path: "src/content/docs",
         fields: [
           {
             type: "string",
@@ -50,5 +50,12 @@ export default defineConfig({
         ],
       },
     ],
+  },  search: {
+    tina: {
+      indexerToken: '23ecaa997c1fae0d0fbef566054fb9600dc5f661',
+      stopwordLanguages: ['eng'],
+    },
+    indexBatchSize: 100,
+    maxSearchIndexFieldLength: 100,
   },
 });
