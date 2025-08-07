@@ -22,10 +22,6 @@ export default defineConfig({
        
     }),
 
-
-  
-
-
  		starlight({
 			  customCss: ['./src/styles/custom.css'],
 			favicon: '/favicon.ico',
