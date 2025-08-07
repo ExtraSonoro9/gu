@@ -25,7 +25,7 @@ export default defineConfig({
  		starlight({
 			  customCss: ['./src/styles/custom.css'],
 			favicon: '/favicon.ico',
-			
+			defaultLocale: 'es',
 			logo: {
 				src: './src/assets/logo.svg',
 			  },
