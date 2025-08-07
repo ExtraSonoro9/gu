@@ -12,7 +12,7 @@
   "dev": "tinacms dev -c \"astro dev\"",
   
     
-  "build": "astro build && tinacms build && rm -f public/admin/.gitignore && rm -f dist/admin/.gitignore",
+  "build": "astro build && tinacms search-index && tinacms build --skip-search-index && rm -f public/admin/.gitignore && rm -f dist/admin/.gitignore",
   "deploy": "gh-pages -d dist",
   
     
