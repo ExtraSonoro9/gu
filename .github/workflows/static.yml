@@ -11,20 +11,13 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Cache Node.js modules
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
-          node-version: 20
+          cache: 'npm' # Habilita el caché para npm
+
 
       - name: Install dependencies
         run: npm install
@@ -32,24 +25,24 @@ jobs:
       - name: Remove Tina auto gitignore
         run: rm -f admin/.gitignore
 
-      - name: Detect if Tina needs rebuild
-        id: detect
-        run: |
-          if git diff --name-only HEAD~1 HEAD | grep -qE '^(admin/|tina\.config)'; then
-            echo "tina_changed=true" >> $GITHUB_OUTPUT
-          else
-            echo "tina_changed=false" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Build TinaCMS
-        if: steps.detect.outputs.tina_changed == 'true'
+      - name: Cache TinaCMS build
+        id: cache-tina
+        uses: actions/cache@v3
+        with:
+          path: .tina/compiled
+          key: ${{ runner.os }}-tina-v1-${{ hashFiles('.tina/**/*.ts') }}
+      - name: Build TinaCMS and Astro
+        if: steps.cache-tina.outputs.cache-hit != 'true'
         run: npm run build:tina
+          # O el comando específico para compilar TinaCMS, si es separado
+          # npx tina-build
+
 
       - name: Build Astro
         run: npm run build:astro
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.TOKEN }}
-          publish_dir: ./dist
+            github_token: ${{ secrets.TOKEN }}
+            publish_dir: ./dist
