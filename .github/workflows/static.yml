@@ -21,16 +21,20 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
-      - name: Remove Tina auto gitignore
-        run: rm -f admin/.gitignore
-
-      - name: Cache TinaCMS build
+        
+      - name: Restore TinaCMS build cache
         id: cache-tina
         uses: actions/cache@v3
         with:
           path: .tina/compiled
           key: ${{ runner.os }}-tina-v1-${{ hashFiles('.tina/**/*.ts') }}
+
+          
+      - name: Build Astro and TinaCMS (if no cache)
+        if: steps.cache-tina.outputs.cache-hit != 'true'
+        run: npm run build:tina
+      - name: Remove Tina auto gitignore
+        run: rm -f admin/.gitignore
       - name: Build TinaCMS and Astro
         if: steps.cache-tina.outputs.cache-hit != 'true'
         run: npm run build:tina
@@ -41,6 +45,10 @@ jobs:
       - name: Build Astro
         run: npm run build:astro
 
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: './dist'
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
