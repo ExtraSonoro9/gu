@@ -1,33 +1,50 @@
 ---
-// src/components/DynamicSidebar.astro
+import { getCollection } from 'astro:content';
+
 const { pathname } = Astro.url;
 
-// 1. Define las páginas especiales (ocultarán panel derecho)
-const specialPages = [
-  '/contacto',
-  '/politica-de-privacidad',
-  '/sobre-nosotros',
-  '/advertencia'
-];
-
-// 2. Configuración manual de sidebars
+// 1. Configuración base del sidebar
 const sidebars = {
-  informacion: [
-    { label: "Contacto", link: "/contacto" },
-    { label: "Política", link: "/politica-de-privacidad" },
-    { label: "Sobre Nosotros", link: "/sobre-nosotros" },
-    { label: "Advertencia", link: "/advertencia" }
-  ],
-  matematica: [
-    { label: "Álgebra", link: "/matematica/algebra" },
-    { label: "Geometría", link: "/matematica/" }
-  ],
-  lengua: [
-    { label: "Gramática", link: "/lengua/gramatica" },
-    { label: "Literatura", link: "/lengua/" }
-  ]
+  informacion: {
+    label: "Información",
+    items: [
+           { label: "Contacto", link: "/contacto"},
+      { label: "Política de Privacidad", link: "/politica-de-privacidad"},
+      { label: "Sobre Nosotros", link: "/sobre-nosotros" },
+      { label: "Advertencia", link: "/advertencia"}
+    ],
+  },
+  matematica: {
+    label: "Matemática",
+    items: [ 
+    
+        'matematica',
+        'matematica/bibliografia',
+        // Un grupo anidado de enlaces para constelaciones estacionales.
+        {
+          label: 'Conceptos principales',
+          items: [
+            'matematica/conjuntos',
+            'matematica/multiplicacionydivision',
+            'matematica/sumayresta',
+            'matematica/potencias',
+            'matematica/radicacion',
+            'matematica/numerosirracionales',
+            'matematica/numeropi',
+            'matematica/numeroe',
+            'matematica/numerodeoro',
+            'matematica/sumatoria',
+            
+          ],
+        },
+      ],
+    
+  },
+  lengua: {
+    label: "Lengua",
+    items: [],
+  },
 };
-
 // 3. Determina qué sidebar mostrar
 let currentSidebar;
 
@@ -63,16 +80,3 @@ let currentSidebar;
     </div>
   )}
   
-  {currentSidebar === 'lengua' && (
-    <div>
-      <h3>Lengua</h3>
-      <ul>
-        {sidebars.lengua.map(item => (
-          <li><a href={item.link}>{item.label}</a></li>
-        ))}
-      </ul>
-    </div>
-  )}
-</nav>
-
-<!-- 5. Ocultar panel derecho en páginas especiales -->

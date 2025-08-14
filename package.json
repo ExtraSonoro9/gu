@@ -9,7 +9,7 @@
   "scripts": {
   
     
-  "dev": "tinacms dev -c \"astro dev\"",
+  "dev": "astro dev",
   
     
   "build": "astro build && tinacms search-index && tinacms build --skip-search-index && rm -f public/admin/.gitignore && rm -f dist/admin/.gitignore",

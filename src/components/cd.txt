@@ -1,0 +1,192 @@
+---
+import { getCollection } from 'astro:content';
+
+const { pathname } = Astro.url;
+
+// 1. Configuración base del sidebar
+const sidebars = {
+  informacion: {
+    label: "Información",
+    items: [
+      { label: "Contacto", link: "/contacto", order: 1 },
+      { label: "Política de Privacidad", link: "/politica-de-privacidad", order: 2 },
+      { label: "Sobre Nosotros", link: "/sobre-nosotros", order: 3 },
+      { label: "Advertencia", link: "/advertencia", order: 4 }
+    ],
+  },
+  matematica: {
+    label: "Matemática",
+    items: [],
+  },
+  lengua: {
+    label: "Lengua",
+    items: [],
+  },
+};
+
+// 2. Procesar las entradas usando el order del frontmatter
+const allEntries = await getCollection('docs');
+
+allEntries.forEach((entry) => {
+  if (!entry.slug) return;
+  
+  const path = `/${entry.slug}`;
+  const [materia, ...resto] = entry.slug.split('/');
+  
+  // Ignorar páginas especiales e index
+  const isSpecialPage = sidebars.informacion.items.some(item => item.link === path);
+  if (entry.slug === 'index' || isSpecialPage) return;
+
+  // Solo procesar materias conocidas
+  if (!sidebars[materia]) return;
+
+  // Procesar estructura usando order del frontmatter
+  const itemData = {
+    label: entry.data.title || formatTitle(resto[resto.length - 1]),
+    link: path,
+    order: entry.data.order || 999 // Valor por defecto alto para los sin order
+  };
+
+  if (resto.length === 1) {
+    // Documento directo en la materia
+    sidebars[materia].items.push(itemData);
+  } else if (resto.length >= 2) {
+    // Documento en subgrupo
+    const subgrupo = resto[0];
+    
+    // Buscar si ya existe el subgrupo
+    let subgrupoExistente = sidebars[materia].items.find(item => 
+      item.label === formatTitle(subgrupo) && item.items
+    );
+    
+    if (!subgrupoExistente) {
+      subgrupoExistente = {
+        label: formatTitle(subgrupo),
+        items: [],
+        order: entry.data.subgroupOrder || 999 // Order para el grupo
+      };
+      sidebars[materia].items.push(subgrupoExistente);
+    }
+    
+    // Añadir documento al subgrupo
+    subgrupoExistente.items?.push(itemData);
+  }
+});
+
+// Función para formatear títulos
+function formatTitle(str: string): string {
+  return str
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+
+// 3. Ordenar TODO por la propiedad order
+Object.values(sidebars).forEach(sidebar => {
+  // Ordenar grupos principales
+  sidebar.items.sort((a, b) => (a.order || 999) - (b.order || 999));
+  
+  // Ordenar items dentro de cada grupo
+  sidebar.items.forEach(item => {
+    if (item.items) {
+      item.items.sort((a, b) => (a.order || 999) - (b.order || 999));
+    }
+  });
+});
+
+// 4. Determinar qué sidebar mostrar
+const currentMateria = pathname.split('/')[1] || 'informacion';
+const currentSidebar = sidebars[currentMateria] || sidebars.informacion;
+---
+
+<nav class="sidebar-custom">
+  <details class="sidebar-group" open>
+    <summary class="sidebar-group-heading">{currentSidebar.label}</summary>
+    <ul class="sidebar-group-items">
+      {currentSidebar.items.map(item => (
+        <li key={item.link || item.label}>
+          {!item.items ? (
+            <a 
+              href={item.link} 
+              class:list={['sidebar-link', { 'is-active': pathname === item.link }]}
+            >
+              {item.label}
+            </a>
+          ) : (
+            <details class="subgroup" open>
+              <summary class="subgroup-heading">{item.label}</summary>
+              <ul class="subgroup-items">
+                {item.items.map(subItem => (
+                  <li key={subItem.link}>
+                    <a 
+                      href={subItem.link} 
+                      class:list={['sidebar-link', { 'is-active': pathname === subItem.link }]}
+                    >
+                      {subItem.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )}
+        </li>
+      ))}
+    </ul>
+  </details>
+</nav>
+
+<style is:global>
+.sidebar-custom {
+  padding: 1.5rem 0;
+}
+.sidebar-group {
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+.sidebar-group-heading {
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--sl-color-text-dim);
+  list-style: none;
+  cursor: pointer;
+}
+.sidebar-group-heading::before {
+  content: '';
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 0.5rem;
+  border-right: 1px solid var(--sl-color-gray-3);
+  border-bottom: 1px solid var(--sl-color-gray-3);
+  transform: rotate(-45deg);
+  transition: transform 0.2s ease-in-out;
+}
+.sidebar-group[open] > .sidebar-group-heading::before {
+  transform: rotate(45deg);
+  margin-right: 0.5rem;
+  margin-bottom: 0.1rem;
+}
+.sidebar-group-items {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+  border-left: 1px solid var(--sl-color-gray-3);
+  padding-left: 1rem;
+}
+.sidebar-link {
+  display: block;
+  padding: 0.25rem 0;
+  text-decoration: none;
+  color: var(--sl-color-text);
+}
+.sidebar-link:hover {
+  color: var(--sl-color-accent);
+}
+.is-active {
+  color: #4c82f9; /* 🟢 CORRECCIÓN: Usamos un color azul fijo para el enlace activo */
+  font-weight: 600;
+}
+</style>
+

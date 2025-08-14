@@ -35,27 +35,45 @@ export default defineConfig({
 				src: './src/assets/logo.svg',
 			  },
 			      title: "Guía Universal",
-				  sidebar: [
-  {
-    label: "Lengua",
-    autogenerate: { directory: "lengua" }, // Genera automáticamente los links
-    collapsed: false,
+		  sidebar: [
+			{
+    label: "Información",
+    items: [
+      { label: "Contacto", link: "/contacto"},
+      { label: "Política de Privacidad", link: "/politica-de-privacidad"},
+      { label: "Sobre Nosotros", link: "/sobre-nosotros" },
+      { label: "Advertencia", link: "/advertencia"}
+    ],
   },
-  {
-    label: "Matemática",
-    autogenerate: { directory: "matematica" },
-    collapsed: false,
-  }, 
+    // Un grupo de enlaces etiquetado "Constelaciones".
+    {
+		
+      label: 'Matemática',
+      items: [
+        'matematica',
+        'matematica/bibliografia',
+        // Un grupo anidado de enlaces para constelaciones estacionales.
+        {
+          label: 'Conceptos principales',
+          items: [
+            'matematica/conjuntos',
+            'matematica/multiplicacionydivision',
+            'matematica/sumayresta',
+            'matematica/potencias',
+            'matematica/radicacion',
+            'matematica/numerosirracionales',
+            'matematica/numeropi',
+            'matematica/numeroe',
+            'matematica/numerodeoro',
+            'matematica/sumatoria',
+            
+          ],
+        },
+      ],
+    },
+  ], 
+      
        
-       
-
-
-],
-
-      components: {
-        Sidebar: "./src/components/DynamicSidebar.astro",
-        
-      },      
       
 
 			 

@@ -1,0 +1,187 @@
+---
+// src/components/DynamicSidebar.astro
+const { pathname } = Astro.url;
+
+// 1. Define las páginas especiales (ocultarán panel derecho)
+const specialPages = [
+  '/contacto',
+  '/politica-de-privacidad',
+  '/sobre-nosotros',
+  '/advertencia'
+];
+
+// 2. Configuración manual de sidebars
+const sidebars = {
+  informacion: [
+    { label: "Contacto", link: "/contacto" },
+    { label: "Política", link: "/politica-de-privacidad" },
+    { label: "Sobre Nosotros", link: "/sobre-nosotros" },
+    { label: "Advertencia", link: "/advertencia" }
+  ],
+  matematica: [
+    { label: "Álgebra", link: "/matematica/algebra" },
+    { label: "Geometría", link: "/matematica/" }
+  ],
+  lengua: [
+    { label: "Gramática", link: "/lengua/gramatica" },
+    { label: "Literatura", link: "/lengua/" }
+  ]
+};
+
+// 3. Determina qué sidebar mostrar
+let currentSidebar;
+
+ if (pathname.startsWith('/matematica/')) {
+  currentSidebar = 'matematica';
+} else if (pathname.startsWith('/lengua/')) {
+  currentSidebar = 'lengua';
+} else if (pathname.startsWith('/')) {
+  currentSidebar = 'informacion';}
+---
+
+<!-- 4. Sidebar personalizado -->
+<nav class="sidebar-custom">
+  {currentSidebar === 'informacion' && (
+    <div>
+      <h3>Información</h3>
+      <ul>
+        {sidebars.informacion.map(item => (
+          <li><a href={item.link}>{item.label}</a></li>
+        ))}
+      </ul>
+    </div>
+  )}
+  
+  {currentSidebar === 'matematica' && (
+    <div>
+      <h3>Matemática</h3>
+      <ul>
+        {sidebars.matematica.map(item => (
+          <li><a href={item.link}>{item.label}</a></li>
+        ))}
+      </ul>
+    </div>
+  )}
+  
+  {currentSidebar === 'lengua' && (
+    <div>
+      <h3>Lengua</h3>
+      <ul>
+        {sidebars.lengua.map(item => (
+          <li><a href={item.link}>{item.label}</a></li>
+        ))}
+      </ul>
+    </div>
+  )}
+</nav>
+
+<!-- 5. Ocultar panel derecho en páginas especiales -->
+
+
+---
+import { getCollection } from 'astro:content';
+import DefaultSidebar from '@astrojs/starlight/components/Sidebar.astro';
+import type { Props } from '@astrojs/starlight/props';
+
+const { sidebar, entry, ...rest } = Astro.props;
+
+// 1. Obtener la materia actual de forma segura
+const currentMateria = entry?.slug?.split('/')[0];
+const isSpecialPage = !currentMateria || currentMateria === 'informacion';
+
+// 2. Configuración base del sidebar
+const sidebars = {
+  informacion: {
+    label: "Información",
+    items: [
+      { label: "Contacto", link: "/contacto" },
+      { label: "Política de Privacidad", link: "/politica-de-privacidad" },
+      { label: "Sobre Nosotros", link: "/sobre-nosotros" },
+      { label: "Advertencia", link: "/advertencia" }
+    ],
+  },
+  matematica: {
+    label: "Matemática",
+    items: [],
+  },
+  lengua: {
+    label: "Lengua",
+    items: [],
+  },
+};
+
+// 3. Procesar las entradas de la colección de documentos
+const allEntries = await getCollection('docs');
+
+allEntries.forEach((doc) => {
+  if (!doc.slug) return;
+  
+  const path = `/${doc.slug}`;
+  const [materia, ...resto] = doc.slug.split('/');
+  
+  const docIsSpecialPage = sidebars.informacion.items.some(item => item.link === path);
+  if (doc.slug === 'index' || docIsSpecialPage) return;
+  if (!sidebars[materia]) return;
+
+  const itemData = {
+    label: doc.data.title || formatTitle(resto.length > 0 ? resto[resto.length - 1] : materia),
+    link: path,
+  };
+
+  if (resto.length === 1) {
+    sidebars[materia].items.push(itemData);
+  } else if (resto.length >= 2) {
+    const subgrupo = resto[0];
+    let subgrupoExistente = sidebars[materia].items.find(item => 
+      item.label === formatTitle(subgrupo)
+    );
+    
+    if (!subgrupoExistente) {
+      subgrupoExistente = {
+        label: formatTitle(subgrupo),
+        items: [],
+      };
+      sidebars[materia].items.push(subgrupoExistente);
+    }
+    
+    if (!subgrupoExistente.items) {
+      subgrupoExistente.items = [];
+    }
+    subgrupoExistente.items.push(itemData);
+  }
+});
+
+function formatTitle(str: string): string {
+  if (!str) return '';
+  return str
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+
+// 4. Ordenar las materias dinámicas con lógica de Starlight
+Object.keys(sidebars).forEach(key => {
+  if (key !== 'informacion') {
+    sidebars[key].items.sort((a, b) => {
+      if (a.items && !b.items) return 1;
+      if (!a.items && b.items) return -1;
+      return a.label.localeCompare(b.label);
+    });
+    sidebars[key].items.forEach(item => {
+      if (item.items) {
+        item.items.sort((a, b) => a.label.localeCompare(b.label));
+      }
+    });
+  }
+});
+
+// 5. Determinar qué sidebar mostrar
+let sidebarToShow = sidebars.informacion;
+if (currentMateria && sidebars[currentMateria] && !isSpecialPage) {
+  sidebarToShow = sidebars[currentMateria];
+}
+---
+
+<DefaultSidebar {...rest} sidebar={sidebarToShow}>
+  <slot />
+</DefaultSidebar>
