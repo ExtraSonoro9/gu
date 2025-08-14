@@ -12,7 +12,7 @@
   "dev": "astro dev",
   
 
-  "build:astro": "astro build",
+  "build:astro": "astro build && tinacms search-index",
   "build:tina": "tinacms search-index && tinacms build--skip-search-index && rm -f public/admin/.gitignore && rm -f dist/admin/.gitignore",
   "build": "npm run build:astro",
 
