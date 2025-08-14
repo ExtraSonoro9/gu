@@ -1,6 +1,5 @@
 ---
-noTOC: true
-layout: /src/layouts/Layout.astro
+
 title: Sobre el manejo de datos
 ---
 

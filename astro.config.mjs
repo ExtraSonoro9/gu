@@ -1,5 +1,8 @@
 // @ts-check
 
+const googleAnalyticsId = 'G-Z3R6NF5FQX';
+
+
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
  import remarkMath from 'remark-math';
@@ -23,9 +26,37 @@ export default defineConfig({
     }),
 
  		starlight({
+
 			  customCss: ['./src/styles/custom.css'],
 			favicon: '/favicon.ico',
-			  
+      
+         head: [
+        // Adding google analytics
+        {
+          tag: 'script',
+          attrs: {
+            src: `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`,
+          },
+        },
+        {
+          tag: 'script',
+          content: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          
+           gtag("consent", "default", {
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied",
+      analytics_storage: "denied",
+  });
+  gtag('config', '${googleAnalyticsId}');
+          `,
+        },
+      ],
+    
       locales: {
         root: {
           label: 'Español',

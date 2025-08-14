@@ -1,8 +1,8 @@
 ---
 title: Contacto
 description: Página de contacto con formulario
-noTOC: true 
-layout: /src/layouts/Layout.astro
+
+
 
 ---
 
