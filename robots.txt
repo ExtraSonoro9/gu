@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://extrasonoro9.github.io/gu/sitemap-index.xml
