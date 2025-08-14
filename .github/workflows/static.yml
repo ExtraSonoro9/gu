@@ -17,17 +17,24 @@ jobs:
         uses: actions/setup-node@v3
         with:
           cache: 'npm' # Habilita el caché para npm
-
+      - name: Restore node_modules cache
+        id: cache-npm
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
         
       - name: Restore TinaCMS build cache
         id: cache-tina
         uses: actions/cache@v3
         with:
-          path: .tina/compiled
-          key: ${{ runner.os }}-tina-v1-${{ hashFiles('.tina/**/*.ts') }}
+          # ¡Cambiar la ruta del caché a 'admin'!
+          path: admin
+          key: ${{ runner.os }}-tina-v1-${{ hashFiles('package-lock.json', '.tina/config.ts') }}
           restore-keys: |
             ${{ runner.os }}-tina-v1-
-
       - name: Install dependencies
         run: npm install
     
