@@ -31,6 +31,9 @@ jobs:
         run: npm install
     
    
+      - name: Build Astro
+        run: npm run build:astro
+
       - name: Build Astro and TinaCMS (if no cache)
         if: steps.cache-tina.outputs.cache-hit != 'true'
         run: npm run build:tina
@@ -40,9 +43,6 @@ jobs:
           # O el comando específico para compilar TinaCMS, si es separado
           # npx tina-build
 
-
-      - name: Build Astro
-        run: npm run build:astro
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
