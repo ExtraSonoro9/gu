@@ -31,7 +31,7 @@ jobs:
         uses: actions/cache@v3
         with:
           # ¡Cambiar la ruta del caché a 'admin'!
-          path:dist/admin
+          path: ./dist/admin
           key: ${{ runner.os }}-tina-v1-${{ hashFiles('package-lock.json', '.tina/config.ts') }}
           restore-keys: |
             ${{ runner.os }}-tina-v1-
