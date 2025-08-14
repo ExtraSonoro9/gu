@@ -17,13 +17,15 @@ jobs:
         uses: actions/setup-node@v3
         with:
           cache: 'npm' # Habilita el caché para npm
+      - name: Prepare TinaCMS directory
+        run: mkdir -p .tina/compiled
+        
       - name: Restore TinaCMS build cache
         id: cache-tina
         uses: actions/cache@v3
         with:
           path: .tina/compiled
-          # Clave que se basa en package-lock y el archivo de configuración principal de Tina
-          key: ${{ runner.os }}-tina-v1-${{ hashFiles('package-lock.json', '.tina/config.ts') }}
+          key: ${{ runner.os }}-tina-v1-${{ hashFiles('.tina/**/*.ts') }}
           restore-keys: |
             ${{ runner.os }}-tina-v1-
 
