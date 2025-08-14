@@ -10,9 +10,13 @@
   
     
   "dev": "astro dev",
-  
+
+  "build:astro": "astro build",
+  "build:tina": "tinacms search-index && tinacms build--skip-search-index && rm -f public/admin/.gitignore && rm -f dist/admin/.gitignore",
+  "build": "npm run build:astro && npm run build:tina"
+
     
-  "build": "astro build && tinacms search-index && tinacms build --skip-search-index && rm -f public/admin/.gitignore && rm -f dist/admin/.gitignore",
+
   "deploy": "gh-pages -d dist",
   
     
