@@ -18,11 +18,27 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Detectchanges
+        id: detect
+        run: |
+          if git diff --name-only HEAD~1 HEAD | grep -q '^admin/'; then
+            echo "tina_changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "tina_changed=false" >> $GITHUB_OUTPUT
+          fi
+
+
+   
+      - name: BuildTinaCMS
+        if: steps.detect.outputs.tina_changed == 'true'
+        run: npm run build:tina
+
+      - name: BuildAstro
+        run: npm run build:astro  
       - name: Checkout your repository using git
         uses: actions/checkout@v4
       - name: Install, build, and upload your site
         uses: withastro/action@v3
-        
         # with:
           # path: . # The root location of your Astro project inside the repository. (optional)
           # node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
