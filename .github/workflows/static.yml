@@ -17,8 +17,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           cache: 'npm' # Habilita el caché para npm
-      - name: Prepare TinaCMS directory
-        run: mkdir -p .tina/compiled
+
         
       - name: Restore TinaCMS build cache
         id: cache-tina
