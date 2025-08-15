@@ -5,7 +5,49 @@ title: Conjuntos
 
 $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$
 
- \<math>\<mi>x\</mi>\<mo>\&isin;\</mo>\<mi>S\</mi>\</math>
+\<math xmlns="http\://www\.w3.org/1998/Math/MathML">
+
+  \<mi>x\</mi>
+
+  \<mo>=\</mo>
+
+  \<mfrac>
+
+    \<mrow>
+
+      \<mo>-\</mo>
+
+      \<mi>b\</mi>
+
+      \<mo>±\</mo>
+
+      \<msqrt>
+
+        \<msup>\<mi>b\</mi>\<mn>2\</mn>\</msup>
+
+        \<mo>-\</mo>
+
+        \<mn>4\</mn>
+
+        \<mi>a\</mi>
+
+        \<mi>c\</mi>
+
+      \</msqrt>
+
+    \</mrow>
+
+    \<mrow>
+
+      \<mn>2\</mn>
+
+      \<mi>a\</mi>
+
+    \</mrow>
+
+  \</mfrac>
+
+\</math>
 Guides g fghdfgdgdf lead a user through a specific task they want to accomplish, often with a sequence of steps.
 Writing a good guide requires thinking about what your users are trying to do.
 
