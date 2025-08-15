@@ -11,11 +11,14 @@
     
   "dev": "astro dev",
   
-
+    
   "build:astro": "astro build",
+  
+    
   "build:tina": "tinacms build && rm -f public/admin/.gitignore",
+  
+    
   "build": "npm run build:astro",
-
   
     
   "start": "astro dev",
@@ -41,15 +44,6 @@
   
     
   "astro": "^5.12.8",
-  
-    
-  "katex": "^0.16.22",
-  
-    
-  "rehype-katex": "^7.0.1",
-  
-    
-  "remark-math": "^6.0.0",
   
     
   "sharp": "^0.32.5",

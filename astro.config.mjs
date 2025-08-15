@@ -5,8 +5,7 @@ const googleAnalyticsId = 'G-Z3R6NF5FQX';
 
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
- import remarkMath from 'remark-math';
- import rehypeKatex from 'rehype-katex';
+
 import partytown from '@astrojs/partytown'
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
@@ -30,32 +29,34 @@ export default defineConfig({
 			  customCss: ['./src/styles/custom.css'],
 			favicon: '/favicon.ico',
       
-         head: [
-        // Adding google analytics
-        {
-          tag: 'script',
-          attrs: {
-            src: `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`,
-          },
-        },
-        {
-          tag: 'script',
-          content: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+      
+       head: [
+  // Configuración de Partytown para reenviar llamadas a dataLayer.push
+ 
+  // Añadiendo Google Analytics con Partytown
+  {
+    tag: 'script',
+    attrs: {
+      type: 'text/partytown',
+      src: `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`,
+    },
+  },
+  {
+    tag: 'script',
+    attrs: {
+      type: 'text/partytown',
+    },
+    content: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag("consent", "default", {
+         
 
-          
-           gtag("consent", "default", {
-      
-      
-     
-  });
-  gtag('config', '${googleAnalyticsId}');
-          `,
-        },
-      ],
-    
+      });
+    `,
+  },
+],
       locales: {
         root: {
           label: 'Español',
@@ -111,9 +112,5 @@ export default defineConfig({
 		}), mdx(),
 	],
 	
-	markdown: {
-     remarkPlugins: [remarkMath],
-     rehypePlugins: [rehypeKatex],
-   },
-   
+
 });
