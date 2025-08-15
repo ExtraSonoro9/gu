@@ -32,31 +32,55 @@ export default defineConfig({
       
        head: [
   // Configuración de Partytown para reenviar llamadas a dataLayer.push
- 
-  // Añadiendo Google Analytics con Partytown
+  {
+    tag: 'script',
+    content: `
+      const isDebugging = window.location.search.includes('debug=true');
+      window.PARTYTOWN_ENABLED = !isDebugging;
+    `
+  },
+  // Configuración de Partytown
   {
     tag: 'script',
     attrs: {
-      type: 'text/partytown',
+      'data-partytown-config': ''
+    },
+    content: `partytown = {
+      forward: ['dataLayer.push']
+    };`
+  },
+  // Script de Google Analytics (cargado de forma condicional)
+  {
+    tag: 'script',
+    attrs: {
       src: `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`,
+      type: 'text/partytown',
+      // Este atributo hace que Partytown se deshabilite en modo de depuración
+      'partytown-enabled': 'window.PARTYTOWN_ENABLED',
     },
   },
   {
     tag: 'script',
     attrs: {
       type: 'text/partytown',
+      'partytown-enabled': 'window.PARTYTOWN_ENABLED',
     },
     content: `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag("consent", "default", {
-         
 
+      gtag("consent", "default", {
+          ad_storage: "denied",
+          ad_user_data: "denied",
+          ad_personalization: "denied",
+          analytics_storage: "denied",
       });
     `,
   },
 ],
+
+
       locales: {
         root: {
           label: 'Español',
