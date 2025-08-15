@@ -86,7 +86,7 @@ gtag("consent", "default", {
       { label: "Sobre Nosotros", link: "/sobre-nosotros" },
       { label: "Advertencia", link: "/advertencia"}
     ],
-  },import partytown from '@astrojs/partytown'
+  },
     // Un grupo de enlaces etiquetado "Constelaciones".
     {
 		
