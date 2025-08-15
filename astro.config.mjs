@@ -6,7 +6,7 @@ const googleAnalyticsId = 'G-Z3R6NF5FQX';
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-import partytown from '@astrojs/partytown'
+
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
@@ -14,7 +14,7 @@ export default defineConfig({
 	site: 'https://extrasonoro9.github.io/gu/',
  
 	integrations: [
-		partytown({ config: { forward: ['dataLayer.push'] } }),
+		
             sitemap({
 				entryLimit: 10000,
       // configuration options
@@ -31,53 +31,40 @@ export default defineConfig({
       
       
        head: [
-  // Configuración de Partytown para reenviar llamadas a dataLayer.push
-  {
-    tag: 'script',
-    content: `
-      const isDebugging = window.location.search.includes('debug=true');
-      window.PARTYTOWN_ENABLED = !isDebugging;
-    `
-  },
-  // Configuración de Partytown
-  {
-    tag: 'script',
-    attrs: {
-      'data-partytown-config': ''
-    },
-    content: `partytown = {
-      forward: ['dataLayer.push']
-    };`
-  },
-  // Script de Google Analytics (cargado de forma condicional)
-  {
-    tag: 'script',
-    attrs: {
-      src: `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`,
-      type: 'text/partytown',
-      // Este atributo hace que Partytown se deshabilite en modo de depuración
-      'partytown-enabled': 'window.PARTYTOWN_ENABLED',
-    },
-  },
-  {
-    tag: 'script',
-    attrs: {
-      type: 'text/partytown',
-      'partytown-enabled': 'window.PARTYTOWN_ENABLED',
-    },
-    content: `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag("consent", "default", {
-          ad_storage: "denied",
-          ad_user_data: "denied",
-          ad_personalization: "denied",
-          analytics_storage: "denied",
-      });
-    `,
-  },
+// Adding google analytics
+
+{
+
+tag: 'script',
+
+attrs: {
+
+src: `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`,
+
+},
+
+},
+
+{
+
+tag: 'script',
+
+content: `
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){dataLayer.push(arguments);}
+
+gtag('js', new Date());
+
+
+gtag("consent", "default", {
+
+
+}); `}
+
+
 ],
 
 
@@ -99,7 +86,7 @@ export default defineConfig({
       { label: "Sobre Nosotros", link: "/sobre-nosotros" },
       { label: "Advertencia", link: "/advertencia"}
     ],
-  },
+  },import partytown from '@astrojs/partytown'
     // Un grupo de enlaces etiquetado "Constelaciones".
     {
 		
