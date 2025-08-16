@@ -11,7 +11,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({ 
-	site: 'https://extrasonoro9.github.io/gu/',
+	site: 'https://guiauniversal.net',
  
 	integrations: [
 		
