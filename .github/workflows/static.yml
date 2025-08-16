@@ -62,5 +62,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
             github_token: ${{ secrets.TOKEN }}
-            cname: guiauniversal.net
+            cname: www.guiauniversal.net
             publish_dir: ./dist
