@@ -40,7 +40,7 @@ tag: 'script',
 
 attrs: {
 
-src: `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`,
+async src="https://www.googletagmanager.com/gtag/js?id=G-Z3R6NF5FQX",
 
 },
 
@@ -51,18 +51,11 @@ src: `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`,
 tag: 'script',
 
 content: `
-
 window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-function gtag(){dataLayer.push(arguments);}
-
-gtag('js', new Date());
-
-
-gtag("consent", "default", {
-
-
-}); `}
+  gtag('config', 'G-Z3R6NF5FQX');`}
 
 
 ],
