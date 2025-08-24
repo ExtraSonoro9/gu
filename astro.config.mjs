@@ -40,7 +40,8 @@ tag: 'script',
 
 attrs: {
 
- async: true,  src="https://www.googletagmanager.com/gtag/js?id=G-Z3R6NF5FQX",
+ async: true, 
+src="https://www.googletagmanager.com/gtag/js?id=G-Z3R6NF5FQX",
 
 },
 
