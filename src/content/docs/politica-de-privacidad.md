@@ -1,5 +1,6 @@
 ---
 title: Sobre el manejo de datos
+tableOfContents: false
 ---
 
 Este sitio web recupera datos anónimos sobre el número de ingresos a los diferentes contenidos para conocer cuales secciones generan más visitas.

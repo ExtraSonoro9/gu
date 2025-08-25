@@ -1,5 +1,5 @@
 ---
-noTOC: true
+
 
 title: Sobre nosotros
 ---

@@ -1,6 +1,7 @@
 ---
 description: Página de contacto con formulario
 title: Contacto
+tableOfContents: false
 ---
 
 # Contáctanos
