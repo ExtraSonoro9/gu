@@ -2,6 +2,6 @@
 @media (max-width: 50em) {
   :root {
     /* Ajusta el tamaño de fuente para el título principal */
-    --sl-text-5xl: 2.5rem;
+    --sl-text-5xl: 2.2rem;
   }
 }
