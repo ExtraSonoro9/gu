@@ -2,6 +2,7 @@
 description: Inicio de modificaciones
 title: Conjuntos
 ---
+
 <?xml version="1.0" encoding="UTF-8"?>
 
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
@@ -28,7 +29,3 @@ title: Conjuntos
   <annotation encoding="StarMath 5.0">a in b  drarrow  int from{a} to{b}   frac {a} {b} </annotation>
  </semantics>
 </math>
-## Conjuntos
-## Varios
-### Simbolos
-### Notación
