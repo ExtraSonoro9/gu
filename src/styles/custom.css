@@ -1,7 +1,9 @@
 
 @media (max-width: 50em) {
-  :root {
-    /* Ajusta el tamaño de fuente para el título principal */
-    --sl-text-5xl: 2.5rem;
+  span.astro-m46x6ez3 {
+    white-space: normal ;
+    font-size: 1rem ; /* Nuevo tamaño de fuente */
+    line-height: 1.2 ;
+    max-width: 70% ; /* Limita el ancho para evitar superposición */
   }
 }
