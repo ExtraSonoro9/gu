@@ -29,3 +29,9 @@ title: Conjuntos
   <annotation encoding="StarMath 5.0">a in b  drarrow  int from{a} to{b}   frac {a} {b} </annotation>
  </semantics>
 </math>
+
+# Símbolos Comunes
+
+hay muchos símbolos en
+
+![](/FB_IMG_1742486023201.jpg)
