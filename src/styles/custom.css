@@ -2,8 +2,18 @@
 @media (max-width: 50em) {
   span.astro-m46x6ez3 {
     white-space: normal ;
-    font-size: 1rem ; /* Nuevo tamaño de fuente */
+    font-size: 0.80rem ; /* Nuevo tamaño de fuente */
     line-height: 1.2 ;
-    max-width: 70% ; /* Limita el ancho para evitar superposición */
+    max-width: 60% ; /* Limita el ancho para evitar superposición */
+  }
+}
+
+
+@media (max-width: 50em) {
+  /* Este selector apunta a los enlaces de paginación */
+  .astro-u2l5gyhi {
+    font-size: 0.80rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
   }
 }
