@@ -8,11 +8,29 @@
 }
 
 
-
 @media (max-width: 50em) {
-  /* Selecciona los íconos de los botones de paginación */
-   .astro-u2l5gyhi {
-    height: 1.5rem;
-    width: 1.5rem;
+  /* Selector para el ENLACE COMPLETO del botón de paginación (Anterior/Siguiente) */
+  .astro-3c3547f8 a {
+    /* Reduce el padding para hacer el botón más compacto */
+    padding: 0.5rem 0.75rem !important; /* Ajusta estos valores */
+    
+    /* Reduce el tamaño de la fuente para el texto (si lo hay) */
+    font-size: 0.85rem !important; /* Ajusta este valor */
+    
+    /* Asegura que el contenido se alinee correctamente */
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.25rem !important; /* Espacio entre flecha y texto */
+  }
+
+  /* Selector para los ICONOS (las flechas) dentro de esos botones */
+  .astro-3c3547f8 a svg {
+    height: 1rem !important; /* Altura de la flecha */
+    width: 1rem !important;  /* Ancho de la flecha */
+  }
+
+  /* Si el texto tiene un span interno y se sigue saliendo, podemos apuntar a él también */
+  .astro-3c3547f8 a span {
+    white-space: normal !important; /* Asegura que el texto pueda envolverse si es muy largo */
   }
 }
