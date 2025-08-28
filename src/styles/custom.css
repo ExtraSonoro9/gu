@@ -8,10 +8,11 @@
 }
 
 
+
 @media (max-width: 50em) {
-  /* Este selector apunta a los enlaces de paginación */
-  .astro-u2l5gyhi {
-    font-size: 0.80rem;
-  
+  /* Selecciona los íconos de los botones de paginación */
+   .astro-u2l5gyhi {
+    height: 0.8rem;
+    width: 0.8rem;
   }
 }
