@@ -10,7 +10,7 @@
 
 @media (max-width: 50em) {
   /* Selector para el ENLACE COMPLETO del botón de paginación (Anterior/Siguiente) */
-  .astro-3c3547f8 a {
+ .astro-u2l5gyhi  a {
     /* Reduce el padding para hacer el botón más compacto */
     padding: 0.5rem 0.75rem !important; /* Ajusta estos valores */
     
@@ -24,13 +24,13 @@
   }
 
   /* Selector para los ICONOS (las flechas) dentro de esos botones */
-  .astro-3c3547f8 a svg {
+  .astro-u2l5gyhi a svg {
     height: 1rem !important; /* Altura de la flecha */
     width: 1rem !important;  /* Ancho de la flecha */
   }
 
   /* Si el texto tiene un span interno y se sigue saliendo, podemos apuntar a él también */
-  .astro-3c3547f8 a span {
+ .astro-u2l5gyhi  a span {
     white-space: normal !important; /* Asegura que el texto pueda envolverse si es muy largo */
   }
 }
