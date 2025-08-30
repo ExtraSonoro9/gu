@@ -1,5 +1,5 @@
 ---
-description: Inicio de modificaciones
+
 title: Números irracionales
 ---
 
