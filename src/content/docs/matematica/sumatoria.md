@@ -9,9 +9,113 @@ Representada con el símbolo sigma (Σ) permite sumar una lista de elementos por
 
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
  <semantics>
-  <msqrt>
-   <mn>2</mn>
-  </msqrt>
-  <annotation encoding="StarMath 5.0">sqrt{2} </annotation>
+  <mtable>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mrow>
+       <munderover>
+        <mo stretchy="false">∑</mo>
+        <mrow>
+         <mi>i</mi>
+         <mo stretchy="false">=</mo>
+         <mn>0</mn>
+        </mrow>
+        <mrow>
+         <mi>n</mi>
+         <mo stretchy="false">=</mo>
+         <mn>3</mn>
+        </mrow>
+       </munderover>
+       <msub>
+        <mi>F</mi>
+        <mi>n</mi>
+       </msub>
+      </mrow>
+      <mo stretchy="false">=</mo>
+      <mrow>
+       <msub>
+        <mi>F</mi>
+        <mn>0</mn>
+       </msub>
+       <mo stretchy="false">+</mo>
+       <msub>
+        <mi>F</mi>
+        <mn>1</mn>
+       </msub>
+       <mo stretchy="false">+</mo>
+       <msub>
+        <mi>F</mi>
+        <mn>2</mn>
+       </msub>
+       <mo stretchy="false">+</mo>
+       <msub>
+        <mi>F</mi>
+        <mn>3</mn>
+       </msub>
+      </mrow>
+      <mo stretchy="false">=</mo>
+      <mrow>
+       <mn>20</mn>
+       <mo stretchy="false">−</mo>
+       <mn>20</mn>
+       <mo stretchy="false">+</mo>
+       <mn>30</mn>
+       <mo stretchy="false">−</mo>
+       <mn>30</mn>
+      </mrow>
+      <mo stretchy="false">=</mo>
+      <mn>0</mn>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mrow>
+       <munderover>
+        <mo stretchy="false">∑</mo>
+        <mrow>
+         <mi>i</mi>
+         <mo stretchy="false">=</mo>
+         <mn>1</mn>
+        </mrow>
+        <mrow>
+         <mi>n</mi>
+         <mo stretchy="false">=</mo>
+         <mn>2</mn>
+        </mrow>
+       </munderover>
+       <msub>
+        <mi>F</mi>
+        <mi>n</mi>
+       </msub>
+      </mrow>
+      <mo stretchy="false">=</mo>
+      <mrow>
+       <msub>
+        <mi>F</mi>
+        <mn>1</mn>
+       </msub>
+       <mo stretchy="false">+</mo>
+       <msub>
+        <mi>F</mi>
+        <mn>2</mn>
+       </msub>
+      </mrow>
+      <mo stretchy="false">=</mo>
+      <mrow>
+       <mn>20</mn>
+       <mo stretchy="false">+</mo>
+       <mn>30</mn>
+      </mrow>
+      <mo stretchy="false">=</mo>
+      <mn>50</mn>
+     </mrow>
+    </mtd>
+   </mtr>
+  </mtable>
+  <annotation encoding="StarMath 5.0">sum from{i=0} to{n=3}   F_{n} = F_{0}+ F_{1}  + F_{2}  + F_{3} =20-20+30-30=0 newline
+sum from{i=1} to{n=2}   F_{n} = F_{1}  + F_{2}   =20+30=50</annotation>
  </semantics>
 </math>
