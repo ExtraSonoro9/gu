@@ -1,3 +1,14 @@
+@import "katex/dist/katex.min.css";
+
+/* Ajustes globales de subíndices y superíndices */
+
+
+.katex .frac { line-height: 1; vertical-align: middle; }
+.katex .op-symbol { margin-left: -0.1em; margin-right: -0.1em; }
+.katex .limits { margin-top: -0.2em; margin-bottom: -0.2em; }
+.katex .sub { margin-left: -0.1em; }
+.katex .sup { margin-left: -0.05em; }
+
 @media (max-width: 50em) {
   span.astro-m46x6ez3 {
     white-space: normal ;
