@@ -9,4 +9,4 @@ $ \sqrt{2}=1.414213562… $
 
 Esta expresión tiene cifras decimales infinitas y no periódicas.
 
-A este y a números similares se los conoce como irracionales porque no se pueden escribir como una fracción.![](</Captura de pantalla_2025-08-29_15-31-13.png>)
+A este y a números similares se los conoce como irracionales porque no se pueden escribir como una fracción.![](</hipotenuza-lado-1x1-raiz-de-dos.png>)
