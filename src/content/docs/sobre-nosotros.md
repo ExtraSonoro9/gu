@@ -24,7 +24,7 @@ La autocrítica y el avance constante serán pilares en la redacción de las gu�
 
 ## Creada por los "fracasados"
 
-Sépase que según los sujetos que me evaluaron yo estoy más que desaprobado en las materias que intento compartir en las guías al punto de que me recomendaron estudiar otras cosas “más fáciles”, así que no aseguro que la información sea correcta después de todo solo soy… ¡él loco que enseña las materias en la que fue desaprobado más de diez veces seguidas!
+Sépase que según sujetos que me evaluaron yo estoy más que desaprobado en las materias que intento compartir en las guías al punto de que me recomendaron estudiar otras cosas “más fáciles”, así que no aseguro que la información sea correcta después de todo solo soy… ¡él loco que enseña las materias en la que fue desaprobado más de diez veces seguidas!
 
 ## Nuestro logo
 
