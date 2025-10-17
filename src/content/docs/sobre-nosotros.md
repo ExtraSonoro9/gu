@@ -28,7 +28,7 @@ Sépase que según sujetos que me evaluaron yo estoy más que desaprobado en las
 
 ## Nuestro logo
 
-El logotipo de la página es el símbolo de un transistor. Lo elijemos porque es un invento tan importante que sin él los procesadores de nuestras computadoras y celulares no existirían (además es bonito a la vista y fácil de recordar).
+El logotipo de la página es el símbolo de un transistor. Lo elijemos porque es un invento tan importante que sin él los procesadores y por tanto nuestras computadoras y celulares no existirían (además es bonito a la vista y fácil de recordar).
 
 ## Origen del nombre
 
