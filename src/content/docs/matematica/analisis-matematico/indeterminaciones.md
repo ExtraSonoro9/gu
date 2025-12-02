@@ -1,5 +1,4 @@
 ---
-title: Indetermicaciones
-
-
+title: Indeterminaciones
 ---
+
