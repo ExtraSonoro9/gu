@@ -127,13 +127,13 @@ window.dataLayer = window.dataLayer || [];
             'matematica/analisis-matematico/derivadas',
             'matematica/analisis-matematico/regladelacadena',
             'matematica/analisis-matematico/tdecontinuidad',
-            'matematica/analisis-matematico/tValorMedioLagrange',
+            'matematica/analisis-matematico/tvalormedio',
             
             'matematica/analisis-matematico/monotonia',
             'matematica/analisis-matematico/concavidad',
             'matematica/analisis-matematico/optimizacion',
             'matematica/analisis-matematico/razondecambio',
-            'matematica/analisis-matematico/LHopital',
+            'matematica/analisis-matematico/lhopital',
             'matematica/analisis-matematico/sumatoria',
 
 
