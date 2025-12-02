@@ -110,8 +110,35 @@ window.dataLayer = window.dataLayer || [];
             'matematica/numeropi',
             'matematica/numeroe',
             'matematica/numerodeoro',
-            'matematica/sumatoria',
+            'matematica/factorizacion',
+            'matematica/ecuacioncuadratica',
+           
+          ],
+        },
+        {
+          label: 'Análisis Matemático',
+          items: [
+            'matematica/analisis-matematico/funcionesycorrespondencias',
+            'matematica/analisis-matematico/inecuaciones',
+            'matematica/analisis-matematico/cotas',
+            'matematica/analisis-matematico/limites',
+            'matematica/analisis-matematico/indeterminaciones',
             
+            'matematica/analisis-matematico/derivadas',
+            'matematica/analisis-matematico/regladelacadena',
+            'matematica/analisis-matematico/tdecontinuidad',
+            'matematica/analisis-matematico/tValorMedioLagrange',
+            
+            'matematica/analisis-matematico/monotonia',
+            'matematica/analisis-matematico/concavidad',
+            'matematica/analisis-matematico/optimizacion',
+            'matematica/analisis-matematico/razondecambio',
+            'matematica/analisis-matematico/LHopital',
+            'matematica/analisis-matematico/sumatoria',
+
+
+
+ 
           ],
         },
       ],

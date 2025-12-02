@@ -1,0 +1,4 @@
+---
+title: Ecuación Cuadrática
+
+---
