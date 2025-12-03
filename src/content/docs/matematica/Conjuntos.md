@@ -16,7 +16,7 @@ Algunos ejemplos de conjuntos son:
 
 #### Elementos
 
- Los objetos que componen un conjunto se llaman elementos o miembros del conjunto.
+Los objetos que componen un conjunto se llaman elementos o miembros del conjunto.
 
 Los elementos de un conjunto pueden ser cualquier cosa (días, colores, personas, etc), pero en este curso nos centraremos los conjuntos numéricos, es decir, los conjuntos cuyos elementos son números, ya que son los que se estudian en el Análisis Matemático.
 
@@ -38,7 +38,7 @@ válidos, tal y como demostró Bertrand Russell con su famosa paradoja del barbe
 
 #### Pertenencia
 
- Si 𝑎 es un elemento de un conjunto 𝐴, se dice que 𝑎
+Si 𝑎 es un elemento de un conjunto 𝐴, se dice que 𝑎
 
 pertenece a 𝐴 y se denota 𝑎 ∈ 𝐴. Por el contrario, si 𝑎 no es un elemento del conjunto
 
@@ -56,7 +56,7 @@ importa el orden en que se listan los elementos.
 
 Ejemplo 1.3. {1, 2, 3} = {3, 1, 2}.
 
- La igualdad de conjuntos es una relación de equivalencia, es decir,
+La igualdad de conjuntos es una relación de equivalencia, es decir,
 
 satisface las propiedades:
 
@@ -95,3 +95,41 @@ satisface las propiedades:
 Definición 1.6 (Conjunto vacío). El conjunto que no tiene ningún elemento se llama
 
 conjunto vacío y se denota ∅
+
+### Álgebra de conjuntos
+
+A continuación se definen las principales operaciones sobre conjuntos y sus propiedades.
+
+#### Unión
+
+Dados dos conjuntos 𝐴 y 𝐵, se llama unión de 𝐴 y 𝐵, y se
+
+denota 𝐴 ∪ 𝐵, al conjunto de todos los elementos que pertenecen al menos a uno de los
+
+conjuntos 𝐴 y 𝐵.
+
+𝐴 ∪ 𝐵 = {𝑥 ∶ 𝑥 ∈ 𝐴 o 𝑥 ∈ 𝐵}.
+
+![](/conjuntos3.png)
+
+Ejemplo: Dado el conjunto de los números que contiene un dado, Ω =
+
+{1, 2, 3, 4, 5, 6} y sus subconjuntos 𝐴 = {2, 4, 6} y 𝐵 = {1, 2, 3, 4},la unión de 𝐴 y 𝐵 es
+
+𝐴 ∪ 𝐵 = {1, 2, 3, 4, 6}.
+
+#### Intersección
+
+ Dados dos conjuntos 𝐴 y 𝐵, se llama intersección de 𝐴
+
+y 𝐵, y se denota 𝐴 ∩ 𝐵, al conjunto de todos los elementos comunes a 𝐴 y 𝐵.
+
+𝐴 ∩ 𝐵 = {𝑥 ∶ 𝑥 ∈ 𝐴 y 𝑥 ∈ 𝐵}.
+
+![](/conjunto.png)
+
+Ejemplo: Dado el conjunto de los números que contiene un dado, Ω =
+
+{1, 2, 3, 4, 5, 6} y sus subconjuntos 𝐴 = {2, 4, 6} y 𝐵 = {1, 2, 3, 4},la intersección de 𝐴 y
+
+𝐵 es 𝐴 ∩ 𝐵 = {2, 4}.
