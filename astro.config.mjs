@@ -119,7 +119,7 @@ window.dataLayer = window.dataLayer || [];
         }, {
           label: 'Geometría',
           items: [
-            'matematica/geometria/poligonos',
+            'matematica/geometria/poligono',
             'matematica/geometria/triangulos',
 
             'matematica/geometria/funcionestrigonometricas',
