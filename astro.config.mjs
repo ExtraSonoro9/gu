@@ -112,29 +112,81 @@ window.dataLayer = window.dataLayer || [];
             'matematica/numerodeoro',
             'matematica/factorizacion',
             'matematica/ecuacioncuadratica',
+            'matematica/logaritmos',
+
+           
+          ],
+        }, {
+          label: 'Geometría',
+          items: [
+            'matematica/geometria/poligonos',
+            'matematica/geometria/triangulos',
+
+            'matematica/geometria/funcionestrigonometricas',
+            'matematica/geometria/identidadestrigonometricas',
+            'matematica/geometria/pitagoras',
+            'matematica/geometria/ttales',
+            'matematica/geometria/planocartesianorectacomponentes',
+            'matematica/geometria/parabola',
+            
+
+
+
+
+
+           
+          ],
+        },{
+          label: 'Álgebra',
+          items: [
+            'matematica/algebra/vectores',
+            'matematica/algebra/nimaginarios',
+            'matematica/algebra/matrices',
+            'matematica/algebra/determinantes',
+            'matematica/algebra/polinomiosyraices',
+            'matematica/algebra/sistemasdeecuaciones',
+            
+
+
+
+
+
+
+            
+            
+
+
+
+
+
            
           ],
         },
         {
           label: 'Análisis Matemático',
           items: [
+   
             'matematica/analisis-matematico/funcionesycorrespondencias',
+            'matematica/analisis-matematico/aproximaciondefunciones',
             'matematica/analisis-matematico/inecuaciones',
-            'matematica/analisis-matematico/cotas',
+            
+
             'matematica/analisis-matematico/limites',
             'matematica/analisis-matematico/indeterminaciones',
             
             'matematica/analisis-matematico/derivadas',
-            'matematica/analisis-matematico/regladelacadena',
             'matematica/analisis-matematico/tdecontinuidad',
-            'matematica/analisis-matematico/tvalormedio',
             
-            'matematica/analisis-matematico/monotonia',
-            'matematica/analisis-matematico/concavidad',
+        
             'matematica/analisis-matematico/optimizacion',
             'matematica/analisis-matematico/razondecambio',
             'matematica/analisis-matematico/lhopital',
             'matematica/analisis-matematico/sumatoria',
+            'matematica/analisis-matematico/staylor',
+            'matematica/analisis-matematico/integral',
+            
+            'matematica/analisis-matematico/arealongvolumen',
+
 
 
 

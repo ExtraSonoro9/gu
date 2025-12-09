@@ -1,0 +1,5 @@
+---
+title: Teorema de Tales
+
+
+---
