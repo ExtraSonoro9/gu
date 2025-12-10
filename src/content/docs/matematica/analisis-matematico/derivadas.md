@@ -16,11 +16,15 @@ Dados una función $y=f(x)$ y un intervalo $$\[a, a + \Delta x] \subseteq I$, se
 $$TVM(f, \[a, a + \Delta x]) = \frac{\Delta y}{\Delta x} = \frac{f(a + \Delta x) - f(a)}{\Delta x}$$
 imagen
 
-Geométricamente, la tasa de variación media
+Geométricamente, la tasa de variación media representa la pendiente de la recta secante:
 
-\\( TVM(f,\[a,a+\Delta x]) \\)
+$$
 
-representa la pendiente de la recta secante a la gráfica de la función f.
+TVM\bigl(f,\[a, a+\Delta x]\bigr)
+
+$$
+
+que pasa por los puntos $(a,f(a))$ y $(a+\Delta x,f(a+\Delta x))$.
 
 ### Interpretación geométrica de la tasa de variación media
 
