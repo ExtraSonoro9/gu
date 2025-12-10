@@ -42,7 +42,7 @@ conjunto de los números reales, ya que, por ejemplo √1 = ±1.A B
 
 ![](/matematica/func1.png "Función")
 
-![](/matematica/func2.png)
+![Correspondencia (no función)](/matematica/func2.png)
 
 # Dominio
 
