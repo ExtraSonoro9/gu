@@ -116,7 +116,7 @@ Consideremos la función $f(x) = x^2$. Queremos aproximar el incremento que sufr
 La derivada es $f'(x) = 2x$, por lo que $f'(10) = 2(10) = 20$.
 El incremento real es $\Delta y = f(10.1) - f(10) = (10.1)^2 - 10^2 = 102.01 - 100 = 2.01$.
 La aproximación con el diferencial es $\Delta y \approx f'(10) \Delta x = 20(0.1) = 2$.
-El error de la aproximación es $|2.01 - 2| = 0.01$.
+El error de la aproximación es $|2.01 - 2| = 0.01$
 
 **Recta tangente a la gráfica de una función**
 Dado un intervalo $I \subseteq \mathbb{R}$, una función $f: I \rightarrow \mathbb{R}$ diferenciable en $a \in I$, se llama recta tangente a la gráfica de $f$ en el punto $(a, f(a))$ a la recta de ecuación:
