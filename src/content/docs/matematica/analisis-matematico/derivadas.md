@@ -12,6 +12,12 @@ En la mayoría de los problemas reales, las magnitudes que intervienen están re
 Dada una función $y=f(x)$ y un punto $a \in I$, se llama incremento de $x$ a cualquier número $\Delta x$ tal que $a + \Delta x \in I$, y se denota $\Delta x = x - a$.
 
 **Tasa de variación media**
+
+Geométricamente, la tasa de variación media
+
+\\( TVM(f,\[a,a+\Delta x]) \\)
+
+representa la pendiente de la recta secante a la gráfica de la función f.
 Dados una función $y=f(x)$ y un intervalo $\[a, a + \Delta x] \subseteq I$, se llama incremento de $y$ a $\Delta y = f(a + \Delta x) - f(a)$. La tasa de variación media de $f$ en el intervalo $\[a, a + \Delta x]$, se denota $TVM(f, \[a, a + \Delta x])$ y se define como el cociente:
 $$TVM(f, \[a, a + \Delta x]) = \frac{\Delta y}{\Delta x} = \frac{f(a + \Delta x) - f(a)}{\Delta x}$$
 imagen
