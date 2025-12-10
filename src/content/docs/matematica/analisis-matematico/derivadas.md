@@ -18,7 +18,7 @@ imagen
 
 ### Interpretación geométrica de la tasa de variación media
 
-Geométricamente, la tasa de variación media $TVM(f, \[a, a + \Delta x])$ representa la **pendiente de la recta secante** a la gráfica de la función $f$ que pasa por los puntos $(a, f(a))$ y $(a + \Delta x, f(a + \Delta x))$. Esta pendiente mide la variación promedio de la función a lo largo de ese intervalo.
+Geométricamente, la tasa de variación media $TVM(f,\[a, a + \Delta x])$ representa la **pendiente de la recta secante** a la gráfica de la función $f$ que pasa por los puntos $(a, f(a))$ y $(a + \Delta x, f(a + \Delta x))$. Esta pendiente mide la variación promedio de la función a lo largo de ese intervalo.
 
 ### Tasa de variación instantánea
 
@@ -37,7 +37,7 @@ $$= \lim\_{\Delta x \rightarrow 0} \frac{2a\Delta x + \Delta x^2}{\Delta x} = \l
 Así pues, $f'(a) = 2a$, lo que indica que la tendencia de crecimiento el área es del doble del valor del lado. El signo de $f'(a)$ indica la tendencia de crecimiento de $f$ en el punto $a$:
 
 * $f'(a) > 0$ indica que la tendencia es creciente.
-* $f'(a) \< 0$ indica que la tendencia es decreciente.
+* $f'(a)\< 0$ indica que la tendencia es decreciente.
 
 ### Interpretación geométrica de la tasa de variación instantánea
 
