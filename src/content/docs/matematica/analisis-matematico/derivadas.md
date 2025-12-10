@@ -12,7 +12,7 @@ En la mayoría de los problemas reales, las magnitudes que intervienen están re
 Dada una función $y=f(x)$ y un punto $a \in I$, se llama incremento de $x$ a cualquier número $\Delta x$ tal que $a + \Delta x \in I$, y se denota $\Delta x = x - a$.
 
 **Tasa de variación media**
-Dados una función $y=f(x)$ y un intervalo $$\[a, a + \Delta x] \subseteq I$, se llama incremento de $y$ a $\Delta y = f(a + \Delta x) - f(a)$. La tasa de variación media de $f$ en el intervalo $\[a, a + \Delta x]$, se denota $TVM(f, \[a, a + \Delta x])$ y se define como el cociente:
+Dados una función $y=f(x)$ y un intervalo $$[a, a + \Delta x] \subseteq I$, se llama incremento de $y$ a $\Delta y = f(a + \Delta x) - f(a)$. La tasa de variación media de $f$ en el intervalo $[a, a + \Delta x]$, se denota $TVM(f, [a, a + \Delta x])$ y se define como el cociente:
 $$TVM(f, \[a, a + \Delta x]) = \frac{\Delta y}{\Delta x} = \frac{f(a + \Delta x) - f(a)}{\Delta x}$$
 imagen
 
@@ -20,7 +20,7 @@ Geométricamente, la tasa de variación media representa la pendiente de la rect
 
 $$
 
-TVM\bigl(f,\[a, a+\Delta x]\bigr)
+TVM\bigl(f,[a, a+\Delta x]\bigr)
 
 $$
 
@@ -47,7 +47,7 @@ $$= \lim\_{\Delta x \rightarrow 0} \frac{2a\Delta x + \Delta x^2}{\Delta x} = \l
 Así pues, $f'(a) = 2a$, lo que indica que la tendencia de crecimiento el área es del doble del valor del lado. El signo de $f'(a)$ indica la tendencia de crecimiento de $f$ en el punto $a$:
 
 * $f'(a) > 0$ indica que la tendencia es creciente.
-* $f'(a)\< 0$ indica que la tendencia es decreciente.
+* $f'(a) < 0$ indica que la tendencia es decreciente.
 
 ### Interpretación geométrica de la tasa de variación instantánea
 
