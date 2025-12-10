@@ -12,33 +12,25 @@ En la mayoría de los problemas reales, las magnitudes que intervienen están re
 Dada una función $y=f(x)$ y un punto $a \in I$, se llama incremento de $x$ a cualquier número $\Delta x$ tal que $a + \Delta x \in I$, y se denota $\Delta x = x - a$.
 
 **Tasa de variación media**
+Dados una función $y=f(x)$ y un intervalo $$\[a, a + \Delta x] \subseteq I$, se llama incremento de $y$ a $\Delta y = f(a + \Delta x) - f(a)$. La tasa de variación media de $f$ en el intervalo $\[a, a + \Delta x]$, se denota $TVM(f, \[a, a + \Delta x])$ y se define como el cociente:
+$$TVM(f, \[a, a + \Delta x]) = \frac{\Delta y}{\Delta x} = \frac{f(a + \Delta x) - f(a)}{\Delta x}$$
+imagen
 
 Geométricamente, la tasa de variación media
 
 \\( TVM(f,\[a,a+\Delta x]) \\)
 
 representa la pendiente de la recta secante a la gráfica de la función f.
-Dados una función $y=f(x)$ y un intervalo $\[a, a + \Delta x] \subseteq I$, se llama incremento de $y$ a $\Delta y = f(a + \Delta x) - f(a)$. La tasa de variación media de $f$ en el intervalo $\[a, a + \Delta x]$, se denota $TVM(f, \[a, a + \Delta x])$ y se define como el cociente:
-$$TVM(f, \[a, a + \Delta x]) = \frac{\Delta y}{\Delta x} = \frac{f(a + \Delta x) - f(a)}{\Delta x}$$
-imagen
 
 ### Interpretación geométrica de la tasa de variación media
 
-Geométricamente, la tasa de variación media
-
-$TVM(f,\[a, a + \Delta x])$
-
-representa la pendiente de la recta secante a la gráfica de la función
-
-$f$ que pasa por los puntos
-
-$(a, f(a))$ y $(a + \Delta x, f(a + \Delta x))$.
+Geométricamente, la tasa de variación media $TVM(f,\[a, a + \Delta x])$ representa la **pendiente de la recta secante** a la gráfica de la función $f$ que pasa por los puntos $(a, f(a))$ y $(a + \Delta x, f(a + \Delta x))$. Esta pendiente mide la variación promedio de la función a lo largo de ese intervalo.
 
 ### Tasa de variación instantánea
 
 **Tasa de variación instantánea**
-Dada una función $y=f(x)$ y un punto $a \in I$, se llama tasa de variación instantánea de $f$ en el punto $a$, y se denota $TVI(f, a)$, al límite de la tasa de variación media en el intervalo $\left\[a, a + \Delta x]$ cuando $\Delta x \rightarrow 0$, es decir,
-$$TVI(f, a) = \lim\_{\Delta x \rightarrow 0} TVM(f, \left\[a, a + \Delta x]) = \lim\_{\Delta x \rightarrow 0} \frac{\Delta y}{\Delta x} = \lim\_{\Delta x \rightarrow 0} \frac{f(a + \Delta x) - f(a)}{\Delta x}$$
+Dada una función $y=f(x)$ y un punto $a \in I$, se llama tasa de variación instantánea de $f$ en el punto $a$, y se denota $TVI(f, a)$, al límite de la tasa de variación media en el intervalo $\[a, a + \Delta x]$ cuando $\Delta x \rightarrow 0$, es decir,
+$$TVI(f, a) = \lim\_{\Delta x \rightarrow 0} TVM(f, \[a, a + \Delta x]) = \lim\_{\Delta x \rightarrow 0} \frac{\Delta y}{\Delta x} = \lim\_{\Delta x \rightarrow 0} \frac{f(a + \Delta x) - f(a)}{\Delta x}$$
 
 **Derivada**
 Cuando este límite existe, se dice que la función $f$ es derivable en el punto $a$, y al valor del mismo se le llama derivada de $f$ en $a$, y se nota como $f'(a)$ o bien $\frac{df}{dx}(a)$.
@@ -51,7 +43,7 @@ $$= \lim\_{\Delta x \rightarrow 0} \frac{2a\Delta x + \Delta x^2}{\Delta x} = \l
 Así pues, $f'(a) = 2a$, lo que indica que la tendencia de crecimiento el área es del doble del valor del lado. El signo de $f'(a)$ indica la tendencia de crecimiento de $f$ en el punto $a$:
 
 * $f'(a) > 0$ indica que la tendencia es creciente.
-* $f'(a) \left\< 0$ indica que la tendencia es decreciente.
+* $f'(a)\< 0$ indica que la tendencia es decreciente.
 
 ### Interpretación geométrica de la tasa de variación instantánea
 
