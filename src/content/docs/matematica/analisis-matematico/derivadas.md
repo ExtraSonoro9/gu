@@ -34,6 +34,12 @@ $(a, f(a))$ y $(a + \Delta x, f(a + \Delta x))$.
 Dada una función $y=f(x)$ y un punto $a \in I$, se llama tasa de variación instantánea de $f$ en el punto $a$, y se denota $TVI(f, a)$, al límite de la tasa de variación media en el intervalo $\[a, a + \Delta x]$ cuando $\Delta x \rightarrow 0$, es decir,
 $$TVI(f, a) = \lim\_{\Delta x \rightarrow 0} TVM(f, \[a, a + \Delta x]) = \lim\_{\Delta x \rightarrow 0} \frac{\Delta y}{\Delta x} = \lim\_{\Delta x \rightarrow 0} \frac{f(a + \Delta x) - f(a)}{\Delta x}$$
 
+$$
+
+TVM(f,\[a,a+\Delta x])=\frac{f(a+\Delta x)-f(a)}{\Delta x}
+
+$$
+
 **Derivada**
 Cuando este límite existe, se dice que la función $f$ es derivable en el punto $a$, y al valor del mismo se le llama derivada de $f$ en $a$, y se nota como $f'(a)$ o bien $\frac{df}{dx}(a)$.
 
