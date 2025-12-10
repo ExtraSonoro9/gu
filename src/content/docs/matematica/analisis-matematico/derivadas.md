@@ -50,5 +50,5 @@ que es otra definición equivalente de la derivada de $f$ en $a$.
 **Función derivada**
 Dada un intervalo $I \subseteq \mathbb{R}$ y una función $f: I \rightarrow \mathbb{R}$, se define la función derivada de $f$, y se denota $f'$, a la función cuyo dominio es el conjunto de los puntos de $I$ donde $f$ es diferenciable y el valor de $f'$ es el valor de la derivada en cada uno de esos puntos.
 
-**Nota**
+**Notas**
 La notación $f'(a)$ para la derivada de $f$ se debe a... (fin del texto disponible).
