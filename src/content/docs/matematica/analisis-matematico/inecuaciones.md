@@ -2,11 +2,11 @@
 title: Inecuaciones
 ---
 
-fddf## Comparación de números reales
+\## Comparación de números reales
 
 Es menor aquel que se representa como $-5$. Al ubicar los números en la recta, $-5$ queda a la izquierda de $-2$.
 
-.
+![](/matematica/recta.png)
 
 $-5 \< -2$
 
@@ -16,7 +16,7 @@ $-5$ se encuentra a la izquierda de $-2$. Se lee: “$-5$ es menor que $-2$”.
 
 Cuando dos fracciones tienen el mismo denominador, se puede determinar fácilmente cuál es la menor. Por ejemplo, entre $\dfrac{1}{4}$ y $\dfrac{3}{4}$, observamos en el gráfico:
 
-imagen
+![](/matematica/analisis/recta2.png)
 
 que $\dfrac{1}{4}$ se encuentra a la izquierda de $\dfrac{3}{4}$, por tanto
 
@@ -40,4 +40,4 @@ $\dfrac{1}{2} \< \dfrac{3}{4}$.
 
 $\dfrac{1}{2}$ se encuentra a la izquierda de $\dfrac{3}{4}$ en la recta.
 
-imagen
+![](/matematica/analisis/recta3.png)
