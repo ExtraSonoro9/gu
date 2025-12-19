@@ -182,21 +182,6 @@ $$x^{2} + 2x - 24 = (x + 6)(x - 4)$$
 
 ***
 
-### EJERCICIO 6
-
-**Factorice:**
-
-1. $x^{2} + 8x + 15$
-2. $x^{2} - 2x - 15$
-3. $y^{2} - 4y - 5$
-4. $y^{2} - 14y + 45$
-5. $z^{2} - 2 + z$ (ordene primero)
-6. $z^{2} + 3 + 4z$
-7. $-x^{2} + 5x + 36$ (factorice -1 primero)
-8. $-y^{2} + 2y + 35$
-
-***
-
 ### 3.4.2. Trinomios de la forma $ax^{2} + bx + c$
 
 Consideremos ahora factorizaciones de trinomios, como $2x^{2} - 5x - 12$.
