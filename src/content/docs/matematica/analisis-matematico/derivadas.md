@@ -2,68 +2,53 @@
 title: Derivadas
 ---
 
-## El concepto de derivada
+## 7 Derivadas de funciones
 
 En la mayoría de los problemas reales, las magnitudes que intervienen están relacionadas mediante ecuaciones o funciones. Para construir estos modelos matemáticos resulta imprescindible entender cómo varían unas magnitudes con respecto a las otras. En este capítulo abordamos el concepto de derivada, que surge de estudiar cómo varía una función cuando cambia la variable de la que depende. El concepto de derivada, junto al de integral, son los dos pilares fundamentales del Análisis Matemático, sobre los que se sostienen la mayor parte de las aplicaciones en Ciencia e Ingeniería.
 
+## 7.1 El concepto de derivada
+
+### 7.1.1 Tasa de variación media
+
+### Incremento
+
+Dada una función $y = f(x)$, se llama incremento de $f$ en un intervalo $\[a,b]$ a la diferencia entre el valor de $f$ en cada uno de los extremos del intervalo, y se nota
+
+$\Delta y = f(b) - f(a)$.
+
+Cuando $f$ es la función identidad $y=x$, se cumple que
+
+$\Delta x = \Delta y = f(b) - f(a) = b - a$,
+
+y por tanto, el incremento de $x$ en un intervalo es la amplitud del intervalo. Esto nos permite escribir el intervalo $\[a,b]$ como $\[a,a+\Delta x]$.
+
 ### Tasa de variación media
 
-**Incremento**
-Dada una función $y=f(x)$ y un punto $a \in I$, se llama incremento de $x$ a cualquier número $\Delta x$ tal que $a + \Delta x \in I$, y se denota $\Delta x = x - a$.
+Dada una función $y=f(x)$, se llama tasa de variación media de $f$ en el intervalo $\[a,a+\Delta x]$ al cociente entre el incremento de $y$ y el incremento de $x$ en dicho intervalo, y se escribe
 
-**Tasa de variación media**
-Dados una función $y=f(x)$ y un intervalo $\[a, a + \Delta x] \subseteq I$, se llama incremento de $y$ a $\Delta y = f(a + \Delta x) - f(a)$. La tasa de variación media de $f$ en el intervalo $\[a, a + \Delta x]$, se denota $TVM(f, \[a, a + \Delta x])$ y se define como el cociente:
-$$TVM(f, \[a, a + \Delta x]) = \frac{\Delta y}{\Delta x} = \frac{f(a + \Delta x) - f(a)}{\Delta x}$$
+$\mathrm{TVM}(f,\[a,a+\Delta x]) = \dfrac{\Delta y}{\Delta x} = \dfrac{f(a+\Delta x)-f(a)}{\Delta x}$.
+
+### Ejemplo:
+
+Consideremos la función $y=x^2$ que mide el área de un cuadrado de chapa metálica de lado $x$.
+
+Si en un determinado instante el lado del cuadrado es $a$, y sometemos la chapa a un proceso de calentamiento que aumenta el lado del cuadrado una cantidad $\Delta x$, ¿en cuánto se incrementará el área del cuadrado?
+
+$\Delta y = f(a+\Delta x)-f(a) = (a+\Delta x)^2 - a^2$
+
+$= a^2 + 2a\Delta x + (\Delta x)^2 - a^2 = 2a\Delta x + (\Delta x)^2$.
+
+¿Cuál será la tasa de variación media del área en el intervalo $\[a,a+\Delta x]$?
+
+$\dfrac{\Delta y}{\Delta x} = \dfrac{2a\Delta x + (\Delta x)^2}{\Delta x} = 2a + \Delta x$.
+
+Tomando el límite cuando $\Delta x \to 0$, se obtiene la tasa de variación instantánea.
+
+### 7.1.4 Interpretación geométrica de la tasa de variación instantánea
+
+La tasa de variación instantánea de $f$ en el punto $a$ es la pendiente de la recta tangente a $f$ en el punto $(a,f(a))$.
+
 imagen
-
-Geométricamente, la tasa de variación media representa la pendiente de la recta secante:
-
-$$
-
-TVM\bigl(f,\[a, a+\Delta x]\bigr)
-
-$$
-
-que pasa por los puntos $(a,f(a))$ y $(a+\Delta x,f(a+\Delta x))$.
-
-### Interpretación geométrica de la tasa de variación media
-
-Geométricamente, la tasa de variación media $TVM(f,\[a, a + \Delta x])$ representa la **pendiente de la recta secante** a la gráfica de la función $f$ que pasa por los puntos $(a, f(a))$ y $(a + \Delta x, f(a + \Delta x))$. Esta pendiente mide la variación promedio de la función a lo largo de ese intervalo.
-
-### Tasa de variación instantánea
-
-**Tasa de variación instantánea**
-Dada una función $y=f(x)$ y un punto $a \in I$, se llama tasa de variación instantánea de $f$ en el punto $a$, y se denota $TVI(f, a)$, al límite de la tasa de variación media en el intervalo $\[a, a + \Delta x]$ cuando $\Delta x \rightarrow 0$, es decir,
-$$TVI(f, a) = \lim\_{\Delta x \rightarrow 0} TVM(f, \[a, a + \Delta x]) = \lim\_{\Delta x \rightarrow 0} \frac{\Delta y}{\Delta x} = \lim\_{\Delta x \rightarrow 0} \frac{f(a + \Delta x) - f(a)}{\Delta x}$$
-
-**Derivada**
-Cuando este límite existe, se dice que la función $f$ es derivable en el punto $a$, y al valor del mismo se le llama derivada de $f$ en $a$, y se nota como $f'(a)$ o bien $\frac{df}{dx}(a)$.
-
-**Ejemplo:**
-Consideremos de nuevo la función $y = x^2$ que mide el área de un cuadrado de chapa metálica de lado $x$. Si en un determinado instante el lado del cuadrado es $a$, y sometemos la chapa a un proceso de calentamiento que aumenta el lado del cuadrado, ¿cuál es la tasa de variación instantánea del área del cuadrado en dicho instante?
-$$TVI(f(a)) = \lim\_{\Delta x \rightarrow 0} \frac{\Delta y}{\Delta x} = \lim\_{\Delta x \rightarrow 0} \frac{f(a + \Delta x) - f(a)}{\Delta x}$$
-$$= \lim\_{\Delta x \rightarrow 0} \frac{(a + \Delta x)^2 - a^2}{\Delta x} = \lim\_{\Delta x \rightarrow 0} \frac{a^2 + 2a\Delta x + \Delta x^2 - a^2}{\Delta x}$$
-$$= \lim\_{\Delta x \rightarrow 0} \frac{2a\Delta x + \Delta x^2}{\Delta x} = \lim\_{\Delta x \rightarrow 0} (2a + \Delta x) = 2a$$
-Así pues, $f'(a) = 2a$, lo que indica que la tendencia de crecimiento el área es del doble del valor del lado. El signo de $f'(a)$ indica la tendencia de crecimiento de $f$ en el punto $a$:
-
-* $f'(a) > 0$ indica que la tendencia es creciente.
-* $f'(a) \< 0$ indica que la tendencia es decreciente.
-
-### Interpretación geométrica de la tasa de variación instantánea
-
-Geométricamente, la derivada $f'(a)$ representa la **pendiente de la recta tangente** a la gráfica de la función $f$ en el punto $(a, f(a))$. Es el valor al que tiende la pendiente de la recta secante cuando el incremento $\Delta x$ se acerca a cero.
-imagen
-
-**Nota**
-Si en la definición anterior llamamos $h = x - a$, resulta
-$$f'(a) = \lim\_{x \rightarrow a} \frac{f(x) - f(a)}{x - a} = \lim\_{h \rightarrow 0} \frac{f(a + h) - f(a)}{h}$$
-que es otra definición equivalente de la derivada de $f$ en $a$.
-
-**Función derivada**
-Dada un intervalo $I \subseteq \mathbb{R}$ y una función $f: I \rightarrow \mathbb{R}$, se define la función derivada de $f$, y se denota $f'$, a la función cuyo dominio es el conjunto de los puntos de $I$ donde $f$ es diferenciable y el valor de $f'$ es el valor de la derivada en cada uno de esos puntos.
-
-**Nota**
-La notación $f'(a)$ para la derivada de $f$ se debe a
 
 ## 7.2 Diferenciabilidad
 
