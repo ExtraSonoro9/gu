@@ -138,3 +138,37 @@ Pasemos ahora a factorizar binomios como $x^{5} + y^{5}$, una suma de potencias 
 
 La factorización de $x^{5} + y^{5}$:
 $$x^{5} + y^{5} = (x + y)(x^{4} - x^{3}y + x^{2}y^{2} - xy^{3} + y^{4})$$
+no presenta cambios en cuanto a la disposición de los exponentes sino en los signos con respecto a la factorización de $x^{5} - y^{5}$.
+
+* 🍃 **Describa la disposición de los signos en la factorización de $x^{5} + y^{5}$**
+* 🍃 **Factorice:** $x^{3} + y^{3} =$
+* 🍃 **Compruebe la factorización anterior**
+
+Esta manera de factorizar sumas de potencias iguales se cumple cuando $n$ es impar, como en los casos anteriores para $n = 5$ y $n = 3$; **si $n$ es par, no se cumple esa forma de factorizar**, como puede verificarse para $n = 4$ y $n = 2$.
+
+* 🍃 Compruebe que $(x + y)(x^{3} - x^{2}y + xy^{2} - y^{3})$ es diferente de $(x^{4} + y^{4})$ y que $(x + y)(x - y)$ lo es de $(x^{2} + y^{2})$
+
+> $x^{2} + y^{2}$ es un polinomio ¡no factorizable!
+
+## 3.4. Trinomios
+
+### 3.4.1. Trinomios de la forma $x^{2} + bx + c$
+
+Busquemos características comunes en las siguientes multiplicaciones:
+
+$$
+\begin{aligned}
+(x + 2)(x + 3) &= x^{2} + 3x + 2x + 6 = x^{2} + 5x + 6 \\
+(x + 6)(x - 4) &= x^{2} - 4x + 6x - 24 = x^{2} + 2x - 24 \\
+(x - 3)(x + 7) &= x^{2} + 7x - 3x - 21 = x^{2} + 4x - 21 \\
+(x - 9)(x - 2) &= x^{2} - 2x - 9x + 18 = x^{2} - 11x + 18
+\end{aligned}
+$$
+
+Podemos notar que son multiplicaciones entre binomios; en cada uno a la variable $x$ se le suma o resta un número entero, es decir, son de la forma $(x + m)(x + n)$, donde $m$ y $n$ son números enteros.
+
+$$(x + m)(x + n) = x^{2} + nx + mx + mn = x^{2} + (m + n) x + mn$$
+
+Los resultados son trinomios que tienen la forma $x^{2} + bx + c$, donde $b$ y $c$ son números enteros; entre los números $m, n, b$ y $c$ se cumple:
+
+$$c = m \cdot n \text{ y } b = m + n$$
