@@ -172,3 +172,81 @@ $$(x + m)(x + n) = x^{2} + nx + mx + mn = x^{2} + (m + n) x + mn$$
 Los resultados son trinomios que tienen la forma $x^{2} + bx + c$, donde $b$ y $c$ son números enteros; entre los números $m, n, b$ y $c$ se cumple:
 
 $$c = m \cdot n \text{ y } b = m + n$$
+De modo que si se va a factorizar un trinomio como $x^{2} + 5x + 6$ revertimos el proceso preguntándonos por dos números que multiplicados den $+6$ y que sumados den $+5$; esos números son $+2$ y $+3$. Factorizamos, entonces, como producto de binomios:
+
+$$x^{2} + 5x + 6 = (x + 2)(x + 3)$$
+
+De igual forma, para factorizar $x^{2} + 2x - 24$ buscamos dos enteros que multiplicados den $-24$ y que sumados den $+2$. Los números son $+6$ y $-4$. Por lo tanto,
+
+$$x^{2} + 2x - 24 = (x + 6)(x - 4)$$
+
+***
+
+### EJERCICIO 6
+
+**Factorice:**
+
+1. $x^{2} + 8x + 15$
+2. $x^{2} - 2x - 15$
+3. $y^{2} - 4y - 5$
+4. $y^{2} - 14y + 45$
+5. $z^{2} - 2 + z$ (ordene primero)
+6. $z^{2} + 3 + 4z$
+7. $-x^{2} + 5x + 36$ (factorice -1 primero)
+8. $-y^{2} + 2y + 35$
+
+***
+
+### 3.4.2. Trinomios de la forma $ax^{2} + bx + c$
+
+Consideremos ahora factorizaciones de trinomios, como $2x^{2} - 5x - 12$.
+
+Difiere de los anteriores en que el coeficiente de $x^{2}$ ya no es 1. Hay varios métodos para factorizar esta clase de trinomios; presentaremos aquí uno de ellos.
+
+El método que vamos a presentar consiste en reescribir apropiadamente el polinomio dado, agrupar términos y, por último, extraer un factor común.
+
+Ilustramos el proceso factorizando el polinomio $2x^{2} - 5x - 12$.
+
+* ✅ Ordenado ya el polinomio (en la forma estándar), multiplicamos el coeficiente de $x^{2}$ y el término independiente: $2(-12) = -24$.
+* ✅ Buscamos ahora dos números que multiplicados den $-24$ y sumados den $-5$ (el coeficiente de $x$). Esos números son $-8$ y $+3$.
+* ✅ Reescribimos el término en $x$ del polinomio dado, usando los números que acabamos de encontrar: $2x^{2} - 5x - 12 = 2x^{2} - 8x + 3x - 12$.
+* ✅ Agrupamos y sacamos factor común en cada grupo:
+  $$2x^{2} - 8x + 3x - 12 = (2x^{2} - 8x) + (3x - 12) = 2x(x - 4) + 3(x - 4)$$
+* ✅ Factorizamos el polinomio utilizando factor común:
+  $$2x(x - 4) + 3(x - 4) = (x - 4)(2x + 3)$$
+* ✅ Reunimos lo realizado:
+  $$
+  \begin{aligned}
+  2x^{2} - 5x - 12 &= 2x^{2} - 8x + 3x - 12 \\
+  &= (2x^{2} - 8x) + (3x - 12) \\
+  &= 2x(x - 4) + 3(x - 4) \\
+  &= (x - 4)(2x + 3)
+  \end{aligned}
+  $$
+
+**Compruebe que al efectuar $(x - 4)(2x + 3)$ se obtiene $2x^{2} - 5x - 12$**
+
+### 3.4.3. Trinomio cuadrado perfecto
+
+Reversamos ahora el proceso correspondiente al producto especial en el cual se eleva un binomio al cuadrado y se obtiene un trinomio (**trinomio cuadrado perfecto**).
+
+Factorizamos estos trinomios por medio de alguna de las formas:
+
+$$
+\begin{aligned}
+a^2 + 2ab + b^2 &= (a + b)^2 \\
+a^2 - 2ab + b^2 &= (a - b)^2
+\end{aligned}
+$$
+
+### EJEMPLOS
+
+**Factorizar las expresiones dadas:** **A.** $x^2 + 6xy + 9y^2$ ; **B.** $9x^2 - 12xy + 4y^2$
+
+**Solución:**
+
+**A.** Como el trinomio se puede escribir en la forma $x^2 + 2(x)(3y) + (3y)^2$, se trata de un trinomio cuadrado perfecto; por lo tanto, factorizamos en la forma:
+$$x^2 + 6xy + 9y^2 = (x + 3y)^2$$
+
+**B.** Ya que $9x^2 - 12xy + 4y^2 = (3x)^2 - 2(3x)(2y) + (2y)^2$, factorizamos:
+$$9x^2 - 12xy + 4y^2 = (3x - 2y)^2$$
