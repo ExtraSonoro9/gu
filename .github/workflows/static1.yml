@@ -1,0 +1,67 @@
+name: Deploy site
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          cache: 'npm' # Habilita el caché para npm
+      - name: Restore node_modules cache
+        id: cache-npm
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+        
+      - name: Restore TinaCMS build cache
+        id: cache-tina
+        uses: actions/cache@v3
+        with:
+          # ¡Cambiar la ruta del caché a 'admin'!
+          path: ./dist/admin
+          key: ${{ runner.os }}-tina-v1-${{ hashFiles('package-lock.json', '.tina/config.ts') }}
+          restore-keys: |
+            ${{ runner.os }}-tina-v1-
+      - name: Install dependencies
+        run: npm install
+    
+   
+      - name: Build Astro
+        run: npm run build:astro
+
+      - name: Build Astro and TinaCMS (if no cache)
+        if: steps.cache-tina.outputs.cache-hit != 'true'
+        run: npm run build:tina
+      - name: Remove Tina auto gitignore
+
+
+        run: rm -f admin/.gitignore
+
+          # O el comando específico para compilar TinaCMS, si es separado
+          # npx tina-build
+
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          path: './dist'
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+            github_token: ${{ secrets.TOKEN }}
+            
+            cname: guiauniversal.net
+            publish_dir: ./dist
