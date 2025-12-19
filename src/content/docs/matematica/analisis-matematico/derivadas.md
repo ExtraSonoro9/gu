@@ -106,3 +106,72 @@ El error de la aproximación es $|2.01 - 2| = 0.01$
 **Recta tangente a la gráfica de una función**
 Dado un intervalo $I \subseteq \mathbb{R}$, una función $f: I \rightarrow \mathbb{R}$ diferenciable en $a \in I$, se llama recta tangente a la gráfica de $f$ en el punto $(a, f(a))$ a la recta de ecuación:
 $$y - f(a) = f'(a)(x - a)$$
+
+## Regla de la cadena
+
+El resultado anterior permite calcular la derivada de cualquier función algebraica. A continuación se presenta otro importante resultado que nos permitirá calcular la derivada de una composición de funciones.
+
+### Regla de la cadena
+
+Dados dos intervalos $I, J \subset \mathbb{R}$ y dos funciones\
+$f : I \to \mathbb{R}$ y $g : J \to \mathbb{R}$ tales que $f(I) \subset J$, si $f$ es diferenciable en $a \in I$ y $g$ es diferenciable en $f(a)$, entonces $g \circ f$ es diferenciable en $a$ y
+
+$(g \circ f)'(a) = g'(f(a)),f'(a)$.
+
+### Demostración
+
+Sea
+
+$h(y) =
+\begin{cases}
+\dfrac{g(y)-g(f(a))}{y-f(a)} & \text{si } y \in J \text{ y } y \neq f(a), \\
+g'(f(a)) & \text{si } y = f(a).
+\end{cases}$
+
+Veamos que $h$ es continua en $f(a)$. Como $g$ es diferenciable en $f(a)$, se tiene que
+
+$\lim\_{y \to f(a)} h(y) = g'(f(a))$,
+
+de modo que para cualquier $\varepsilon > 0$ existe $\delta > 0$ tal que, si\
+$|y - f(a)| \< \delta$, entonces
+
+$|h(y) - g'(f(a))| \< \varepsilon$.
+
+Si $y \neq f(a)$ y $|y - f(a)| \< \delta$, entonces
+
+$|g(y) - g(f(a)) - g'(f(a))(y - f(a))|
+\= |y - f(a)|,|h(y) - g'(f(a))|
+\< \varepsilon |y - f(a)|$.
+
+Por otro lado, si $y = f(a)$, la desigualdad anterior se cumple trivialmente. Por tanto, la función $g$ es continua en $f(a)$ y
+
+$\lim\_{x \to a} h(f(x)) = h(f(a)) = g'(f(a))$.
+
+De la definición de derivada se tiene que
+
+$(g \circ f)'(a)
+\= \lim\_{x \to a} \dfrac{g(f(x)) - g(f(a))}{x - a}
+\= \lim\_{x \to a} h(f(x)) \dfrac{f(x) - f(a)}{x - a}
+\= h(f(a)),f'(a)
+\= g'(f(a)),f'(a)$.
+
+### Nota
+
+La demostración es mucho más sencilla usando la notación diferencial de Leibniz para la derivada. Si $y = g(z)$ y $z = f(x)$, entonces
+
+$\dfrac{dy}{dx} = \dfrac{dy}{dz}\dfrac{dz}{dx}
+\= g'(z),f'(x)$.
+
+### Ejemplo:
+
+Si $g(x) = \sin(x)$ y $f(x) = x^2$, entonces $g \circ f(x) = \sin(x^2)$ y, aplicando la regla de la cadena, su derivada vale
+
+$(g \circ f)'(x) = g'(f(x)),f'(x)
+\= \cos(x^2),2x$.
+
+Por otro lado, si $g(x) = (\sin(x))^2$, de nuevo aplicando la regla de la cadena, su derivada vale
+
+$(g \circ f)'(x)
+\= f'(g(x)),g'(x)
+\= 2g(x)\cos(x)
+\= 2\sin(x)\cos(x)$.
