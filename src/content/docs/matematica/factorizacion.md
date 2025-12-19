@@ -119,3 +119,50 @@ En el cálculo de límites con radicales de índice $n$, estas identidades se ut
 2. Para racionalizar $(\sqrt\[n]{a} + \sqrt\[n]{b})$ (siendo $n$ impar), el **F.R.** es:
    $$(\sqrt\[n]{a})^{n-1} - (\sqrt\[n]{a})^{n-2}\sqrt\[n]{b} + \dots + (\sqrt\[n]{b})^{n-1}$$
    De modo que: $(\sqrt\[n]{a} + \sqrt\[n]{b}) \cdot F.R. = a + b$
+
+   1.7. FACTORIZACIÓN DE TRINOMIOS
+
+Existen diferentes métodos para factorizar trinomios dependiendo de su forma. Los casos más comunes son:
+
+### 1.7.1. Trinomio de la forma $x^2 + bx + c$
+
+Para factorizar este trinomio, se buscan dos números $m$ y $n$ tales que su suma sea $b$ y su producto sea $c$.
+$$ x^2 + (m + n)x + mn = (x + m)(x + n) $$
+
+**Ejemplo:**
+Para factorizar $x^2 + 5x + 6$:
+
+* Buscamos dos números que sumados den $5$ y multiplicados den $6$.
+* Los números son $3$ y $2$.
+* Resultado: $(x + 3)(x + 2)$
+
+***
+
+### 1.7.2. Trinomio Cuadrado Perfecto (T.C.P.)
+
+Es el resultado de elevar un binomio al cuadrado. Tiene la forma:
+$$ a^2 \pm 2ab + b^2 = (a \pm b)^2 $$
+
+**Regla para identificarlo:**
+
+1. El primer y tercer término deben tener raíces cuadradas exactas ($a$ y $b$).
+2. El segundo término debe ser el doble producto de dichas raíces ($2ab$).
+
+***
+
+### 1.7.3. Trinomio de la forma $ax^2 + bx + c$ (Método del Aspa Simple)
+
+Para este caso, donde el coeficiente principal $a$ es distinto de 1, se descompone el primer y tercer término en dos factores cada uno:
+
+$$
+\begin{array}{rcccl}
+ax^2 & + & bx & + & c \\
+\downarrow & & & & \downarrow \\
+a\_1 x & & & & c\_1 \rightarrow a\_2 x \cdot c\_1 \\
+a\_2 x & & & & c\_2 \rightarrow a\_1 x \cdot c\_2 \\
+\hline
+& & & & \text{Suma} = bx
+\end{array}
+$$
+
+**Resultado:** $(a\_1 x + c\_1)(a\_2 x + c\_2)$
