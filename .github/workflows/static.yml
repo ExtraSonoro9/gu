@@ -37,8 +37,11 @@ jobs:
             ${{ runner.os }}-tina-v1-
 
       - name: Install dependencies
-        run: npm install -g npm-check-updates
+        run: npm-check-updates
+      - name: Install dependencies
+        run: npm install 
    
+    
     
    
       - name: Build Astro
