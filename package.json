@@ -64,14 +64,14 @@
   "sitemap": "^8.0.0",
   
     
-  "tinacms": "^3.1.2"
+  "tinacms": "3.1.2"
   
   },
   
   "devDependencies": {
   
     
-  "@tinacms/cli": "^2.0.5",
+  "@tinacms/cli": "2.0.5",
   
     
   "@types/node": "^24.2.0",
