@@ -21,3 +21,5 @@ Para matrices 2×2
 y 3×3 el determinante se calcula como sigue:
 
 $$ A = \left( {\begin{array}{\*{20}{c}}{{a\_{11}}}&{{a\_{12}}}\\\\{{a\_{21}}}&{{a\_{22}}}\end{array}} \right)\\;\\;\\; \Rightarrow \\;\\;\\;\left| A \right| = \left| {\begin{array}{\*{20}{c}}{{a\_{11}}}&{{a\_{12}}}\\\\{{a\_{21}}}&{{a\_{22}}}\end{array}} \right| = {a\_{11}}\\;{a\_{22}} – {a\_{12}}\\;{a\_{21}} $$
+
+$$ A = \left( {\begin{array}{\*{20}{c}}{{a\_{11}}}&{{a\_{12}}}&{{a\_{13}}}\\\\{{a\_{21}}}&{{a\_{22}}}&{{a\_{23}}}\\\\{{a\_{31}}}&{{a\_{32}}}&{{a\_{33}}}\end{array}} \right)\\;\\;\\; \Rightarrow \\;\\;\\;\left| A \right| = {a\_{11}}\\;\left| {\begin{array}{\*{20}{c}}{{a\_{22}}}&{{a\_{23}}}\\\\{{a\_{32}}}&{{a\_{33}}}\end{array}} \right|\\; – \\;{a\_{12}}\\;\left| {\begin{array}{\*{20}{c}}{{a\_{21}}}&{{a\_{23}}}\\\\{{a\_{31}}}&{{a\_{33}}}\end{array}} \right|\\; + \\;{a\_{13}}\\;\left| {\begin{array}{\*{20}{c}}{{a\_{21}}}&{{a\_{22}}}\\\\{{a\_{31}}}&{{a\_{32}}}\end{array}} \right| $$
