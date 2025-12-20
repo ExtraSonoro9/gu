@@ -35,8 +35,7 @@ jobs:
           key: ${{ runner.os }}-tina-v1-${{ hashFiles('package-lock.json', '.tina/config.ts') }}
           restore-keys: |
             ${{ runner.os }}-tina-v1-
-      - name: Install dependencies
-        run: ncu -u
+
       - name: Install dependencies
         run: npm install -g npm-check-updates
    
