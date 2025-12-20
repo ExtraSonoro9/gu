@@ -90,6 +90,156 @@ window.dataLayer = window.dataLayer || [];
       { label: "Advertencia", link: "/advertencia"}
     ],
   },
+  {
+    label: "Informática",
+    items: [
+      { label: "Conceptos básicos",  items: [
+          'programacioneinformatica/introduccion',
+          'programacioneinformatica/buclesfor',
+          'programacioneinformatica/diagramadeflujo',
+          'programacioneinformatica/condicionalesif',
+
+    ],},
+    
+    { label: "Arduino y Sistemas Embebidos",  items: [
+         
+    ],},
+    
+    { label: "Linux",  items: [
+          'programacioneinformatica/linuxyservidores/sobrelinux',
+
+    ],}, 
+    
+    { label: "Ejecutables de Escritorio",  items: [
+         
+    ],},
+
+     { label: "Apps híbridas y web",  items: [
+        
+    ],},
+
+    { label: "Videojuegos",  items: [
+         
+    ],},
+     { label: "Bases de Datos",  items: [
+         
+    ],}
+    ],
+  },
+  {
+    label: "Proyectos",
+   items: [
+      { label: "Emprendedurismo",  items: [
+
+    ],},
+    
+    { label: "Robot Opencv",  items: [
+        
+    ],},
+    'proyectos/maquinaexpendedoraqr'
+   
+  
+    ],
+  },
+  {
+    label: "Física",
+    items: [
+      { label: "Conceptos básicos",  items: [
+        'fisica/conceptosbasicos/cifrasignmagnitudesherramientas',
+        'fisica/conceptosbasicos/cinematica',
+        'fisica/conceptosbasicos/arquimedesyflotabilidad',
+        'fisica/conceptosbasicos/dinamica',
+        'fisica/conceptosbasicos/cristalizacionsedimentacioncoloides',
+        'fisica/conceptosbasicos/solidoliquidogas',
+        'fisica/conceptosbasicos/traccionycompresion',
+        'fisica/conceptosbasicos/torqueinercia',
+        'fisica/conceptosbasicos/presion',
+        'fisica/conceptosbasicos/poleas',
+        'fisica/conceptosbasicos/palanca',
+        'fisica/conceptosbasicos/vacio',
+        'fisica/conceptosbasicos/plasma',
+        'fisica/conceptosbasicos/leydehook',
+        'fisica/conceptosbasicos/hidraulica',
+        'fisica/conceptosbasicos/friccion',
+        'fisica/conceptosbasicos/cifrasignmagnitudesherramientas',
+
+    ],},
+
+    { label: "Electricidad",  items: [
+      'fisica/electricidad/campo',
+      'fisica/electricidad/voltajeamperajeyresistencia',
+
+         ],},
+    
+    { label: "Termodinámica",  items: [
+      'fisica/termodinamica/calor',
+         
+    ],}
+  
+    ],
+  },
+  {
+    label: "Química",
+    items: [
+     
+   
+      { label: "Conceptos básicos generales",  items: [
+        
+         'quimica/general/inicio',
+         'quimica/general/herramientas',
+         'quimica/general/seguridad', 
+         'quimica/general/masaymolesavogadro',
+         'quimica/general/metodosdeseparacion',
+         'quimica/general/nomenclatura',
+         'quimica/general/basesyacidos',
+         'quimica/general/balanceyestequiometria',
+         'quimica/general/redox',
+
+         'quimica/general/azeotropoypuntoeutectico',
+         'quimica/general/pirolisis',
+         'quimica/general/electrolisis',
+         'quimica/general/endotermiaexotermia',
+         'quimica/general/combustion',
+         'quimica/general/catalizacion',
+         'quimica/general/cristalizacion',
+      
+
+    ],},
+    
+    { label: "Inorgánica",  items: [
+         { label: "Metales Alcalinos",  items: [
+         'quimica/inorganica/metalesalcalinos/sodio',
+         'quimica/inorganica/metalesalcalinos/potasio',
+         
+         
+    ],},{ label: "Metales Transicionales",  items: [
+      { label: "Metales Nobles",  items: [
+         'quimica/inorganica/metalestransicionales/metalesnobles/cobre',
+         'quimica/inorganica/metalestransicionales/metalesnobles/plata',
+         'quimica/inorganica/metalestransicionales/metalesnobles/oro',
+         
+    ],},
+         'quimica/inorganica/metalestransicionales/hierro',
+         
+    ],},{ label: "No Metales",  items: [
+         'quimica/inorganica/nometales/carbono',
+         'quimica/inorganica/nometales/cloro',
+         'quimica/inorganica/nometales/hidrogeno',
+         'quimica/inorganica/nometales/oxigeno',
+         
+    ],},
+    ],},
+    
+    { label: "Orgánica",  items: [
+         'quimica/organica/alcholcetonayaldehidos',
+         'quimica/organica/carbonoygruposfuncionales',
+
+         'quimica/organica/nomenclaturaorganica',
+
+    ],}
+  
+    ],
+  },
     // Un grupo de enlaces etiquetado "Constelaciones".
     {
 		
