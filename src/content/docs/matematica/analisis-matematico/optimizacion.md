@@ -2,60 +2,76 @@
 title: Optimización
 ---
 
-Cuando se necesitan hacer cosas como la construcción de una habitación rectangular cuantos metros de pared para la mayor área.
+# Optimización: Área Máxima y Perímetro Mínimo
 
-\*\*3.- Cuáles son las dimensiones de un campo rectangular de $3600 \text{ m}^2$ de superficie, para poderlo cercar con una valla de longitud mínima.\*\*
+La optimización busca encontrar los valores máximos o mínimos de una función sujeta a ciertas restricciones. En geometría, esto se traduce en eficiencia de materiales (costo-beneficio).
 
-Por la fórmula del área del rectángulo se tiene:
+---
 
-$$xy = 3600$$
+## 1. El Problema: El Rectángulo más Eficiente
 
-Por otro lado, la superficie (longitud) que tenemos que vallar es $2x + 2y$.
+Queremos demostrar qué dimensiones debe tener un terreno rectangular de área fija ($A$) para que su perímetro ($P$) sea el menor posible, minimizando así el costo de cercado.
 
-Así, el problema a resolver es:
+### Variables:
+* $x$: base del terreno.
+* $y$: altura del terreno.
+* $A$: área constante ($A = x \cdot y$).
+* $P$: perímetro a minimizar ($P = 2x + 2y$).
 
-$$
+---
 
-\begin{cases}
+## 2. Resolución Matemática
 
-xy = 3600 \\\\
+**Paso 1: Despejar una variable de la restricción.**
+Como el área $A$ es conocida: $y = \frac{A}{x}$.
 
-2x + 2y \text{ mínima}
+**Paso 2: Expresar la función a optimizar en términos de una sola variable.**
+Sustituimos $y$ en la fórmula del perímetro:
+$$P(x) = 2x + 2\left(\frac{A}{x}\right) = 2x + \frac{2A}{x}$$
 
-\end{cases}
+**Paso 3: Hallar la derivada e igualar a cero.**
+Para encontrar el mínimo, derivamos $P$ respecto a $x$:
+$$P'(x) = 2 - \frac{2A}{x^2}$$
 
-$$
+Igualamos a cero para hallar el punto crítico:
+$$2 = \frac{2A}{x^2} \implies x^2 = A \implies x = \sqrt{A}$$
 
-Como $xy = 3600 \implies y = \frac{3600}{x}$
+**Paso 4: Hallar la otra dimensión.**
+Si $x = \sqrt{A}$, entonces $y = \frac{A}{\sqrt{A}} = \sqrt{A}$.
 
-Llamando $f = 2x + 2y$ y sustituyendo $y = \frac{3600}{x}$ obtenemos:
+> **Conclusión:** Como $x = y$, las dimensiones óptimas corresponden a un **Cuadrado**.
 
-$$f(x) = 2x + 2\frac{3600}{x} = \frac{2x^2 + 7200}{x}$$
 
-\*\*Vamos a minimizar $f$:\*\*
 
-$$f'(x) = \frac{4x^2 - 2x^2 - 7200}{x^2} = \frac{2x^2 - 7200}{x^2}$$
+---
 
-$$f'(x) = 0 \iff 2x^2 - 7200 = 0 \iff x = \pm 60$$
+## 3. Análisis Costo-Beneficio: ¿Por qué el cuadrado?
 
-$$f''(x) = \frac{14400}{x^3}$$
+Imagina que necesitas un terreno de $100 \, m^2$:
 
-$f''(-60) \< 0 \implies x = -60$ es un máximo (no nos interesa)
+| Forma | Dimensiones | Perímetro (Cerca necesaria) | Eficiencia |
+| :--- | :--- | :--- | :--- |
+| **Rectángulo muy largo** | $20 \, m \times 5 \, m$ | $50 \, m$ | Baja |
+| **Rectángulo estándar** | $12,5 \, m \times 8 \, m$ | $41 \, m$ | Media |
+| **Cuadrado (Óptimo)** | $10 \, m \times 10 \, m$ | **$40 \, m$** | **Máxima** |
 
-$f''(60) > 0 \implies x = 60$ es un mínimo
+### Ventajas del Cuadrado:
+1.  **Menor Gasto de Material:** Necesitas menos metros lineales de malla o muro para encerrar la misma superficie.
+2.  **Menos Pérdida de Energía:** En construcción, una casa cuadrada tiene menos superficie de pared expuesta al exterior en relación con su volumen, lo que reduce la pérdida de calor (fricción térmica).
 
-Por tanto, las dimensiones del campo son:
+---
 
-$$
+## 4. ¿Existe algo mejor que el cuadrado?
 
-\begin{cases}
+Si no tuviéramos la restricción de usar ángulos rectos (forma rectangular), la figura que encierra la mayor área con el menor perímetro posible es el **Círculo**. 
 
-x = 60 \text{ m} \\\\
+Esta es la razón por la que:
+* Las burbujas de jabón son esféricas (minimizan la tensión superficial).
+* Los tanques de gas son cilíndricos/esféricos (optimizan volumen vs. material).
 
-y = \frac{3600}{60} = 60 \text{ m}
 
-\end{cases}
 
-$$
+---
 
-\*\*(es decir, se trata de un cuadrado)\*\*
+## 5. Aplicación Práctica: La "Cerca del Río"
+Un problema común es cuando un lado del terreno no necesita cerca (por ejemplo, porque da a un río). En ese caso, la optimización cambia: el área máxima se logra cuando el lado paralelo al río mide el doble que los lados perpendiculares.

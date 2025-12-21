@@ -2,67 +2,69 @@
 title: Serie y polinomio de Taylor
 ---
 
-## 9.10 Series de Taylor
+# Series de Taylor y Maclaurin
 
-En la sección anterior se vio cómo aproximar el valor de una función en un punto mediante un polinomio de grado $n$. En esta sección veremos cómo explotar la misma idea para expresar funciones mediante series de potencias. Esta técnica resulta útil para estudiar funciones complicadas usando su expresión como serie de potencias.
+Las series de potencias nos permiten aproximar funciones mediante polinomios. Cuantos más términos agreguemos, más exacta será nuestra aproximación.
 
-**Definición 9.13 (Serie de Taylor).** Dada una función $f(x)$ con derivadas de orden $n$ en $a$ $\forall n \in \mathbb{N}$, se define la **serie de Taylor** de $f$ centrada en $a$, como:
+---
 
-$$\sum \frac{f^{(n)}(a)}{n!}(x - a)^n$$
+## 1. Definición Matemática
 
-***
+### Serie de Taylor
+Es la expansión de una función $f(x)$ alrededor de un punto $a$:
+$$f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \frac{f'''(a)}{3!}(x-a)^3 + \dots$$
 
-**Ejemplo 9.31.** Veamos cuál es la serie de Taylor de la función $f(x) = \ln(x)$ en $a = 1$. Para ello calculamos las primeras derivadas de $f$ en $a = 1$.
+### Serie de Maclaurin
+Es un caso especial de la serie de Taylor donde el punto de aproximación es **$a = 0$**:
+$$f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n!} x^n$$
 
-$$
-\begin{aligned}
-f(x) &= \ln x & f(1) &= \ln 1 = 0 \\
-f'(x) &= 1/x & f'(1) &= 1/1 = 1 \\
-f''(x) &= -1/x^2 & f''(1) &= -1/1^2 = -1 \\
-f'''(x) &= 2/x^3 & f'''(1) &= 2/1^3 = 2 \\
-f''''(x) &= -3!/x^4 & f''''(1) &= -3! \\
-&\vdots & &\vdots \\
-f^{(n)}(x) &= (-1)^{n-1}(n-1)!/x^n \quad & f^{(n)}(x) &= (-1)^{n-1}(n-1)!
-\end{aligned}
-$$
-Sustituyendo en la fórmula de la serie de Taylor se tiene
+---
 
-$$\sum \frac{f^{(n)}(1)}{n!}(x - 1)^n = \sum \frac{(-1)^{n-1}(n-1)!}{n!}(x - 1)^n = \sum \frac{(-1)^{n-1}}{n}(x - 1)^n$$
+## 2. La Identidad de Euler: El "Milagro" de Maclaurin
 
-Su suma parcial de orden $n$ es
+La identidad de Euler, $e^{i\pi} + 1 = 0$, se demuestra expandiendo las series de Maclaurin de $e^x$, $\sin(x)$ y $\cos(x)$.
 
-$$
-\begin{aligned}
-A\_n(x) &= \sum\_{i=1}^{n} \frac{(-1)^{i-1}}{i}(x - 1)^i \\
-&= (x - 1) - \frac{1}{2}(x - 1)^2 + \frac{1}{3}(x - 1)^3 + \dots + \frac{(-1)^{n-1}}{n}(x - 1)^n
-\end{aligned}
-$$
+1.  **Serie de $e^x$:** $1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots$
+2.  **Sustituyendo $x$ por $iz$:** Al elevar la unidad imaginaria $i$ a diferentes potencias, los términos se separan en reales e imaginarios.
+3.  **Resultado:** Los términos reales forman la serie del $\cos(z)$ y los imaginarios la del $\sin(z)$.
+    $$e^{iz} = \cos(z) + i\sin(z)$$
 
-que resulta ser el polinomio de Taylor de orden $n$ de $f$ en $a = 1$.
 
-Un caso particular bastante habitual es la serie de Taylor en $a = 0$.
 
-**Definición 9.14 (Serie de Maclaurin).** Dada una función $f(x)$ con derivadas de orden $n$ en $0$ $\forall n \in \mathbb{N}$, se define la **serie de Maclaurin** de $f$, como
+---
 
-$$\sum \frac{f^{(n)}(0)}{n!}x^n$$
+## 3. Ejemplo en la Vida Real: Ingeniería Eléctrica (Análisis de AC)
 
-***
+En los sistemas de Corriente Alterna (AC), el voltaje y la corriente oscilan como ondas senoidales. 
 
-**Ejemplo 9.32.** Veamos cuál es la serie de Maclaurin de la función $f(x) = \frac{1}{1 - x}$. Para ello calculamos las primeras derivadas de $f$ en $0$.
+**Problema:** Calcular la impedancia en un circuito donde el voltaje es $V(t) = V_0 e^{i\omega t}$.
+* Utilizando la expansión de Taylor/Maclaurin, los ingenieros pueden convertir estas funciones exponenciales complejas en fasores.
+* Esto permite sumar voltajes y corrientes como si fueran vectores simples en lugar de resolver ecuaciones diferenciales complejas cada vez que se analiza un circuito.
+* **Uso:** Es la base de toda la red eléctrica que alimenta tu casa.
 
-$$
-\begin{aligned}
-f(x) &= \frac{1}{1-x} & f(0) &= 1 \\
-f'(x) &= \frac{1}{(1-x)^2} & f'(0) &= 1 \\
-f''(x) &= \frac{2}{(1-x)^3} & f''(0) &= 2 \\
-f'''(x) &= \frac{3!}{(1-x)^4} & f'''(0) &= 3! \\
-&\vdots & &\vdots \\
-f^{(n)}(x) &= \frac{n!}{(1-x)^{n+1}} \quad & f^{(n)}(0) &= n!
-\end{aligned}
-$$
+---
 
-Sustituyendo en la fórmula de la serie de Maclaurin se tiene
+## 4. Margen de Error: El Resto de Lagrange
 
-$$\sum \frac{f^{(n)}(0)}{n!}x^n = \sum \frac{n!}{n!}x^n = \sum x^n$$
+Como no podemos sumar infinitos términos, truncamos la serie. El error cometido se conoce como el **Resto de Taylor ($R_n$)**.
 
-que es una serie geométrica de razón $x$, y por tanto, converge para $|x| \< 1$, con suma $\sum\_{n=1}^{\infty} x^n = \frac{1}{1 - x}$, es decir, $f(x)$ coincide con la suma de su serie de Maclaurin para $|x| \< 1$.
+Según el Teorema de Taylor, existe un punto $c$ entre $a$ y $x$ tal que el error es:
+$$R_n(x) = \frac{f^{(n+1)}(c)}{(n+1)!} (x-a)^{n+1}$$
+
+### Factores que afectan el error:
+1.  **Distancia ($x-a$):** Cuanto más lejos estés del punto de aproximación $a$, mayor será el error.
+2.  **Número de términos ($n$):** A mayor cantidad de términos, el error disminuye drásticamente debido al factorial en el denominador.
+3.  **Curvatura:** Funciones que cambian muy bruscamente requieren más términos para ser precisas.
+
+
+
+---
+
+## 5. Tabla de Aproximaciones Comunes ($a=0$)
+
+| Función | Aproximación (Polinomio grado 3) |
+| :--- | :--- |
+| $\sin(x)$ | $x - \frac{x^3}{6}$ |
+| $\cos(x)$ | $1 - \frac{x^2}{2}$ |
+| $e^x$ | $1 + x + \frac{x^2}{2} + \frac{x^3}{6}$ |
+| $\ln(1+x)$ | $x - \frac{x^2}{2} + \frac{x^3}{3}$ |
