@@ -1,4 +1,8 @@
-# Regla de L'Hôpital
+
+---
+title: Regla de L'Hôpital
+
+---
 
 Esta regla se utiliza para resolver límites que resultan en formas indeterminadas del tipo $\frac{0}{0}$ o $\frac{\infty}{\infty}$. 
 
