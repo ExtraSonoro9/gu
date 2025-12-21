@@ -1,103 +1,140 @@
 ---
 title: Limites
 ---
+# Límites: El Concepto de Aproximación
 
-El concepto de límite está ligado al de tendencia.
+Un límite describe el valor al que se aproxima una función $f(x)$ a medida que la variable $x$ se acerca a un valor determinado $a$, sin llegar necesariamente a tocarlo.
 
-Dado un conjunto 𝐴 ⊆ ℝ, se dice que 𝑥 ∈ 𝐴 tiende a un número 𝑎 ∈ ℝ, y lo escribimos
+Se escribe como:
+$$\lim_{x \to a} f(x) = L$$
 
-𝑥 → 𝑎, si se pueden tomar valores de 𝑥 tan próximos a 𝑎 como se quiera, pero sin llegar
+---
 
-a valer 𝑎.
+## 1. Definición Intuida y Gráfica
+Decimos que el límite existe si, al acercarnos a $a$ por la izquierda ($x \to a^-$) y por la derecha ($x \to a^+$), la función tiende al mismo valor $L$.
 
-Para que 𝑥 ∈ 𝐴 tienda a 𝑎, es necesario que 𝑎 sea un punto de acumulación de 𝐴.
+* **Límites Laterales:** Para que el límite general exista, los límites laterales deben ser iguales:
+  $$\lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x) = L$$
 
- Si la aproximación es por defecto (con valores menores que 𝑎) se dice que 𝑥 tiende a 𝑎
 
-por la izquierda, y se escribe 𝑥 → 𝑎−, y si es por exceso (con valores mayores que 𝑎) se
 
-dice que 𝑥 tiende a 𝑎 por la derecha, y se escribe 𝑥 → 𝑎+.
+---
 
-Cuando la variable 𝑥 de una función 𝑓 tiende a un valor 𝑎, cabe preguntarse si sus
+## 2. Propiedades de los Límites
+Si $\lim_{x \to a} f(x) = L$ y $\lim_{x \to a} g(x) = M$, se cumple:
 
-imágenes mediante 𝑓 tienden a otro valor concreto:
+1. **Suma/Resta:** $\lim (f \pm g) = L \pm M$
+2. **Producto:** $\lim (f \cdot g) = L \cdot M$
+3. **Cociente:** $\lim (f / g) = L / M$ (si $M \neq 0$)
+4. **Potencia:** $\lim (f^g) = L^M$
+5. **Constante:** $\lim (k \cdot f) = k \cdot L$
 
-Si 𝑓(𝑥) tiende a un valor 𝑙 cuando 𝑥 tiende a 𝑎, se dice que 𝑙 es el límite de 𝑓(𝑥) cuando
+---
 
-𝑥 → 𝑎, y se escribe
+## 3. Indeterminaciones
+A veces, al evaluar un límite directamente, obtenemos expresiones que no tienen un valor definido. Las más comunes son:
 
-lim
+* $\frac{0}{0}$
+* $\frac{\infty}{\infty}$
+* $\infty - \infty$
 
-𝑥→𝑎 𝑓(𝑥) = 𝑙
+**¿Cómo resolverlas?**
+* **Factorización:** Para eliminar el término que causa el cero en el denominador.
+* **Racionalización:** Si hay raíces cuadradas.
+* **L'Hôpital:** (Si ya sabes derivar) para resolver $0/0$ o $\infty/\infty$.
 
-### Límites laterales
+---
 
-Si 𝑓(𝑥) tiende a 𝑙 cuando 𝑥 tiende a 𝑎 por la izquierda, entonces se dice que 𝑙 es el límite
+## 4. Límites al Infinito
+Estudian el comportamiento de la función cuando $x$ se hace extremadamente grande o pequeño. Estos límites definen las **Asíntotas Horizontales**.
 
-por la izquierda de 𝑓(𝑥) cuando 𝑥 → 𝑎−, y se escribe
+* Si el grado del numerador es **menor** al del denominador, el límite es $0$.
+* Si los grados son **iguales**, el límite es el cociente de los coeficientes principales.
 
-lim
 
-𝑥→𝑎− 𝑓(𝑥) = 𝑙.
 
-Si 𝑓(𝑥) tiende a 𝑙 cuando 𝑥 se aproxima a 𝑎 por exceso, entonces se dice que 𝑙 es el límite
+---
 
-por la derecha de 𝑓(𝑥) cuando 𝑥 → 𝑎−, y se escribe
+## 5. Límites Trigonométricos Notables
+Existen límites especiales que son la base para las derivadas de funciones trigonométricas:
 
-lim
+$$\lim_{x \to 0} \frac{\sin(x)}{x} = 1$$
+$$\lim_{x \to 0} \frac{1 - \cos(x)}{x} = 0$$
 
-𝑥→𝑎+ 𝑓(𝑥) = 𝑙.
+---
 
-Ejemplo 6.1. Consideremos la función 𝑓(𝑥) = 𝑥2 y veamos que pasa cuando 𝑥 → 2:
+## 6. Ejemplo Práctico (Factorización)
+Calcula $\lim_{x \to 2} \frac{x^2 - 4}{x - 2}$.
 
-### Límites que no existen
+1. Al evaluar directamente: $\frac{2^2 - 4}{2 - 2} = \frac{0}{0}$ (Indeterminado).
+2. Factorizamos el numerador: $\frac{(x-2)(x+2)}{x-2}$.
+3. Simplificamos: $x + 2$.
+4. Evaluamos de nuevo: $2 + 2 = 4$.
+**Resultado:** El límite es $4$.
 
-Si la función no está definida entorno a un punto, entonces no existe el límite en dicho
+# Discontinuidades, Asíntotas y Rectas de la Derivada
 
-punto.
+Este capítulo conecta el concepto de límite con la forma física de las gráficas y la inclinación de las curvas.
 
-Cuando los límites laterales no coinciden entonces no existe el límite.
+---
 
-A veces, cuando 𝑥 → 𝑎 los valores de 𝑓(𝑥) crecen o decrecen infinitamente y entonces
+## 1. Tipos de Discontinuidad (Saltos)
 
-no existe el límite. En este caso se dice que la función diverge y se escribe
+Una función es continua si puedes dibujarla sin levantar el lápiz. Si no, presenta una discontinuidad:
 
-### Límites en el infinito
+* **Evitable:** Existe el límite, pero no coincide con el valor del punto (o el punto no existe). Se ve como un "agujero".
+* **Inevitable de Salto Finito:** Los límites laterales existen pero son diferentes.
+* **Inevitable de Salto Infinito:** Uno o ambos límites laterales tienden a $\pm \infty$.
 
-Si 𝑓(𝑥) tiende a 𝑙 cuando 𝑥 crece infinitamente, entonces se dice que 𝑙 es el límite en el
+[Image showing point, finite jump, and infinite jump discontinuities]
 
-infinito de 𝑓(𝑥) cuando 𝑥 → +∞, y se escribe
+---
 
-lim
+## 2. Asíntotas: El Comportamiento Límite
 
-𝑥→+∞ 𝑓(𝑥) = 𝑙.
+Las asíntotas son rectas a las que la función se acerca infinitamente pero nunca toca (usualmente).
 
-Si 𝑓(𝑥) tiende a 𝑙 cuando 𝑥 decrece infinitamente, entonces se dice que 𝑙 es el límite en
+### A. Asíntota Vertical (A.V.)
+Ocurre en valores de $x$ donde la función explota al infinito.
+* **Condición:** $\lim_{x \to a} f(x) = \pm \infty$.
+* Se encuentran buscando los valores que hacen cero el denominador (y no el numerador).
 
-el infinito de 𝑓(𝑥) cuando 𝑥 → −∞, y se escribe
+### B. Asíntota Horizontal (A.H.)
+Describe qué hace la función cuando $x$ es muy grande.
+* **Condición:** $\lim_{x \to \pm \infty} f(x) = L$.
+* Si existe A.H., la recta es $y = L$.
 
-lim
+---
 
-𝑥→−∞ 𝑓(𝑥) = 𝑙.
+## 3. Construcción de Rectas (Secante, Tangente y Normal)
 
-107
+Estas rectas nos permiten estudiar la pendiente de una curva en un punto $P(a, f(a))$.
 
-Ejemplo 6.6. Estudiemos la tendencia de 𝑓(𝑥) = 1
+### A. Recta Secante
+Corta a la curva en dos puntos. Su pendiente es el cociente incremental:
+$$m_{sec} = \frac{f(a+h) - f(a)}{h}$$
 
-𝑥 cuando 𝑥 → ±∞:
+### B. Recta Tangente
+Toca a la curva en un solo punto. Su pendiente es la **derivada** en ese punto: $m_t = f'(a)$.
+* **Ecuación:** $y - f(a) = f'(a)(x - a)$
 
-### Definición
+### C. Recta Normal
+Es la recta **perpendicular** a la tangente en el punto de contacto.
+* **Pendiente:** Es la inversa negativa de la tangente: $m_n = -\frac{1}{f'(a)}$.
+* **Ecuación:** $y - f(a) = -\frac{1}{f'(a)}(x - a)$
 
-Dado un conjunto 𝐴 ⊆ ℝ, una
+[Image showing a curve with a tangent line and a perpendicular normal line at a point]
 
-función 𝑓 ∶ 𝐴 → ℝ y un punto de acumulación 𝑎 de 𝐴, se dice que 𝑙 ∈ ℝ es el límite de
+---
 
-𝑓 en 𝑎 y se escribe
+## 4. Ejemplo Práctico
 
-lim
+Dada $f(x) = x^2$, hallar la recta tangente y normal en $x = 1$.
 
-𝑥→𝑎 𝑓(𝑥) = 𝑙
-
-si para cualquier número 𝜀 > 0 existe un número 𝛿 > 0 tal que |𝑓(𝑥) − 𝑙| \< 𝜀 ∀𝑥 ∈ 𝐴  {𝑎}
-
-con |𝑥 − 𝑎| \< 𝛿 
+1. **Punto:** $f(1) = 1^2 = 1$. Punto $(1, 1)$.
+2. **Derivada:** $f'(x) = 2x$. En el punto: $f'(1) = 2$. (Esta es $m_t$).
+3. **Recta Tangente:**
+   $y - 1 = 2(x - 1) \implies y = 2x - 1$
+4. **Recta Normal:**
+   $m_n = -1/2$.
+   $y - 1 = -\frac{1}{2}(x - 1) \implies y = -\frac{1}{2}x + \frac{3}{2}$

@@ -260,3 +260,142 @@ Es el punto exacto donde la función **cambia su concavidad** (pasa de "U" a "n"
 En física y economía, esto es vital:
 * El **punto de inflexión** en una curva de contagios indica cuándo la velocidad de propagación empieza a frenarse.
 * En **optimización**, los máximos y mínimos nos dicen el beneficio más alto o el costo más bajo (como ya vimos en tu archivo de optimización).
+
+# La Definición Formal de la Derivada
+
+La derivada no es solo una fórmula; es un **límite especial** que representa la tasa de cambio instantánea. Matemáticamente, nace de intentar calcular la pendiente de una recta en un solo punto.
+
+---
+
+## 1. El Concepto Geométrico: De Secante a Tangente
+
+Si tenemos dos puntos en una curva, $P(x, f(x))$ y $Q(x+h, f(x+h))$, la pendiente de la recta que los une (secante) es:
+$$m = \frac{\Delta y}{\Delta x} = \frac{f(x+h) - f(x)}{h}$$
+
+Para hallar la pendiente **en un solo punto** (tangente), hacemos que la distancia entre los puntos ($h$) sea lo más pequeña posible, es decir, que tienda a cero.
+
+
+
+---
+
+## 2. La Definición por Límite
+
+La derivada de una función $f(x)$, denotada como $f'(x)$, se define como:
+
+$$f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}$$
+
+Esta expresión se conoce como el **Cociente de Fermat** o Cociente Diferencial.
+
+---
+
+## 3. Demostración Práctica: Derivada de $x^2$
+
+Vamos a demostrar por qué la derivada de $f(x) = x^2$ es $2x$ usando la definición:
+
+1. **Plantear el límite:**
+   $$\lim_{h \to 0} \frac{(x + h)^2 - x^2}{h}$$
+
+2. **Desarrollar el binomio:**
+   $$\lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h}$$
+
+3. **Simplificar términos ($x^2 - x^2 = 0$):**
+   $$\lim_{h \to 0} \frac{2xh + h^2}{h}$$
+
+4. **Factorizar $h$ en el numerador:**
+   $$\lim_{h \to 0} \frac{h(2x + h)}{h}$$
+
+5. **Eliminar la indeterminación ($h/h = 1$):**
+   $$\lim_{h \to 0} (2x + h)$$
+
+6. **Evaluar el límite (hacer $h = 0$):**
+   $$2x + 0 = 2x$$
+
+**Resultado:** Queda demostrado que $f'(x^2) = 2x$.
+
+---
+
+## 4. Interpretación de la Notación
+
+Existen diferentes formas de escribir la derivada, todas válidas según el contexto:
+* **Leibniz:** $\frac{dy}{dx}$ (Muy usada en física para indicar "cambio de $y$ respecto a $x$").
+* **Lagrange:** $f'(x)$ (La más común en cálculo).
+* **Newton:** $\dot{y}$ (Usada principalmente en física para derivadas respecto al tiempo).
+
+---
+
+## 5. ¿Cuándo NO existe la derivada?
+Para que una función sea derivable en un punto, el límite debe existir y ser único. La derivada falla en:
+1. **Puntos angulosos (Picos):** Donde los límites laterales son distintos (ej. $|x|$ en $x=0$).
+2. **Discontinuidades:** Si la función está rota, no hay tangente.
+3. **Tangentes verticales:** Donde la pendiente tiende a infinito.
+
+[Image showing non-differentiable points: a cusp, a discontinuity, and a vertical tangent]
+
+# Derivación Implícita
+
+La derivación implícita se aplica a funciones donde la variable dependiente $y$ está mezclada con la independiente $x$ (ej. $x^2 + y^2 = 25$). 
+
+La clave es recordar la **Regla de la Cadena**: cada vez que derivamos un término que contiene $y$, debemos multiplicar por $y'$ (o $\frac{dy}{dx}$), porque tratamos a $y$ como una función de $x$ que aún no conocemos.
+
+---
+
+## 1. El Procedimiento Estándar
+
+Para hallar $y'$ en una ecuación implícita, seguimos estos pasos:
+1. **Derivar ambos lados** de la ecuación respecto a $x$.
+2. **Aplicar la Regla de la Cadena** en cada término con $y$.
+3. **Agrupar** todos los términos que tengan $y'$ en un lado de la igualdad.
+4. **Factorizar $y'$** y despejarlo.
+
+---
+
+## 2. Ejemplo Paso a Paso: La Circunferencia
+
+Hallemos la pendiente de la recta tangente en un punto de la circunferencia $x^2 + y^2 = 25$.
+
+**Paso 1: Derivar respecto a $x$**
+* La derivada de $x^2$ es $2x$.
+* La derivada de $y^2$ es $2y \cdot y'$ (aquí aplicamos la regla de la cadena).
+* La derivada de $25$ es $0$.
+
+Ecuación resultante:
+$$2x + 2y \cdot y' = 0$$
+
+
+
+**Paso 2: Despejar $y'$**
+1. Restamos $2x$: $2y \cdot y' = -2x$
+2. Dividimos por $2y$: $y' = \frac{-2x}{2y}$
+3. Simplificamos:
+$$y' = -\frac{x}{y}$$
+
+---
+
+## 3. Ejemplo Complejo: Regla del Producto
+
+Derivar $x \cdot y = 1$:
+1. Aplicamos la regla del producto $(u \cdot v)' = u'v + uv'$:
+   $(1) \cdot y + x \cdot (y') = 0$
+2. Despejamos $y'$:
+   $x \cdot y' = -y$
+   $y' = -\frac{y}{x}$
+
+---
+
+## 4. Aplicación Geométrica: Rectas Tangentes
+
+Si queremos la pendiente en el punto $(3, 4)$ de la circunferencia $x^2 + y^2 = 25$:
+* Usamos nuestra fórmula $y' = -x/y$.
+* $m = -3/4$.
+
+
+
+---
+
+## 5. Diferencia entre Derivación Explícita e Implícita
+
+| Característica | Derivación Explícita | Derivación Implícita |
+| :--- | :--- | :--- |
+| **Forma** | $y = f(x)$ | $F(x, y) = 0$ |
+| **Facilidad** | Directa | Requiere despejar $y'$ |
+| **Resultado** | Solo depende de $x$ | Suele depender de $x$ e $y$ |
