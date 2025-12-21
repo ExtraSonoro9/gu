@@ -1,43 +1,61 @@
+# Regla de L'Hôpital
+
+Esta regla se utiliza para resolver límites que resultan en formas indeterminadas del tipo $\frac{0}{0}$ o $\frac{\infty}{\infty}$. 
+
 ---
-title: Regla de L'Hopital
+
+## 1. El Teorema
+
+Si tenemos un límite:
+$$\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{0}{0} \quad \text{o} \quad \frac{\infty}{\infty}$$
+
+Entonces, el límite es igual al límite de la derivada de la función de arriba entre la derivada de la función de abajo:
+$$\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}$$
+
+> **¡Cuidado!** No es la derivada de un cociente (no uses la regla de la división). Simplemente derivas el de arriba por un lado y el de abajo por el otro.
+
 ---
 
-### Regla de L'Hôpital
+## 2. Requisitos para aplicar la regla
 
-La Regla de L'Hôpital proporciona un método para calcular límites de indeterminaciones de tipo $\frac{0}{0}$ y $\frac{\infty}{\infty}$ utilizando las derivadas de las funciones.
+1.  **Indeterminación:** Solo puedes usarla si al evaluar obtienes $0/0$ o $\infty/\infty$.
+2.  **Derivabilidad:** Las funciones $f$ y $g$ deben ser derivables cerca del punto $a$.
+3.  **$g'(x) \neq 0$:** La derivada del denominador no puede ser cero cerca de $a$.
 
-**Teorema (Regla de L'Hôpital)**
-Sean $f$ y $g$ dos funciones derivables en un entorno de $a$, y supongamos que $g'(x) \neq 0$ en ese entorno. Si el límite $\lim\_{x \rightarrow a} \frac{f(x)}{g(x)}$ presenta una indeterminación de tipo $\frac{0}{0}$ o $\frac{\infty}{\infty}$, entonces, si existe el límite del cociente de las derivadas, se cumple que:
-$$\lim\_{x \rightarrow a} \frac{f(x)}{g(x)} = \lim\_{x \rightarrow a} \frac{f'(x)}{g'(x)}$$
-El teorema es válido también si $a = \pm \infty$.
+---
 
-**Ejemplo:**
-Calcular el límite $\lim\_{x \rightarrow 0} \frac{\sin(x)}{x}$.
-Es una indeterminación de tipo $\frac{0}{0}$. Aplicando la Regla de L'Hôpital:
-$$\lim\_{x \rightarrow 0} \frac{\sin(x)}{x} = \lim\_{x \rightarrow 0} \frac{(\sin(x))'}{(x)'} = \lim\_{x \rightarrow 0} \frac{\cos(x)}{1} = \frac{\cos(0)}{1} = 1$$
+## 3. Ejemplo Paso a Paso
 
-**Ejemplo:**
-Calcular el límite $\lim\_{x \rightarrow 0} \frac{e^x - 1 - x}{x^2}$.
-Es una indeterminación de tipo $\frac{0}{0}$. Aplicando la Regla de L'Hôpital:
-$$\lim\_{x \rightarrow 0} \frac{e^x - 1 - x}{x^2} = \lim\_{x \rightarrow 0} \frac{e^x - 1}{2x}$$
-Esta sigue siendo una indeterminación de tipo $\frac{0}{0}$, por lo que aplicamos de nuevo la Regla de L'Hôpital:
-$$\lim\_{x \rightarrow 0} \frac{e^x - 1}{2x} = \lim\_{x \rightarrow 0} \frac{(e^x - 1)'}{(2x)'} = \lim\_{x \rightarrow 0} \frac{e^x}{2} = \frac{e^0}{2} = \frac{1}{2}$$
+Calcular el límite: $\lim_{x \to 0} \frac{\sin(x)}{x}$
 
-**Ejemplo:**
-Calcular el límite $\lim\_{x \rightarrow \infty} \frac{e^x}{x}$.
-Es una indeterminación de tipo $\frac{\infty}{\infty}$. Aplicando la Regla de L'Hôpital:
-$$\lim\_{x \rightarrow \infty} \frac{e^x}{x} = \lim\_{x \rightarrow \infty} \frac{(e^x)'}{(x)'} = \lim\_{x \rightarrow \infty} \frac{e^x}{1} = \infty$$
+1.  **Evaluar:** $\frac{\sin(0)}{0} = \frac{0}{0}$. (Indeterminado, ¡podemos usar L'Hôpital!).
+2.  **Derivar arriba:** La derivada de $\sin(x)$ es $\cos(x)$.
+3.  **Derivar abajo:** La derivada de $x$ es $1$.
+4.  **Nuevo límite:**
+    $$\lim_{x \to 0} \frac{\cos(x)}{1} = \frac{\cos(0)}{1} = \frac{1}{1} = 1$$
 
-**Nota sobre otras indeterminaciones**
-La Regla de L'Hôpital solo se puede aplicar a indeterminaciones de tipo cociente $\frac{0}{0}$ o $\frac{\infty}{\infty}$. Las otras indeterminaciones deben transformarse primero en alguna de estas formas:
 
-* $0 \cdot \infty$: Se transforma en $\frac{0}{0}$ o $\frac{\infty}{\infty}$ usando $f \cdot g = \frac{f}{1/g}$ o $f \cdot g = \frac{g}{1/f}$.
-* $\infty - \infty$: Se transforma en cociente usando un común denominador o conjugado.
-* $1^\infty, \infty^0, 0^0$: Se transforman usando logaritmos en la forma $0 \cdot \infty$, y de ahí a $\frac{0}{0}$ o $\frac{\infty}{\infty}$.
 
-**Ejemplo:**
-Calcular el límite $\lim\_{x \rightarrow 0^+} x \ln(x)$.
-Es una indeterminación de tipo $0 \cdot \infty$. Lo transformamos en $\frac{\infty}{\infty}$:
-$$\lim\_{x \rightarrow 0^+} x \ln(x) = \lim\_{x \rightarrow 0^+} \frac{\ln(x)}{1/x}$$
-Ahora aplicamos la Regla de L'Hôpital:
-$$\lim\_{x \rightarrow 0^+} \frac{(\ln(x))'}{(1/x)'} = \lim\_{x \rightarrow 0^+} \frac{1/x}{-1/x^2} = \lim\_{x \rightarrow 0^+} -x = 0$$
+---
+
+## 4. Otras formas indeterminadas
+
+A veces el límite no es una fracción, pero puedes "forzarlo" para usar la regla:
+* **$0 \cdot \infty$:** Reubica uno de los términos como $1/(1/x)$.
+* **$1^\infty, 0^0, \infty^0$:** Se resuelven aplicando logaritmos naturales ($\ln$) para bajar el exponente y luego aplicar L'Hôpital.
+
+
+
+---
+
+## 5. ¿Cuántas veces se puede aplicar?
+Si al derivar una vez sigues obteniendo $0/0$, puedes aplicar la regla una **segunda o tercera vez** (derivando las derivadas) hasta que la indeterminación desaparezca.
+
+---
+
+## 6. Resumen de uso con tu Tabla de Derivadas
+
+Para usar L'Hôpital rápido, necesitas tener a mano tu tabla de:
+* Polinomios ($x^n \to nx^{n-1}$)
+* Exponenciales ($e^x \to e^x$)
+* Trigonométricas ($\sin \to \cos$)

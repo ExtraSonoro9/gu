@@ -2,176 +2,261 @@
 title: Derivadas
 ---
 
-## 7 Derivadas de funciones
+# Tabla de Derivadas y Reglas de Cálculo
 
-En la mayoría de los problemas reales, las magnitudes que intervienen están relacionadas mediante ecuaciones o funciones. Para construir estos modelos matemáticos resulta imprescindible entender cómo varían unas magnitudes con respecto a las otras. En este capítulo abordamos el concepto de derivada, que surge de estudiar cómo varía una función cuando cambia la variable de la que depende. El concepto de derivada, junto al de integral, son los dos pilares fundamentales del Análisis Matemático, sobre los que se sostienen la mayor parte de las aplicaciones en Ciencia e Ingeniería.
+Este archivo sirve como guía de referencia rápida para operar con derivadas en problemas de física y análisis.
 
-## 7.1 El concepto de derivada
+---
 
-### 7.1.1 Tasa de variación media
+## 1. Tabla de Derivadas Inmediatas
 
-### Incremento
+| Función $f(x)$ | Derivada $f'(x)$ | Notas |
+| :--- | :--- | :--- |
+| $k$ (Constante) | $0$ | El cambio de algo fijo es nulo. |
+| $x$ | $1$ | La pendiente de una identidad es 1. |
+| $x^n$ | $n \cdot x^{n-1}$ | **Regla de la potencia.** |
+| $e^x$ | $e^x$ | Es la única función que es su propia derivada. |
+| $\ln(x)$ | $\frac{1}{x}$ | Solo para $x > 0$. |
+| $\sin(x)$ | $\cos(x)$ | La razón de cambio del seno es el coseno. |
+| $\cos(x)$ | $-\sin(x)$ | ¡Cuidado con el signo negativo! |
 
-Dada una función $y = f(x)$, se llama incremento de $f$ en un intervalo $\[a,b]$ a la diferencia entre el valor de $f$ en cada uno de los extremos del intervalo, y se nota
 
-$\Delta y = f(b) - f(a)$.
 
-Cuando $f$ es la función identidad $y=x$, se cumple que
+---
 
-$\Delta x = \Delta y = f(b) - f(a) = b - a$,
+## 2. Reglas de Operación (Álgebra de Derivadas)
 
-y por tanto, el incremento de $x$ en un intervalo es la amplitud del intervalo. Esto nos permite escribir el intervalo $\[a,b]$ como $\[a,a+\Delta x]$.
+Cuando las funciones no están solas, aplicamos estas propiedades:
 
-### Tasa de variación media
+### A. Suma y Resta
+La derivada de una suma es la suma de las derivadas.
+$$(f + g)' = f' + g'$$
 
-Dada una función $y=f(x)$, se llama tasa de variación media de $f$ en el intervalo $\[a,a+\Delta x]$ al cociente entre el incremento de $y$ y el incremento de $x$ en dicho intervalo, y se escribe
+### B. Producto (Multiplicación)
+$$ (u \cdot v)' = u' \cdot v + u \cdot v' $$
 
-$\mathrm{TVM}(f,\[a,a+\Delta x]) = \dfrac{\Delta y}{\Delta x} = \dfrac{f(a+\Delta x)-f(a)}{\Delta x}$.
+### C. Cociente (División)
+$$ \left( \frac{u}{v} \right)' = \frac{u' \cdot v - u \cdot v'}{v^2} $$
 
-### Ejemplo:
+### D. Regla de la Cadena
+Es vital para funciones compuestas (una función dentro de otra).
+$$ \frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} $$
 
-Consideremos la función $y=x^2$ que mide el área de un cuadrado de chapa metálica de lado $x$.
 
-Si en un determinado instante el lado del cuadrado es $a$, y sometemos la chapa a un proceso de calentamiento que aumenta el lado del cuadrado una cantidad $\Delta x$, ¿en cuánto se incrementará el área del cuadrado?
 
-$\Delta y = f(a+\Delta x)-f(a) = (a+\Delta x)^2 - a^2$
+---
 
-$= a^2 + 2a\Delta x + (\Delta x)^2 - a^2 = 2a\Delta x + (\Delta x)^2$.
+## 3. Relación con la Optimización
 
-¿Cuál será la tasa de variación media del área en el intervalo $\[a,a+\Delta x]$?
+Como ya tenemos documentado en el archivo de **Optimización**, el uso principal de esta tabla es encontrar los **Puntos Críticos**:
 
-$\dfrac{\Delta y}{\Delta x} = \dfrac{2a\Delta x + (\Delta x)^2}{\Delta x} = 2a + \Delta x$.
+1. Se busca la derivada $f'(x)$ usando esta tabla.
+2. Se iguala a cero ($f'(x) = 0$).
+3. Los valores de $x$ resultantes nos indican dónde la función alcanza sus picos máximos o valles mínimos.
 
-Tomando el límite cuando $\Delta x \to 0$, se obtiene la tasa de variación instantánea.
+---
 
-### 7.1.4 Interpretación geométrica de la tasa de variación instantánea
+## 4. Aplicación Cinética
 
-La tasa de variación instantánea de $f$ en el punto $a$ es la pendiente de la recta tangente a $f$ en el punto $(a,f(a))$.
+Recuerda que estas fórmulas son las que permiten derivar las ecuaciones de movimiento:
+* Si la posición es $s(t) = \frac{1}{2}at^2$, al derivar usando la **regla de la potencia**, obtenemos la velocidad: $v(t) = at$.
+* # Derivación Implícita
 
-imagen
+Normalmente, derivamos funciones **explícitas** como $y = x^2$. Pero a veces, la relación entre $x$ e $y$ está "implícita", como en:
+$$x^2 + y^2 = 25$$
 
-## 7.2 Diferenciabilidad
+Para hallar la pendiente ($dy/dx$) en estos casos, usamos la derivación implícita.
 
-El concepto de derivada surge del límite de la tasa de variación media de una función en un intervalo. Un concepto íntimamente ligado es el de función diferenciable.
+---
 
-**Diferenciable**
-Dado un intervalo $I \subseteq \mathbb{R}$ y una función $f: I \rightarrow \mathbb{R}$, se dice que $f$ es diferenciable en el punto $a \in I$ si existe el límite
-$$f'(a) = \lim\_{h \rightarrow 0} \frac{f(a + h) - f(a)}{h}$$
-El valor del límite se llama derivada de $f$ en $a$ y se denota $f'(a)$. Si $f$ es diferenciable en todos los puntos de un conjunto $S \subseteq I$, se dice que $f$ es diferenciable en $S$.
+## 1. La Regla de Oro
+La clave es recordar que **$y$ es una función de $x$** ($y = f(x)$). Por lo tanto, cada vez que derives un término que tenga $y$, debes aplicar la **Regla de la Cadena** y multiplicar por $y'$ (o $\frac{dy}{dx}$).
 
-**Ejemplo:**
-\[cite\_start]La función $f(x) = |x|$ no es diferenciable en $x=0$, ya que los límites laterales no coinciden\[cite: 1558]:
-$$\lim\_{x \rightarrow 0^{-}} \frac{f(x) - f(0)}{x - 0} = \lim\_{x \rightarrow 0^{-}} \frac{|x|}{x} = \lim\_{x \rightarrow 0^{-}} \frac{-x}{x} = -1$$
-$$\lim\_{x \rightarrow 0^{+}} \frac{f(x) - f(0)}{x - 0} = \lim\_{x \rightarrow 0^{+}} \frac{|x|}{x} = \lim\_{x \rightarrow 0^{+}} \frac{x}{x} = 1$$
+* Si derivas $x^2$ respecto a $x$, obtienes $2x$.
+* Si derivas $y^2$ respecto a $x$, obtienes $2y \cdot y'$.
 
-### Relación entre diferenciabilidad y continuidad
 
-Existe una estrecha relación entre la diferenciabilidad y la continuidad de una función.
 
-**Teorema**
-Si una función $f$ es diferenciable en un punto $a$, entonces $f$ es continua en $a$.
+---
 
-**Demostración**
-Para probar que $f$ es continua en $a$, debemos demostrar que $\lim\_{x \rightarrow a} f(x) = f(a)$, o equivalentemente, que $\lim\_{x \rightarrow a} (f(x) - f(a)) = 0$.
-Consideremos la expresión:
-$$f(x) - f(a) = \frac{f(x) - f(a)}{x - a} \cdot (x - a)$$
-Aplicando el límite cuando $x \rightarrow a$ a ambos lados, y teniendo en cuenta que el límite de un producto es el producto de los límites (si existen):
-$$\lim\_{x \rightarrow a} (f(x) - f(a)) = \lim\_{x \rightarrow a} \left( \frac{f(x) - f(a)}{x - a} \right) \cdot \lim\_{x \rightarrow a} (x - a)$$
-Como $f$ es diferenciable en $a$, $\lim\_{x \rightarrow a} \frac{f(x) - f(a)}{x - a} = f'(a)$ (existe). Además, $\lim\_{x \rightarrow a} (x - a) = a - a = 0$.
-Por lo tanto:
-$$\lim\_{x \rightarrow a} (f(x) - f(a)) = f'(a) \cdot 0 = 0$$
-Lo que demuestra que $f$ es continua en $a$.
+## 2. Pasos para Derivar Implícitamente
 
-**Nota**
-El recíproco del teorema anterior no es cierto. Es decir, una función puede ser continua en un punto $a$ pero no ser diferenciable en $a$. El ejemplo típico es $f(x) = |x|$ en $x=0$.
+1.  **Derivar ambos lados** de la ecuación respecto a $x$.
+2.  **Seguimiento de $y$:** Cada vez que derives $y$, añade un $y'$ al lado.
+3.  **Agrupar:** Coloca todos los términos que tengan $y'$ de un lado de la igualdad y los que no del otro.
+4.  **Factorizar:** Saca factor común $y'$.
+5.  **Despejar:** Deja sola a la $y'$.
 
-### Diferenciales
+---
 
-**Diferencial**
-Dado un intervalo $I \subseteq \mathbb{R}$ y una función $f: I \rightarrow \mathbb{R}$ diferenciable en $a \in I$, se define el diferencial de $f$ en $a$, y se denota $df(a)$, a la aplicación lineal:
-$$df(a): \mathbb{R} \rightarrow \mathbb{R}$$
-$$h \mapsto f'(a)h$$
-De esta manera, el diferencial de $f$ en $a$ puede utilizarse para aproximar el incremento de $f$ en un entorno de $a$:
-$$\Delta y = f(a + h) - f(a) \approx f'(a)h$$
-Si tomamos la función identidad $y = x$, su derivada es $f'(x) = 1$. Por tanto, el diferencial de $y=x$ es $dx(a): h \mapsto 1 \cdot h = h$. Se tiene así que:
-$$\Delta y \approx f'(a) \Delta x$$
+## 3. Ejemplo Paso a Paso: El Círculo
 
-**Ejemplo:**
-Consideremos la función $f(x) = x^2$. Queremos aproximar el incremento que sufre $f$ cuando $x$ pasa de $a=10$ a $x=10.1$, es decir, $\Delta x = 0.1$.
-La derivada es $f'(x) = 2x$, por lo que $f'(10) = 2(10) = 20$.
-El incremento real es $\Delta y = f(10.1) - f(10) = (10.1)^2 - 10^2 = 102.01 - 100 = 2.01$.
-La aproximación con el diferencial es $\Delta y \approx f'(10) \Delta x = 20(0.1) = 2$.
-El error de la aproximación es $|2.01 - 2| = 0.01$
+Hallemos la pendiente de la recta tangente en el círculo $x^2 + y^2 = 25$.
 
-**Recta tangente a la gráfica de una función**
-Dado un intervalo $I \subseteq \mathbb{R}$, una función $f: I \rightarrow \mathbb{R}$ diferenciable en $a \in I$, se llama recta tangente a la gráfica de $f$ en el punto $(a, f(a))$ a la recta de ecuación:
-$$y - f(a) = f'(a)(x - a)$$
+**Paso 1: Derivamos todo respecto a $x$**
+$$\frac{d}{dx}(x^2) + \frac{d}{dx}(y^2) = \frac{d}{dx}(25)$$
+$$2x + 2y \cdot y' = 0$$
 
-## Regla de la cadena
+**Paso 2: Despejamos $y'$**
+1. Movemos el $2x$: $2y \cdot y' = -2x$
+2. Pasamos el $2y$ dividiendo: $y' = \frac{-2x}{2y}$
+3. Simplificamos:
+$$y' = -\frac{x}{y}$$
 
-El resultado anterior permite calcular la derivada de cualquier función algebraica. A continuación se presenta otro importante resultado que nos permitirá calcular la derivada de una composición de funciones.
 
-### Regla de la cadena
 
-Dados dos intervalos $I, J \subset \mathbb{R}$ y dos funciones\
-$f : I \to \mathbb{R}$ y $g : J \to \mathbb{R}$ tales que $f(I) \subset J$, si $f$ es diferenciable en $a \in I$ y $g$ es diferenciable en $f(a)$, entonces $g \circ f$ es diferenciable en $a$ y
+---
 
-$(g \circ f)'(a) = g'(f(a)),f'(a)$.
+## 4. Ejemplo con Regla del Producto
+A veces $x$ e $y$ están multiplicándose, como en $x \cdot y = 10$.
 
-### Demostración
+1.  **Aplicamos regla del producto:** $(derivada \, de \, x \cdot y) + (x \cdot derivada \, de \, y) = 0$
+2.  $(1 \cdot y) + (x \cdot y') = 0$
+3.  $y + x \cdot y' = 0$
+4.  **Resultado:** $y' = -\frac{y}{x}$
 
-Sea
+---
 
-$h(y) =
-\begin{cases}
-\dfrac{g(y)-g(f(a))}{y-f(a)} & \text{si } y \in J \text{ y } y \neq f(a), \\
-g'(f(a)) & \text{si } y = f(a).
-\end{cases}$
+## 5. Aplicación en Física: Movimiento Relacionado
 
-Veamos que $h$ es continua en $f(a)$. Como $g$ es diferenciable en $f(a)$, se tiene que
+Este método es el corazón de los problemas de **Razones de Cambio Relacionadas**. 
 
-$\lim\_{y \to f(a)} h(y) = g'(f(a))$,
+* **Ejemplo:** Si una escalera resbala por una pared, la distancia al suelo ($x$) y la altura ($y$) cambian al mismo tiempo. Al derivar implícitamente la ecuación de Pitágoras $x^2 + y^2 = L^2$ respecto al tiempo ($t$), podemos saber qué tan rápido cae la escalera si sabemos qué tan rápido se aleja de la pared.
 
-de modo que para cualquier $\varepsilon > 0$ existe $\delta > 0$ tal que, si\
-$|y - f(a)| \< \delta$, entonces
+$$2x\frac{dx}{dt} + 2y\frac{dy}{dt} = 0$$
 
-$|h(y) - g'(f(a))| \< \varepsilon$.
+# Derivación Logarítmica
 
-Si $y \neq f(a)$ y $|y - f(a)| \< \delta$, entonces
+Cuando tenemos funciones de la forma $y = f(x)^{g(x)}$, las reglas comunes de potencia o de exponencial no funcionan por separado. Necesitamos bajar el exponente usando las propiedades de los logaritmos.
 
-$|g(y) - g(f(a)) - g'(f(a))(y - f(a))|
-\= |y - f(a)|,|h(y) - g'(f(a))|
-\< \varepsilon |y - f(a)|$.
+---
 
-Por otro lado, si $y = f(a)$, la desigualdad anterior se cumple trivialmente. Por tanto, la función $g$ es continua en $f(a)$ y
+## 1. El Proceso Paso a Paso
 
-$\lim\_{x \to a} h(f(x)) = h(f(a)) = g'(f(a))$.
+Para derivar una función complicada $y = f(x)$:
 
-De la definición de derivada se tiene que
+1.  **Aplicar Logaritmo Natural ($\ln$):** Lo aplicamos a ambos lados de la igualdad: $\ln(y) = \ln(f(x))$.
+2.  **Bajar el exponente:** Usamos la propiedad $\ln(a^b) = b \cdot \ln(a)$.
+3.  **Derivar Implícitamente:** Derivamos ambos lados respecto a $x$. Recuerda que la derivada de $\ln(y)$ siempre es $\frac{y'}{y}$.
+4.  **Despejar $y'$:** Pasamos la $y$ multiplicando al otro lado.
+5.  **Sustituir $y$:** Reemplazamos $y$ por su función original.
 
-$(g \circ f)'(a)
-\= \lim\_{x \to a} \dfrac{g(f(x)) - g(f(a))}{x - a}
-\= \lim\_{x \to a} h(f(x)) \dfrac{f(x) - f(a)}{x - a}
-\= h(f(a)),f'(a)
-\= g'(f(a)),f'(a)$.
+---
 
-### Nota
+## 2. Ejemplo Clásico: $y = x^x$
 
-La demostración es mucho más sencilla usando la notación diferencial de Leibniz para la derivada. Si $y = g(z)$ y $z = f(x)$, entonces
+Este es el ejemplo que siempre aparece en los exámenes porque no se puede resolver con la regla de la potencia ($x^n$).
 
-$\dfrac{dy}{dx} = \dfrac{dy}{dz}\dfrac{dz}{dx}
-\= g'(z),f'(x)$.
+**Paso 1: Aplicamos $\ln$**
+$$\ln(y) = \ln(x^x)$$
 
-### Ejemplo:
+**Paso 2: Bajamos la $x$ del exponente**
+$$\ln(y) = x \cdot \ln(x)$$
 
-Si $g(x) = \sin(x)$ y $f(x) = x^2$, entonces $g \circ f(x) = \sin(x^2)$ y, aplicando la regla de la cadena, su derivada vale
+**Paso 3: Derivamos a ambos lados**
+* A la izquierda: $\frac{y'}{y}$
+* A la derecha (Regla del Producto): $(1 \cdot \ln(x)) + (x \cdot \frac{1}{x}) = \ln(x) + 1$
+$$\frac{y'}{y} = \ln(x) + 1$$
 
-$(g \circ f)'(x) = g'(f(x)),f'(x)
-\= \cos(x^2),2x$.
+**Paso 4: Despejamos $y'$**
+$$y' = y \cdot (\ln(x) + 1)$$
 
-Por otro lado, si $g(x) = (\sin(x))^2$, de nuevo aplicando la regla de la cadena, su derivada vale
+**Paso 5: Sustituimos $y$ por el valor original ($x^x$)**
+$$y' = x^x \cdot (\ln(x) + 1)$$
 
-$(g \circ f)'(x)
-\= f'(g(x)),g'(x)
-\= 2g(x)\cos(x)
-\= 2\sin(x)\cos(x)$.
+
+
+---
+
+## 3. ¿Cuándo usar este método?
+
+Existen dos casos principales donde este truco te salvará la vida:
+
+### Caso A: Base y Exponente con variables
+Como el ejemplo anterior ($x^x$, $(\sin x)^x$, etc.). Es la única forma de resolverlos.
+
+### Caso B: Funciones muy largas (Simplificación)
+Si tienes algo como $y = \frac{(x+1)^2 \cdot \sqrt{x-2}}{(x+3)^5}$, derivar eso por la regla del cociente es una pesadilla. Si aplicas logaritmos, las multiplicaciones se vuelven sumas y las potencias pasan a multiplicar:
+$$\ln(y) = 2\ln(x+1) + \frac{1}{2}\ln(x-2) - 5\ln(x+3)$$
+¡Ahora derivar es mucho más fácil!
+
+
+
+---
+
+## 4. Resumen de Propiedades Clave
+
+Para este método, debes dominar estas 3 reglas de los logaritmos:
+1.  **Producto:** $\ln(A \cdot B) = \ln A + \ln B$
+2.  **Cociente:** $\ln(A / B) = \ln A - \ln B$
+3.  **Potencia:** $\ln(A^n) = n \cdot \ln A$
+   
+
+   # Análisis de Funciones: Monotonía, Concavidad y Puntos Clave
+
+El uso de la primera y segunda derivada nos permite conocer la "anatomía" de una función sin necesidad de graficar punto por punto.
+
+---
+
+## 1. El Análisis de la Primera Derivada ($f'$)
+La primera derivada nos indica la **pendiente**. Su signo nos dice si la función sube o baja.
+
+### A. Monotonía (Crecimiento y Decrecimiento)
+* Si **$f'(x) > 0$**, la función es **creciente** (sube).
+* Si **$f'(x) < 0$**, la función es **decreciente** (baja).
+
+### B. Puntos Críticos y Extremos Relativos
+Los puntos críticos ocurren donde **$f'(x) = 0$** (la tangente es horizontal) o donde no existe la derivada.
+* **Máximo relativo:** Si la función pasa de crecer a decrecer (+ a -).
+* **Mínimo relativo:** Si la función pasa de decrecer a crecer (- a +).
+
+[Image: Graph showing intervals of increase/decrease and labeled local maxima and minima]
+
+---
+
+## 2. El Análisis de la Segunda Derivada ($f''$)
+La segunda derivada nos indica la **curvatura** de la función.
+
+### A. Concavidad
+* Si **$f''(x) > 0$**, la función es **Cóncava hacia arriba** (forma de "U" o sonrisa).
+* Si **$f''(x) < 0$**, la función es **Cóncava hacia abajo** (forma de "n" o tristeza).
+
+### B. Puntos de Inflexión
+Es el punto exacto donde la función **cambia su concavidad** (pasa de "U" a "n" o viceversa).
+* Se encuentra igualando la segunda derivada a cero: **$f''(x) = 0$**.
+
+[Image: Visual comparison of concave up vs concave down and the inflection point in between]
+
+---
+
+## 3. Resumen de Criterios
+
+| Elemento | Condición | Qué nos dice |
+| :--- | :--- | :--- |
+| **Crecimiento** | $f'(x) > 0$ | La función sube. |
+| **Decrecimiento** | $f'(x) < 0$ | La función baja. |
+| **Máximo/Mínimo** | $f'(x) = 0$ | Posible cima o valle. |
+| **Cóncava ($\cup$)** | $f''(x) > 0$ | Curva abierta hacia arriba. |
+| **Convexa ($\cap$)** | $f''(x) < 0$ | Curva abierta hacia abajo. |
+| **Pto. Inflexión** | $f''(x) = 0$ | Cambio de curvatura. |
+
+---
+
+## 4. Ejemplo Práctico: $f(x) = x^3 - 3x$
+
+1. **Derivamos:** $f'(x) = 3x^2 - 3$.
+2. **Puntos Críticos ($f'=0$):** $3x^2 - 3 = 0 \implies x^2 = 1 \implies x = 1, x = -1$.
+3. **Segunda Derivada:** $f''(x) = 6x$.
+4. **Evaluamos Concavidad:**
+   * En $x = 1$: $f''(1) = 6$ (> 0). Es un **Mínimo** (cóncava hacia arriba).
+   * En $x = -1$: $f''(-1) = -6$ (< 0). Es un **Máximo** (cóncava hacia abajo).
+5. **Punto de Inflexión:** $6x = 0 \implies x = 0$. En el origen la curva cambia de forma.
+
+[Image: Complete graph of x^3 - 3x with all points and concavities labeled]
+
+---
+
+## 5. Aplicación: ¿Para qué sirve esto?
+En física y economía, esto es vital:
+* El **punto de inflexión** en una curva de contagios indica cuándo la velocidad de propagación empieza a frenarse.
+* En **optimización**, los máximos y mínimos nos dicen el beneficio más alto o el costo más bajo (como ya vimos en tu archivo de optimización).

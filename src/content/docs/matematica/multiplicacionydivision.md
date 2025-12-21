@@ -2,49 +2,61 @@
 title: Multiplicación y división
 ---
 
-### 1.2.1. Multiplicación
+# Multiplicación y División de Fracciones 🍕
 
-En la expresión "tres cuartos de hora son cuarenta y cinco minutos", el resultado se puede obtener mediante la multiplicación:
+Multiplicar y dividir fracciones es, curiosamente, ¡mucho más fácil que sumarlas! No necesitas buscar un denominador común; solo sigues un camino directo.
 
-$$\frac{3}{4} \times 1 \text{ hora} = \frac{3}{4} \times 60 \text{ minutos} = 3 \times 15 \text{ minutos} = 45 \text{ minutos}$$
-Mediante una multiplicación se contesta la pregunta: ¿cuántas mujeres hay en un grupo de treinta y seis personas si ellas constituyen las dos terceras partes del grupo?
+---
 
-$$\frac{2}{3} \times 36 = 2 \times \frac{36}{3} = 2 \times 12 = 24$$
+## 1. Multiplicación: El camino de frente
+Para multiplicar dos fracciones, solo tienes que multiplicar los números de arriba (numeradores) y los de abajo (denominadores) en línea recta.
 
-En el grupo hay 24 mujeres.
+**La Regla:**
+$$\frac{a}{b} \cdot \frac{c}{d} = \frac{a \cdot c}{b \cdot d}$$
 
-El perímetro de un cierto rectángulo es $p$. El perímetro de otro rectángulo que es el triple del anterior también se puede representar con una multiplicación:
+**Ejemplo:** Tienes $\frac{1}{2}$ de una pizza y quieres la mitad de eso ($\frac{1}{2}$).
+$$\frac{1}{2} \cdot \frac{1}{2} = \frac{1 \cdot 1}{2 \cdot 2} = \frac{1}{4}$$
+*Resultado:* La mitad de la mitad es un cuarto.
 
-$$3 \times p = 3p$$
 
-Observe que en las situaciones anteriores la preposición **de** se ha traducido aritméticamente en una multiplicación.
 
-### EJEMPLOS
+---
 
-1. Los tres quintos de 50 son: $\frac{3}{5} \times 50 = 30$
-2. El 20% de 60 es: $\frac{20}{100} \times 60 = 12$
+## 2. División: El salto de la "X"
+Dividir fracciones es como multiplicar, pero de forma cruzada. También puedes pensar en ello como "darle la vuelta" a la segunda fracción y luego multiplicar normal.
 
-### 1.2.3. División
+**La Regla (Multiplicación Cruzada):**
+$$\frac{a}{b} \div \frac{c}{d} = \frac{a \cdot d}{b \cdot c}$$
 
-Para repartir $\frac{3}{4}$ de litro en tres partes iguales es claro que cada uno es de $\frac{1}{4}$ de litro. Lo anterior se puede obtener mediante la división: $\frac{3}{4} \div 3$, lo cual equivale a buscar la tercera parte, es decir, multiplicar por $\frac{1}{3}$ (el recíproco de 3) a:
+**Ejemplo:** $\frac{3}{4} \div \frac{1}{2}$
+1. Multiplicas el de arriba del primero por el de abajo del segundo: $3 \cdot 2 = 6$.
+2. Multiplicas el de abajo del primero por el de arriba del segundo: $4 \cdot 1 = 4$.
+*Resultado:* $\frac{6}{4}$, que si lo simplificas es $\frac{3}{2}$ (una pizza y media).
 
-$$\frac{3}{4} \div 3 = \frac{3}{4} \times \frac{1}{3} = \frac{1}{4}$$
 
-Para dividir dos fracciones, se utiliza la siguiente regla general:
 
-$$\frac{a}{b} \div \frac{c}{d} = \frac{a}{b} \times \frac{d}{c}$$
+---
 
-***
+## 3. ¿Qué significan estos números?
 
-### EJERCICIO 13
+* **El Numerador (arriba):** Cuántos pedazos tienes.
+* **El Denominador (abajo):** En cuántos pedazos cortaste el total.
 
-**Efectúe:**
+> **Truco de la Vida Real:** Multiplicar por una fracción pequeña (como $1/2$) es lo mismo que **dividir**. Multiplicar por $1/2$ es lo mismo que dividir por $2$.
 
-1. $\frac{2}{21} \div \frac{8}{7}$
-2. $-\frac{3}{11} \div \frac{12}{22}$
-3. $\left(-\frac{3}{7}\right) \div \left(-\frac{7}{3}\right)$
-4. $\left(\frac{2}{9}\right) \div 18$
-5. $-\frac{5}{4} \div \frac{5}{4}$
-6. $\left(\frac{2}{3} \div \frac{3}{4}\right) \div \left(\frac{35}{2} \div \frac{28}{3}\right)$
-7. $\left(-\frac{5}{4} \div \frac{1}{2}\right) \div \left(-\frac{3}{7} \div -\frac{6}{5}\right)$
-8. $\left(3\frac{4}{5} \div 1\frac{3}{10}\right) \div \left(-1\frac{2}{3} \div 2\frac{2}{9}\right)$
+---
+
+## 4. Multiplicación de Fracción por un Entero
+Si quieres multiplicar un número entero (como $5$) por una fracción (como $2/3$), imagina que el entero tiene un **1** invisible debajo.
+
+**Ejemplo:** $5 \cdot \frac{2}{3} \rightarrow \frac{5}{1} \cdot \frac{2}{3} = \frac{10}{3}$
+
+---
+
+## 5. ¡A Practicar!
+Si tienes **3 chocolates** y quieres darle **1/4** de chocolate a cada amigo, ¿a cuántos amigos puedes invitar?
+Esto es una división: $3 \div \frac{1}{4}$.
+
+1. Convertimos el 3 en fracción: $\frac{3}{1}$.
+2. Multiplicamos cruzado: $\frac{3 \cdot 4}{1 \cdot 1} = 12$.
+**¡Puedes invitar a 12 amigos!**
