@@ -130,7 +130,12 @@ window.dataLayer = window.dataLayer || [];
     label: "Proyectos",
    items: [
       { label: "Emprendedurismo",  items: [
+      { label: "Reciclaje",  items: [
+    { label: "Oro",  items: [
+    'proyectos/emprendedurismo/reciclaje/oro/recuperaciondeoroelectronico'
 
+    ],},
+    ],},
     ],},
     
     { label: "Robot Opencv",  items: [
@@ -149,7 +154,6 @@ window.dataLayer = window.dataLayer || [];
         'fisica/conceptosbasicos/cinematica',
         'fisica/conceptosbasicos/arquimedesyflotabilidad',
         'fisica/conceptosbasicos/dinamica',
-        'fisica/conceptosbasicos/cristalizacionsedimentacioncoloides',
         'fisica/conceptosbasicos/solidoliquidogas',
         'fisica/conceptosbasicos/traccionycompresion',
         'fisica/conceptosbasicos/torqueinercia',
@@ -201,7 +205,8 @@ window.dataLayer = window.dataLayer || [];
          'quimica/general/endotermiaexotermia',
          'quimica/general/combustion',
          'quimica/general/catalizacion',
-         'quimica/general/cristalizacion',
+         'quimica/general/cristalizacionsedimentacioncoloides',
+
       
 
     ],},

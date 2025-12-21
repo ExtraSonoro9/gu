@@ -1,5 +1,5 @@
 ---
-title: A
+title: Material de Laboratorio
 
 
 ---
