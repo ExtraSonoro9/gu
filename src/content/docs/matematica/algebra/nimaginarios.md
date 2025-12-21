@@ -1,43 +1,80 @@
 ---
 title: Números Imaginarios
 ---
+# Números Imaginarios y Complejos
 
-Definición de número complejo
+Los números complejos ($ \mathbb{C} $) surgen de la necesidad de resolver ecuaciones como $x^2 + 1 = 0$. Se definen mediante la unidad imaginaria $i$.
 
-Un número complejo z
+---
 
-se define como un par ordenado de números reales:
+## 1. Definiciones Básicas
+* **Unidad Imaginaria:** Se define como $i = \sqrt{-1}$, por lo tanto $i^2 = -1$.
+* **Número Complejo:** Tiene la forma $z = a + bi$.
+    * **$a$**: Parte Real ($Re$).
+    * **$bi$**: Parte Imaginaria ($Im$).
 
-z=(a,b)cona,b∈R
+### Potencias de $i$
+Las potencias de $i$ son cíclicas cada 4 valores:
+* $i^1 = i$
+* $i^2 = -1$
+* $i^3 = -i$
+* $i^4 = 1$
 
-donde el primer elemento del par ordenado se llama parte real del número complejo, y el segundo elemento se llama parte imaginaria:
 
-Re(z)=a
 
-Im(z)=b
+---
 
-En los números complejos se definen las siguientes operaciones:
+## 2. Operaciones en Forma Binómica
+Sean $z_1 = a + bi$ y $z_2 = c + di$:
 
-(a,b)+(c,d)=(a+c,b+d)
+* **Suma/Resta:** Se suman partes reales con reales e imaginarias con imaginarias.
+  $(a + bi) + (c + di) = (a+c) + (b+d)i$
+* **Multiplicación:** Se aplica propiedad distributiva recordando que $i^2 = -1$.
+  $(a + bi)(c + di) = (ac - bd) + (ad + bc)i$
+* **Conjugado ($\bar{z}$):** Si $z = a + bi$, entonces $\bar{z} = a - bi$. Es fundamental para la división.
 
-(a,b).(c,d)=(ac–bd,ad+bc)
+---
 
-Con estas operaciones, puede demostrarse que el conjunto de los números complejos tiene las mismas propiedades que los reales con la suma y el producto. No nos extenderemos desarrollando esta cuestión algebraica porque en la práctica lo usual es operar con otras expresiones de los números complejos, como veremos a continuación.
+## 3. Representación Polar y Exponencial
+Un número complejo puede verse como un vector en el plano complejo (Plano de Argand).
 
-Podemos identificar de manera natural los complejos de parte imaginaria nula con los números reales.
+* **Módulo ($r$):** La distancia al origen. $r = \sqrt{a^2 + b^2}$ (Pitágoras).
+* **Argumento ($\theta$):** El ángulo respecto al eje real. $\theta = \arctan(b/a)$.
 
-Por otra parte, los números de parte real nula: z=(0,b) se denominan imaginarios puros. Se define la unidad imaginaria:
 
-$$ i = \left( {0,1} \right)\\;\\;\\;\\;unidad\\;imaginaria $$
 
-Podemos entonces deducir otra forma de expresar un número complejo:
+---
 
-numero complejo forma binomica
+## 4. La Identidad de Euler
+Es considerada la fórmula más bella de las matemáticas porque conecta cinco números fundamentales ($0, 1, e, i, \pi$).
 
-$$ z = a + bi\\;\\;\\;\\;\\;\\;\\;\\;forma\\;binómica\\; $$
+**Forma Exponencial de un complejo:**
+$$z = r \cdot e^{i\theta} = r(\cos \theta + i\sin \theta)$$
 
-Observación: en algunos textos de Física y de Ingeniería la unidad imaginaria se designa como j , para no confundir con la i
+### El caso especial:
+Cuando $r = 1$ y $\theta = \pi$, obtenemos la **Identidad de Euler**:
+$$e^{i\pi} + 1 = 0$$
 
-que suele indicar la intensidad de corriente eléctrica.
+> **Deducción:** $e^{i\pi} = \cos(\pi) + i\sin(\pi) = -1 + i(0) = -1$.
 
-Dado que hemos definido un número complejo como un par ordenado de números reales, es natural interpretarlo como un punto del plano. En el eje de abscisas (eje real) ubicaremos los complejos de parte imaginaria nula. Y en el eje de ordenadas (eje imaginario) ubicaremos los imaginarios puros:
+---
+
+## 5. Ejemplos de Uso
+
+### Ejemplo 1: Multiplicación
+$(2 + 3i)(1 - 2i)$
+1. $2(1) - 4i + 3i - 6i^2$
+2. $2 - i - 6(-1)$
+3. $2 - i + 6 = 8 - i$
+
+### Ejemplo 2: De Binómica a Polar
+Sea $z = 1 + i$:
+1. $r = \sqrt{1^2 + 1^2} = \sqrt{2}$
+2. $\theta = \arctan(1/1) = 45^\circ$ o $\pi/4$ rad.
+3. **Exponencial:** $z = \sqrt{2} e^{i\frac{\pi}{4}}$
+
+---
+
+## 6. Aplicación en la Vida Real
+* **Electrónica:** En corriente alterna, se usan **fasores** (complejos en forma exponencial) para representar voltajes e impedancias. Es mucho más fácil multiplicar complejos que resolver ecuaciones diferenciales de senos y cosenos.
+* **Fractales:** El conjunto de Mandelbrot se genera iterando funciones en el plano complejo.
