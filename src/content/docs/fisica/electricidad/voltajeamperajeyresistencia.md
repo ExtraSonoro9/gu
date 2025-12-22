@@ -3,7 +3,7 @@ title: Voltaje, Amperaje y Resistencia
 
 
 ---
-# La Ley de Ohm y la Proporcionalidad Inversa
+## La Ley de Ohm y la Proporcionalidad Inversa
 
 La Ley de Ohm establece la relación fundamental entre las tres magnitudes básicas de la electricidad. Es la "ecuación de estado" de los circuitos eléctricos.
 

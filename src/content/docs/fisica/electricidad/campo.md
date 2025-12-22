@@ -3,7 +3,7 @@ title: Campos
 
 
 ---
-# El Campo Eléctrico y el Flujo de Energía Real
+## El Campo Eléctrico y el Flujo de Energía Real
 
 Para entender la electricidad, debemos dejar de mirar el cable y empezar a mirar el **espacio alrededor** de él. La energía no es transportada por electrones que chocan; es transportada por campos que oscilan.
 
