@@ -3,7 +3,7 @@ title: Palanca
 
 
 ---
-# Las Palancas: Máquinas Simples
+
 
 Una palanca es una barra rígida que puede girar sobre un punto de apoyo (fulcro). Permite aplicar una fuerza pequeña para vencer una resistencia grande, o para ganar distancia y velocidad.
 

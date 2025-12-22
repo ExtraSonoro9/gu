@@ -2,7 +2,7 @@
 title: Matrices
 ---
 
-# Matrices: Estructuras de Datos y Sistemas
+
 
 Una **matriz** es un conjunto bidimensional de números organizados en filas ($m$) y columnas ($n$). Es la herramienta fundamental para manejar grandes volúmenes de datos simultáneamente.
 

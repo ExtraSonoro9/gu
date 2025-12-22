@@ -1,9 +1,9 @@
 ---
-title: Cinemática
+title: Cinemática Lineal y Angular
 
 
 ---
-# Cinemática Lineal y Angular
+
 
 El movimiento puede ocurrir en línea recta o siguiendo una trayectoria circular. Ambos tipos de movimiento comparten la misma lógica matemática, pero usan unidades diferentes.
 

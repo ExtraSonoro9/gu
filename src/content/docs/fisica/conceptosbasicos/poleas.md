@@ -3,7 +3,7 @@ title: Poleas
 
 
 ---
-# Sistemas de Transmisión: Poleas y Engranajes (Detallado)
+
 
 Estos sistemas son la base de la ingeniería mecánica. Su función principal es transformar las variables de un movimiento circular: **Velocidad ($n$)** y **Par motor o Torque ($M$)**.
 

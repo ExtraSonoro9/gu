@@ -3,7 +3,7 @@ title: Teorema de Tales
 
 
 ---
-# Teorema de Tales y Relaciones Angulares
+
 
 El Teorema de Tales establece que si tres o más rectas paralelas son cortadas por dos transversales, los segmentos determinados en una de ellas son proporcionales a los segmentos correspondientes en la otra.
 

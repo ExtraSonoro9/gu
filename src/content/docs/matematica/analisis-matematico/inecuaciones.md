@@ -1,7 +1,7 @@
 ---
 title: Inecuaciones
 ---
-# Inecuaciones: El mundo de las desigualdades
+
 
 Una inecuación es una desigualdad matemática entre dos expresiones. En lugar de un signo "=", usamos:
 * `<` (Menor que)

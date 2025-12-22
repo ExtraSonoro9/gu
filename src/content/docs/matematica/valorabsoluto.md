@@ -1,7 +1,7 @@
 ---
 title: Valor Absoluto
 ---
-# Valor Absoluto: La Distancia al Cero $|x|$
+
 
 El valor absoluto de un número es su distancia respecto al cero en la recta numérica, sin importar la dirección (si es positivo o negativo).
 

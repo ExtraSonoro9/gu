@@ -2,7 +2,6 @@
 title: Hipérbola
 
 ---
-# La Hipérbola: Geometría y Proporcionalidad Inversa
 
 La hipérbola es el lugar geométrico de los puntos cuya diferencia de distancias a dos puntos fijos (focos) es constante. En el mundo de las funciones, representa la relación de proporcionalidad inversa.
 

@@ -3,7 +3,7 @@ title: Polinomios y formas de encontrar sus raíces
 
 
 ---
-# Raíces de un Polinomio: Relaciones de Vieta
+
 
 Cuando tenemos un polinomio, existe una conexión directa y "mágica" entre sus coeficientes y la suma o producto de sus raíces. Estas son las llamadas **Relaciones de Vieta**.
 

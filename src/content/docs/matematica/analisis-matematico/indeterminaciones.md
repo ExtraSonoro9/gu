@@ -2,7 +2,7 @@
 title: Indeterminaciones
 ---
 
-# Resolución de Indeterminaciones por Métodos Algebraicos
+ 
 
 Antes de usar L'Hôpital, existen métodos clásicos basados en manipular la expresión para "cancelar" lo que causa el problema.
 

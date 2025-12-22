@@ -1,9 +1,9 @@
 ---
-title: Ley de Hook
+title: Ley de Hooke y Elasticidad de Resortes
 
 
 ---
-# Ley de Hooke y Elasticidad de Resortes
+
 
 La ley de Hooke explica cómo los objetos sólidos responden a las fuerzas de tracción y compresión. Es la base para el diseño de amortiguadores, básculas y estructuras de ingeniería.
 

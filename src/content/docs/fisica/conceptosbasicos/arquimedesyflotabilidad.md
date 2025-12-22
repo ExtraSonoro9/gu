@@ -1,9 +1,9 @@
 ---
-title: Principio de Arquimedes
+title: Principio de Arquímedes
 
 
 ---
-# Principio de Arquímedes
+
 
 El principio establece que: *"Todo cuerpo sumergido total o parcialmente en un fluido experimenta un empuje vertical hacia arriba igual al peso del volumen del fluido que desaloja"*.
 

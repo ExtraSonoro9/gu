@@ -3,7 +3,7 @@
 title: Sumatoria
 ---
 
-# La Sumatoria ($\Sigma$)
+
 
 La sumatoria es un operador matemático que permite representar la suma de muchos sumandos, incluso infinitos, de manera abreviada.
 

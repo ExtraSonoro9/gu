@@ -3,7 +3,7 @@ title: Densidad, peso y masa
 
 
 ---
-# Masa, Peso y Densidad
+
 
 Estos tres conceptos describen la materia y cómo interactúa con el espacio y las fuerzas gravitatorias.
 

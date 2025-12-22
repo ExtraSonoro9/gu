@@ -138,11 +138,26 @@ window.dataLayer = window.dataLayer || [];
     ],},
     ],},
     
-    { label: "Robot Opencv",  items: [
-        
+    { label: "Robot Opencv --casero--",  items: [
+        'proyectos/robotopencv/robotopencv'
+    ],},    
+    { label: "Expendedora QR --casera--",  items: [
+       'proyectos/expendedoraqr/maquinaexpendedoraqr'
     ],},
-    'proyectos/maquinaexpendedoraqr'
-   
+      
+    { label: "Espectrómetros --casero--",  items: [
+        'proyectos/espectrometro/espectrometro'
+    ],},
+      
+    { label: "ECG casero",  items: [
+      'proyectos/ecg/ecgconlibreriaspropias'
+    ],},
+        
+    { label: "Prótesis electrónica",  items: [
+        'proyectos/protesiselectronica/protesiselectronica',
+    ],},
+  
+  
   
     ],
   },
@@ -165,20 +180,34 @@ window.dataLayer = window.dataLayer || [];
         'fisica/conceptosbasicos/leydehook',
         'fisica/conceptosbasicos/hidraulica',
         'fisica/conceptosbasicos/friccion',
-        'fisica/conceptosbasicos/cifrasignmagnitudesherramientas',
+        'fisica/conceptosbasicos/fuerza',
+        'fisica/conceptosbasicos/energia',
+        'fisica/conceptosbasicos/transformaciongalileo',
 
     ],},
 
     { label: "Electricidad",  items: [
       'fisica/electricidad/campo',
       'fisica/electricidad/voltajeamperajeyresistencia',
+      'fisica/electricidad/diodos',
+      'fisica/electricidad/transistores',
+
 
          ],},
     
     { label: "Termodinámica",  items: [
       'fisica/termodinamica/calor',
          
+    ],},
+    { label: "Ondas y particulas",  items: [
+      'fisica/ondasyparticulas/ondas',
+
+      'fisica/ondasyparticulas/electromagneticas',
+      'fisica/ondasyparticulas/sonidoyluz',
+      'fisica/ondasyparticulas/transformadas',
+         
     ],}
+  
   
     ],
   },
@@ -268,6 +297,12 @@ window.dataLayer = window.dataLayer || [];
             'matematica/factorizacion',
             'matematica/ecuacioncuadratica',
             'matematica/logaritmos',
+            'matematica/valorabsoluto',
+            'matematica/proporcionalidad',
+            'matematica/notacioncient',
+            'matematica/ecuacioncuadratica',
+            'matematica/notacioncient',
+     
 
            
           ],
@@ -332,6 +367,7 @@ window.dataLayer = window.dataLayer || [];
             'matematica/analisis-matematico/derivadas',
             'matematica/analisis-matematico/tdecontinuidad',
             
+            
         
             'matematica/analisis-matematico/optimizacion',
             'matematica/analisis-matematico/razondecambio',
@@ -342,6 +378,8 @@ window.dataLayer = window.dataLayer || [];
             
             'matematica/analisis-matematico/arealongvolumen',
 
+           
+            'matematica/analisis-matematico/transformadadefourrier',
 
 
 

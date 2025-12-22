@@ -3,7 +3,7 @@ title: Plasma
 
 
 ---
-# El Plasma y la Propulsión Espacial
+
 
 Para entender cómo un cohete puede impulsarse con plasma, primero debemos entender qué es este estado y por qué responde de forma única a la física.
 

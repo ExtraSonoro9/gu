@@ -4,7 +4,7 @@ title: Radicación
 
 ---
 
-# Radicación: ¡El Detective de Números! 🔍
+## ¡El Detective de Números! 🔍
 
 La radicación es la operación inversa a la potenciación. Su símbolo es el radical $\sqrt{ }$.
 

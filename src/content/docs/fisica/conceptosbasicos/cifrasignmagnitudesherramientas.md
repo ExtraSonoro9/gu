@@ -1,9 +1,9 @@
 ---
-title: Magnitudes, cifras significativas y herramientas de medición.
+title: Medición y Cifras Significativas
 
 
 ---
-# Medición y Cifras Significativas
+
 
 En ciencia, medir no es solo obtener un número, sino determinar cuánta **incertidumbre** tiene ese número.
 

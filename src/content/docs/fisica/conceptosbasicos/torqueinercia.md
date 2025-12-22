@@ -3,7 +3,6 @@ title: Torque e Inercia
 
 
 ---
-# Dinámica de Rotación: Torque e Inercia
 
 Para entender el movimiento circular, debemos traducir los conceptos de la física lineal al mundo de los giros.
 

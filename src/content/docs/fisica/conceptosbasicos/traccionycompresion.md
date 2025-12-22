@@ -3,7 +3,7 @@ title: Tracción y Compresión
 
 
 ---
-# Análisis de Esfuerzos: Tracción y Compresión
+
 
 Un esfuerzo axial es aquel que actúa directamente sobre el eje longitudinal de un cuerpo. Dependiendo del sentido de la fuerza, el material responderá de maneras drásticamente diferentes.
 

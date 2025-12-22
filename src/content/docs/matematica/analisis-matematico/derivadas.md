@@ -2,9 +2,58 @@
 title: Derivadas
 ---
 
-# Tabla de Derivadas y Reglas de Cálculo
+## La Definición Formal de la Derivada
 
-Este archivo sirve como guía de referencia rápida para operar con derivadas en problemas de física y análisis.
+La derivada no es solo una fórmula; es un **límite especial** que representa la tasa de cambio instantánea. Matemáticamente, nace de intentar calcular la pendiente de una recta en un solo punto.
+
+---
+
+## 1. El Concepto Geométrico: De Secante a Tangente
+
+Si tenemos dos puntos en una curva, $P(x, f(x))$ y $Q(x+h, f(x+h))$, la pendiente de la recta que los une (secante) es:
+$$m = \frac{\Delta y}{\Delta x} = \frac{f(x+h) - f(x)}{h}$$
+
+Para hallar la pendiente **en un solo punto** (tangente), hacemos que la distancia entre los puntos ($h$) sea lo más pequeña posible, es decir, que tienda a cero.
+
+
+
+---
+
+## 2. La Definición por Límite
+
+La derivada de una función $f(x)$, denotada como $f'(x)$, se define como:
+
+$$f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}$$
+
+Esta expresión se conoce como el **Cociente de Fermat** o Cociente Diferencial.
+
+---
+
+## 3. Demostración Práctica: Derivada de $x^2$
+
+Vamos a demostrar por qué la derivada de $f(x) = x^2$ es $2x$ usando la definición:
+
+1. **Plantear el límite:**
+   $$\lim_{h \to 0} \frac{(x + h)^2 - x^2}{h}$$
+
+2. **Desarrollar el binomio:**
+   $$\lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h}$$
+
+3. **Simplificar términos ($x^2 - x^2 = 0$):**
+   $$\lim_{h \to 0} \frac{2xh + h^2}{h}$$
+
+4. **Factorizar $h$ en el numerador:**
+   $$\lim_{h \to 0} \frac{h(2x + h)}{h}$$
+
+5. **Eliminar la indeterminación ($h/h = 1$):**
+   $$\lim_{h \to 0} (2x + h)$$
+
+6. **Evaluar el límite (hacer $h = 0$):**
+   $$2x + 0 = 2x$$
+
+**Resultado:** Queda demostrado que $f'(x^2) = 2x$.
+
+
 
 ---
 
@@ -261,58 +310,7 @@ En física y economía, esto es vital:
 * El **punto de inflexión** en una curva de contagios indica cuándo la velocidad de propagación empieza a frenarse.
 * En **optimización**, los máximos y mínimos nos dicen el beneficio más alto o el costo más bajo (como ya vimos en tu archivo de optimización).
 
-# La Definición Formal de la Derivada
 
-La derivada no es solo una fórmula; es un **límite especial** que representa la tasa de cambio instantánea. Matemáticamente, nace de intentar calcular la pendiente de una recta en un solo punto.
-
----
-
-## 1. El Concepto Geométrico: De Secante a Tangente
-
-Si tenemos dos puntos en una curva, $P(x, f(x))$ y $Q(x+h, f(x+h))$, la pendiente de la recta que los une (secante) es:
-$$m = \frac{\Delta y}{\Delta x} = \frac{f(x+h) - f(x)}{h}$$
-
-Para hallar la pendiente **en un solo punto** (tangente), hacemos que la distancia entre los puntos ($h$) sea lo más pequeña posible, es decir, que tienda a cero.
-
-
-
----
-
-## 2. La Definición por Límite
-
-La derivada de una función $f(x)$, denotada como $f'(x)$, se define como:
-
-$$f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}$$
-
-Esta expresión se conoce como el **Cociente de Fermat** o Cociente Diferencial.
-
----
-
-## 3. Demostración Práctica: Derivada de $x^2$
-
-Vamos a demostrar por qué la derivada de $f(x) = x^2$ es $2x$ usando la definición:
-
-1. **Plantear el límite:**
-   $$\lim_{h \to 0} \frac{(x + h)^2 - x^2}{h}$$
-
-2. **Desarrollar el binomio:**
-   $$\lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h}$$
-
-3. **Simplificar términos ($x^2 - x^2 = 0$):**
-   $$\lim_{h \to 0} \frac{2xh + h^2}{h}$$
-
-4. **Factorizar $h$ en el numerador:**
-   $$\lim_{h \to 0} \frac{h(2x + h)}{h}$$
-
-5. **Eliminar la indeterminación ($h/h = 1$):**
-   $$\lim_{h \to 0} (2x + h)$$
-
-6. **Evaluar el límite (hacer $h = 0$):**
-   $$2x + 0 = 2x$$
-
-**Resultado:** Queda demostrado que $f'(x^2) = 2x$.
-
----
 
 ## 4. Interpretación de la Notación
 

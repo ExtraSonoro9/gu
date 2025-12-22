@@ -3,7 +3,7 @@ title: Presión
 
 
 ---
-# Presión y el Principio de Pascal
+
 
 En física, la presión no solo depende de cuánta fuerza aplicas, sino de **dónde** y **cómo** la aplicas.
 

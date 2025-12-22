@@ -2,7 +2,7 @@
 title: Multiplicación y división
 ---
 
-# Multiplicación y División de Fracciones 🍕
+
 
 Multiplicar y dividir fracciones es, curiosamente, ¡mucho más fácil que sumarlas! No necesitas buscar un denominador común; solo sigues un camino directo.
 

@@ -1,10 +1,9 @@
 ---
 title: Suma y Resta
 
-
 ---
 
-# Sumas y Restas: ¡Jugando con Números! 🍎
+## ¡Jugando con Números! 🍎
 
 Sumar y restar son las herramientas más importantes. Es como poner cosas en una caja o sacarlas de ella.
 

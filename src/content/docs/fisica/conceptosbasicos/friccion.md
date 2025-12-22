@@ -1,9 +1,9 @@
 ---
-title: Fricción, Fuerza Normal 
+title: Fricción y Resistencia de Fluidos
 
 
 ---
-# Fricción y Resistencia de Fluidos
+
 
 La fricción actúa siempre en sentido opuesto al vector velocidad. Se divide en dos mundos: el contacto entre sólidos y el arrastre en fluidos (aire).
 

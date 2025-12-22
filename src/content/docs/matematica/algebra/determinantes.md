@@ -1,7 +1,7 @@
 ---
 title: Determinantes
 ---
-# Determinantes y Regla de Cramer
+
 
 El determinante es un valor escalar único asociado a una matriz cuadrada que resume muchas de sus propiedades geométricas y algebraicas.
 

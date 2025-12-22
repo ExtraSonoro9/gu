@@ -2,7 +2,7 @@
 title: Integrales
 
 ---
-# El Cálculo Integral: Conceptos, Propiedades y Métodos
+
 
 La integración es el proceso inverso a la derivación. Mientras que la derivada mide la rapidez de cambio, la integral acumula esos cambios para hallar un total (como un área o un volumen).
 

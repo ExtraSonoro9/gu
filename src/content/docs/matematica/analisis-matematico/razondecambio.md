@@ -3,7 +3,7 @@ title: Razón de Cambio
 
 
 ---
-# Razón de Cambio y Derivadas
+
 
 La razón de cambio describe la rapidez con la que una variable cambia en relación con otra. Matemáticamente, la razón de cambio instantánea es la **derivada**.
 

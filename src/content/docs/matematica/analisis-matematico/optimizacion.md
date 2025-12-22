@@ -2,7 +2,6 @@
 title: Optimización
 ---
 
-# Optimización: Área Máxima y Perímetro Mínimo
 
 La optimización busca encontrar los valores máximos o mínimos de una función sujeta a ciertas restricciones. En geometría, esto se traduce en eficiencia de materiales (costo-beneficio).
 

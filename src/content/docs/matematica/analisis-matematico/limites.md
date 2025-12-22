@@ -1,7 +1,7 @@
 ---
 title: Limites
 ---
-# Límites: El Concepto de Aproximación
+
 
 Un límite describe el valor al que se aproxima una función $f(x)$ a medida que la variable $x$ se acerca a un valor determinado $a$, sin llegar necesariamente a tocarlo.
 

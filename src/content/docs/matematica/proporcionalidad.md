@@ -3,7 +3,6 @@ title: Regla de tres directa e inversa
 
 
 ---
-# Proporcionalidad y Regla de Tres
 
 La proporcionalidad estudia la relación constante entre dos magnitudes. Dependiendo de cómo cambie una respecto a la otra, tenemos dos tipos principales.
 

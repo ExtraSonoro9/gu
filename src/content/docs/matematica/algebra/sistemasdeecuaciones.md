@@ -1,7 +1,7 @@
 ---
 title: Sistemas de ecuaciones
 ---
-# Sistemas de Ecuaciones: Método de Gauss-Jordan
+
 
 Este método es un algoritmo que utiliza operaciones elementales de fila para transformar la matriz aumentada de un sistema en su **forma escalonada reducida por filas**.
 

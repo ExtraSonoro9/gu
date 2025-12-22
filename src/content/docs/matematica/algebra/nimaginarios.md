@@ -1,7 +1,7 @@
 ---
 title: Números Imaginarios
 ---
-# Números Imaginarios y Complejos
+
 
 Los números complejos ($ \mathbb{C} $) surgen de la necesidad de resolver ecuaciones como $x^2 + 1 = 0$. Se definen mediante la unidad imaginaria $i$.
 

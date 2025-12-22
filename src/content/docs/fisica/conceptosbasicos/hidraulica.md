@@ -1,9 +1,9 @@
 ---
-title: Hidráulica
+title: Conceptos Básicos de Hidráulica
 
 
 ---
-# Conceptos Básicos de Hidráulica
+
 
 La hidráulica se divide principalmente en dos áreas: **Hidrostática** (fluidos en reposo) e **Hidrodinámica** (fluidos en movimiento).
 

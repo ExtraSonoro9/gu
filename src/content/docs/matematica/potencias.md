@@ -2,7 +2,7 @@
 title: Potenciación
 ---
 
-# Potenciación: ¡El Multiplicador Veloz! 🚀
+## Potenciación: ¡El Multiplicador Veloz! 🚀
 
 La potenciación es una forma corta de escribir una multiplicación donde el mismo número se repite varias veces.
 

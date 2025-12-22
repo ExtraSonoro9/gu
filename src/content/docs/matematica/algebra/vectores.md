@@ -3,7 +3,7 @@ title: Vectores
 
 
 ---
-# Vectores: Magnitud, Dirección y Sentido
+
 
 Un vector es un segmento de recta orientado que representa una magnitud física. Se define por sus componentes, usualmente $(x, y)$ en 2D o $(x, y, z)$ en 3D.
 

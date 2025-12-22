@@ -1,9 +1,8 @@
 ---
 
-title: Números irracionales
+title: Números reales
 ---
 
-# El Universo de los Números Reales ($\mathbb{R}$)
 
 Los números reales incluyen a todos los números que podemos encontrar en la recta numérica. Se dividen en dos grandes grupos según cómo son sus decimales.
 

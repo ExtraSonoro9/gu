@@ -1,9 +1,8 @@
 ---
-title: Teoremas de Continuidad
+title: Teoremas de Continuidad y Derivabilidad
 
 
 ---
-# Teoremas de Continuidad y Derivabilidad
 
 Estos teoremas describen el comportamiento de funciones en intervalos cerrados $[a, b]$. Son la base para entender la optimización y el cálculo integral.
 

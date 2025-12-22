@@ -2,7 +2,7 @@
 title: Parábola
 
 ---
-# Parábolas y Ecuaciones Cuadráticas
+
 
 Toda función cuadrática de la forma $f(x) = ax^2 + bx + c$ representa gráficamente una curva llamada **parábola**. 
 

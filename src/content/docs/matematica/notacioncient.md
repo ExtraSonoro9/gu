@@ -3,7 +3,7 @@ title: Notacón Científica
 
 
 ---
-# Notación Científica
+
 
 La notación científica es una forma de escribir números muy grandes o muy pequeños de manera abreviada utilizando potencias de base 10. 
 

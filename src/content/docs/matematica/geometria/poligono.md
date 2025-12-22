@@ -3,7 +3,7 @@ title: Polígonos
 
 
 ---
-# Polígonos: Las Formas de la Construcción
+
 
 Un polígono es una figura geométrica plana y cerrada formada por segmentos de recta (lados) que se unen en puntos llamados vértices.
 

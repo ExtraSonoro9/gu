@@ -2,7 +2,7 @@
 title: Casos de Factorización
 ---
 
-# 3.1. ¿Qué es factorizar?
+
 
 Una aproximación con el álgebra a la primera parte de la situación inicial permite entender lo que ocurre con cualquier resultado que se obtiene cuando se siguen las instrucciones allí dadas. Representemos con las letras $x$ y $y$ las cifras de las decenas y de las unidades de un número cualquiera de dos cifras, respectivamente (¿qué valores pueden tomar las variables $x$ y $y$?); el número corresponde a la expresión $10x + y$ (¿por qué?). Cuando se intercambian las cifras, el número al cual se llega es $10y + x$. Supongamos que $x$ es mayor que $y$. Entonces, al restar el número mayor con el menor se obtiene:
 

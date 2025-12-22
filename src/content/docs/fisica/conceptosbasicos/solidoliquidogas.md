@@ -3,7 +3,7 @@ title: Estados solido, liquido y gaseoso
 
 
 ---
-# Ley de los Gases Ideales
+
 
 Un **gas ideal** es un modelo teórico donde las partículas no tienen volumen propio y no existen fuerzas de atracción o repulsión entre ellas. Aunque los gases reales no son perfectos, la mayoría se comporta como "ideales" a presiones bajas y temperaturas altas.
 

@@ -3,7 +3,7 @@ title: Identidades Trigonométricas
 
 
 ---
-# Identidades Trigonométricas
+
 
 Las identidades trigonométricas son igualdades que relacionan las funciones trigonométricas y se cumplen para cualquier valor del ángulo. Son herramientas esenciales para simplificar expresiones y resolver integrales.
 

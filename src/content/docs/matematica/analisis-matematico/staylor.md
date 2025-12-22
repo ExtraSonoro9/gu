@@ -2,7 +2,7 @@
 title: Serie y polinomio de Taylor
 ---
 
-# Series de Taylor y Maclaurin
+
 
 Las series de potencias nos permiten aproximar funciones mediante polinomios. Cuantos más términos agreguemos, más exacta será nuestra aproximación.
 

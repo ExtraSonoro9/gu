@@ -1,10 +1,8 @@
 ---
-title: El Vacío
+title: El Vacío, el Sonido y la Resistencia del Aire
 
 
 ---
-# El Vacío, el Sonido y la Resistencia del Aire
-
 El vacío no es solo "nada"; es la ausencia de materia, lo que altera drásticamente cómo se mueven los objetos y cómo se propagan las ondas.
 
 ---

@@ -3,7 +3,7 @@ title: Funciones Trigonométricas
 
 
 ---
-# Funciones Trigonométricas e Hiperbólicas
+
 
 Estas funciones son las herramientas fundamentales para modelar fenómenos periódicos (ondas) y estructuras físicas (cables suspendidos).
 

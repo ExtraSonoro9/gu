@@ -3,7 +3,7 @@ title: Aproximar Funciones
 
 
 ---
-# Aproximación de Funciones (Linealización)
+
 
 La aproximación por diferenciales utiliza la recta tangente en un punto conocido $a$ para estimar el valor de una función en un punto cercano $x$. La fórmula fundamental es:
 

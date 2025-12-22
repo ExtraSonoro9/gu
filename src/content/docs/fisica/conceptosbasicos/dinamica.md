@@ -1,9 +1,8 @@
 ---
-title: Dinámica
+title: Dinámica Lineal y Circular
 
 
 ---
-# Dinámica Lineal y Circular
 
 La dinámica se rige por las **Leyes de Newton**. Su objetivo es predecir el movimiento conociendo las fuerzas y la masa del objeto.
 

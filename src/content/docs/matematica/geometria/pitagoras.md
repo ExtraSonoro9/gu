@@ -3,7 +3,7 @@ title: Teorema de Pitágoras
 
 
 ---
-# De Pitágoras a la Trigonometría General
+
 
 La geometría del triángulo evoluciona desde el ángulo recto (Pitágoras) hasta cualquier tipo de triángulo (Seno y Coseno).
 

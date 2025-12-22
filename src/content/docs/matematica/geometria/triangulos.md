@@ -3,7 +3,7 @@ title: Triángulos
 
 
 ---
-# El Triángulo: Fundamentos y Clasificación
+
 
 El triángulo es un polígono de tres lados cuya característica principal es la **rigidez**: es la única figura geométrica que no puede deformarse sin cambiar la longitud de sus lados.
 
