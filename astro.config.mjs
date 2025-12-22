@@ -104,6 +104,12 @@ window.dataLayer = window.dataLayer || [];
     { label: "Arduino y Sistemas Embebidos",  items: [
          
     ],},
+
+    { label: "Algoritmos",  items: [
+          'programacioneinformatica/algoritmos/busqueda',
+          'programacioneinformatica/algoritmos/ordenacion',
+         
+    ],},
     
     { label: "Linux",  items: [
           'programacioneinformatica/linuxyservidores/sobrelinux',
@@ -384,6 +390,28 @@ window.dataLayer = window.dataLayer || [];
 
 
  
+          ],
+        },{
+          label: 'Discreta',
+          items: [
+            'matematica/discreta/grafos',
+            'matematica/discreta/permutacioncombinacion',
+           
+            
+
+
+
+
+
+
+            
+            
+
+
+
+
+
+           
           ],
         },
       ],
