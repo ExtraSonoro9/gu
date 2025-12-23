@@ -95,6 +95,7 @@ window.dataLayer = window.dataLayer || [];
     items: [
       { label: "Conceptos básicos",  items: [
           'programacioneinformatica/introduccion',
+          'programacioneinformatica/biblografia',
           'programacioneinformatica/buclesfor',
           'programacioneinformatica/diagramadeflujo',
           'programacioneinformatica/condicionalesif',
@@ -170,7 +171,10 @@ window.dataLayer = window.dataLayer || [];
   {
     label: "Física",
     items: [
+      'fisica/biblografia',
+
       { label: "Conceptos básicos",  items: [
+        
         'fisica/conceptosbasicos/cifrasignmagnitudesherramientas',
         'fisica/conceptosbasicos/cinematica',
         'fisica/conceptosbasicos/arquimedesyflotabilidad',
@@ -224,23 +228,27 @@ window.dataLayer = window.dataLayer || [];
    
       { label: "Conceptos básicos generales",  items: [
         
+        
          'quimica/general/inicio',
+         'quimica/general/biblografia',
+
          'quimica/general/herramientas',
          'quimica/general/seguridad', 
          'quimica/general/masaymolesavogadro',
          'quimica/general/metodosdeseparacion',
-         'quimica/general/nomenclatura',
-         'quimica/general/basesyacidos',
          'quimica/general/balanceyestequiometria',
          'quimica/general/redox',
+         'quimica/general/endotermiaexotermia',
+         'quimica/general/combustion',
+         'quimica/general/cristalizacionsedimentacioncoloides',
+
+         'quimica/general/nomenclatura',
+         'quimica/general/basesyacidos',
 
          'quimica/general/azeotropoypuntoeutectico',
          'quimica/general/pirolisis',
          'quimica/general/electrolisis',
-         'quimica/general/endotermiaexotermia',
-         'quimica/general/combustion',
          'quimica/general/catalizacion',
-         'quimica/general/cristalizacionsedimentacioncoloides',
 
       
 
@@ -291,24 +299,25 @@ window.dataLayer = window.dataLayer || [];
         {
           label: 'Conceptos principales',
           items: [
-            'matematica/conjuntos',
             'matematica/multiplicacionydivision',
             'matematica/sumayresta',
             'matematica/potencias',
             'matematica/radicacion',
-            'matematica/numerosirracionales',
+            'matematica/proporcionalidad',
+
+            'matematica/numerosreales',
             'matematica/numeropi',
             'matematica/numeroe',
             'matematica/numerodeoro',
             'matematica/factorizacion',
-            'matematica/ecuacioncuadratica',
             'matematica/logaritmos',
+            'matematica/notacioncient',
+
+            'matematica/conjuntos',
+
             'matematica/valorabsoluto',
-            'matematica/proporcionalidad',
-            'matematica/notacioncient',
             'matematica/ecuacioncuadratica',
-            'matematica/notacioncient',
-     
+            
 
            
           ],
@@ -363,29 +372,36 @@ window.dataLayer = window.dataLayer || [];
           items: [
    
             'matematica/analisis-matematico/funcionesycorrespondencias',
-            'matematica/analisis-matematico/aproximaciondefunciones',
             'matematica/analisis-matematico/inecuaciones',
-            
-
             'matematica/analisis-matematico/limites',
             'matematica/analisis-matematico/indeterminaciones',
-            
             'matematica/analisis-matematico/derivadas',
-            'matematica/analisis-matematico/tdecontinuidad',
-            
-            
-        
+            'matematica/analisis-matematico/aproximaciondefunciones',
             'matematica/analisis-matematico/optimizacion',
             'matematica/analisis-matematico/razondecambio',
             'matematica/analisis-matematico/lhopital',
+
+            'matematica/analisis-matematico/tdecontinuidad',
             'matematica/analisis-matematico/sumatoria',
             'matematica/analisis-matematico/staylor',
-            'matematica/analisis-matematico/integral',
             
-            'matematica/analisis-matematico/arealongvolumen',
+
+            'matematica/analisis-matematico/integral',
+            'matematica/analisis-matematico/transformadadefourrier',
+
+            
+            
+
+            
+            
+            
+            
+            
+        
+            
+            
 
            
-            'matematica/analisis-matematico/transformadadefourrier',
 
 
 
