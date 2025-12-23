@@ -6,6 +6,11 @@ title: Parábola
 
 Toda función cuadrática de la forma $f(x) = ax^2 + bx + c$ representa gráficamente una curva llamada **parábola**. 
 
+
+
+
+![párabola](/mat/geo/parabola.png)
+
 ---
 
 ## 1. Los Componentes Clave

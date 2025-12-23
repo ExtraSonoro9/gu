@@ -333,6 +333,7 @@ window.dataLayer = window.dataLayer || [];
             'matematica/geometria/ttales',
             'matematica/geometria/planocartesianorectacomponentes',
             'matematica/geometria/parabola',
+            'matematica/geometria/hiperbola',
             
 
 

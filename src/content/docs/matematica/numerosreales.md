@@ -20,6 +20,7 @@ Tienen números que se repiten infinitamente en un patrón.
   * **Ejemplo:** $1/3 = 0,3333...$ (se escribe $0,\widehat{3}$).
 * **Periódicos Mixtos:** Tienen algunos números que no se repiten y luego empieza el patrón.
   * **Ejemplo:** $0,1666...$ (se escribe $0,1\widehat{6}$).
+![la raiz de 2](/mathipoten)
 
 
 

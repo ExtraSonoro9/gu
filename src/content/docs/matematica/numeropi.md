@@ -19,6 +19,11 @@ Hace más de 2000 años, Arquímedes de Siracusa fue el primero en aproximar $\p
 * Cuantos más lados tenía el polígono, más se acercaba su perímetro a la longitud del círculo. 
 * Llegó a usar polígonos de **96 lados** para determinar que $\pi$ estaba entre $3 \frac{10}{71}$ y $3 \frac{1}{7}$.
 
+![numero pi](/mat/pi.png)
+
+
+
+![se conoce desde hace miles de años](/mat/PapirodeAhmes.png)
 
 
 ### 2. Series Infinitas

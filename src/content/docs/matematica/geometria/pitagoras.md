@@ -1,5 +1,5 @@
 ---
-title: Teorema de Pitágoras
+title: Teorema de Pitágoras y Coseno
 
 
 ---
@@ -8,6 +8,8 @@ title: Teorema de Pitágoras
 La geometría del triángulo evoluciona desde el ángulo recto (Pitágoras) hasta cualquier tipo de triángulo (Seno y Coseno).
 
 ---
+    ![párabola](/mat/geo/hipotenuza.png)
+
 
 ## 1. El punto de partida: Teorema de Pitágoras
 Solo funciona en **triángulos rectángulos** (uno de sus ángulos mide 90°).
@@ -23,6 +25,8 @@ $$a^2 + b^2 = c^2$$
 
 ## 2. Teorema del Coseno: El "Pitágoras Universal"
 Este teorema funciona para **cualquier triángulo**, sea rectángulo o no. Es la generalización de Pitágoras.
+
+![párabola](/mat/geo/tcoseno.png)
 
 **Fórmula:**
 $$a^2 = b^2 + c^2 - 2bc \cdot \cos(A)$$

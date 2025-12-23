@@ -7,6 +7,9 @@ title: Plano Cartesiano
 
 El plano cartesiano está formado por dos rectas numéricas perpendiculares, una horizontal y otra vertical, que se cortan en un punto llamado **origen**.
 
+    ![párabola](/mat/geo/planocartesiano.png)
+
+
 ---
 
 ## 1. Estructura y Elementos
