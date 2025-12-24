@@ -15,10 +15,9 @@
   "build:astro": "astro build",
   
     
-  "build:tina": "tinacms build && rm -f public/admin/.gitignore",
-  
+  "build:tina": "tinacms search-index && tinacms build--skip-search-index && rm -f public/admin/.gitignore && rm -f dist/admin/.gitignore",
     
-  "build": "npm run build:astro && tinacms build && rm -f public/admin/.gitignore",
+  "build": "npm run build:astro",
   
     
   "start": "astro dev",
