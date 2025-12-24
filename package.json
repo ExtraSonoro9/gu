@@ -18,7 +18,7 @@
   "build:tina": "tinacms build && rm -f public/admin/.gitignore",
   
     
-  "build": "npm run build:astro && tinacms build ",
+  "build": "npm run build:astro && tinacms build && rm -f public/admin/.gitignore",
   
     
   "start": "astro dev",
