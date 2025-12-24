@@ -40,6 +40,7 @@ El acero es mucho más denso que el agua ($7850 \, kg/m^3$ vs $1000 \, kg/m^3$).
 * Esto hace que la **densidad promedio** del barco (acero + aire) sea menor que la del agua.
 * Al ser tan voluminoso, desplaza una cantidad enorme de agua cuyo peso es superior al peso del propio barco.
 
+ <img src="/fisica/barco.jpg" alt="barco" style="display: block; margin-left: auto; margin-right: auto;">
 
 
 ---
@@ -68,6 +69,9 @@ Fragmento de código
 # Arquímedes en el Aire: El Globo de Helio
 
 Un globo de helio asciende porque el aire que lo rodea es un fluido que ejerce una fuerza de empuje hacia arriba.
+
+ <img src="/fisica/globo.jpg" alt="globo de helio hidrogeno" style="display: block; margin-left: auto; margin-right: auto;">
+ <img src="/fisica/globohelio.jpg" alt="globo de helio hidrogeno" style="display: block; margin-left: auto; margin-right: auto;">
 
 ## 1. La Diferencia de Densidades
 La clave está en la comparación entre la densidad del gas dentro del globo y la densidad del aire atmosférico:

@@ -7,6 +7,7 @@ El número de oro es un número irracional que representa una proporción geomé
 
 $$\phi = \frac{1 + \sqrt{5}}{2} \approx 1,61803398...$$
 
+![número de oro](/mat/oro.png)
 
 
 ---
@@ -49,7 +50,7 @@ Si construimos rectángulos cuyas proporciones sean áureas y dibujamos arcos ci
 
 ### 2. En el Arte y la Arquitectura
 * **El Partenón:** Sus dimensiones generales encajan en un rectángulo áureo.
-* **Leonardo da Vinci:** En el "Hombre de Vitruvio" y "La Gioconda", Da Vinci utilizó estas proporciones para lograr armonía visual.
+* **Leonardo da Vinci:** En el "Hombre de Vitruvio" y "La Gioconda", se cree que Da Vinci utilizó estas proporciones para lograr armonía visual.
 * **Diseño Moderno:** Muchas tarjetas de crédito y logotipos de marcas famosas (como Apple) utilizan rectángulos áureos en su diseño.
 
 

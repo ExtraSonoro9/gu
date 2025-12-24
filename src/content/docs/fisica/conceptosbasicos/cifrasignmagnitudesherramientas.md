@@ -31,8 +31,9 @@ Las cifras significativas son los dígitos de una medición que se conocen con s
 Los instrumentos se clasifican según la magnitud que miden. Cada uno tiene una **resolución** (la división más pequeña de su escala).
 
 ### A. Para Magnitudes Mecánicas
-* **Calibrador Vernier (Pie de Rey):** Mide longitudes pequeñas (exteriores, interiores y profundidades) con precisión de décimas o centésimas de milímetro.
-* **Micrómetro (Tornillo de Palmer):** Para medidas extremadamente precisas de espesores o diámetros.
+* **Calibre** Mide longitudes pequeñas (exteriores, interiores y profundidades) con precisión de décimas o centésimas de milímetro.
+ <img src="/fisica/calibre.jpg" alt="calibre" style="display: block; margin-left: auto; margin-right: auto;">
+* **Micrómetro :** Para medidas extremadamente precisas de espesores o diámetros. <img src="/fisica/micrometro.jpg" alt="micrometro" style="display: block; margin-left: auto; margin-right: auto;">
 * **Dinamómetro:** Mide fuerzas (o el peso) basándose en la Ley de Hooke.
 
 
@@ -43,6 +44,8 @@ Los instrumentos se clasifican según la magnitud que miden. Cada uno tiene una 
 
 ### C. Para Magnitudes de Fluidos
 * **Barómetro:** Mide la presión atmosférica. Fundamental en meteorología.
+  <img src="/fisica/barom.jpg" alt="barómetro" style="display: block; margin-left: auto; margin-right: auto;">
+
 * **Manómetro:** Mide la presión de fluidos en recipientes cerrados (como el aire en una llanta).
 * **Caudalímetro:** Mide el volumen de fluido que pasa por una tubería en un tiempo dado ($Q$).
 

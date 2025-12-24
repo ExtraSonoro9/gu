@@ -63,3 +63,6 @@ La gráfica de cualquier proporcionalidad inversa es una versión escalada de la
 En los gases, la presión ($P$) y el volumen ($V$) son inversamente proporcionales a temperatura constante.
 $$P \cdot V = k \implies P = \frac{k}{V}$$
 Si graficamos la presión contra el volumen, obtendremos una **isoterma**, que tiene la forma exacta de una **hipérbola**.
+La escala de los mapas y dibujos.
+
+![escala de mapa](/mat/mapaprop.png)

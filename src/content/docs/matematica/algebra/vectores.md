@@ -16,6 +16,8 @@ Un vector es un segmento de recta orientado que representa una magnitud física.
 * **Sentido:** Hacia dónde apunta (indicado por la punta de la flecha).
 * **Vector Unitario:** Un vector con módulo igual a 1. Se obtiene dividiendo al vector por su propio módulo: $\hat{u} = \frac{\vec{v}}{|\vec{v}|}$.
 
+![vector](/mat/algebra/vector.png)
+
 
 
 ---

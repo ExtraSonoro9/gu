@@ -62,16 +62,25 @@ Basándonos en el número de soluciones, clasificamos los sistemas así:
 * **En la matriz:** Obtienes una identidad clara (ej. $x=1, y=2$).
 * **Gráficamente:** Las rectas o planos se cruzan en un solo punto.
 
+  <img src="/mat/algebra/compatible.png" alt="sistema compatible determinado" style="display: block; margin-left: auto; margin-right: auto;">
+
 ### B. Sistema Compatible Indeterminado (SCI)
 * **Solución:** Infinitas soluciones.
 * **En la matriz:** Aparece una fila completa de ceros ($0 = 0$). Esto significa que una ecuación es redundante.
 * **Gráficamente:** Las rectas o planos son coincidentes (están uno encima del otro).
+
+
+
+  <img src="/mat/algebra/indeterminado.png" alt="sistema compatible indeterminado" style="display: block; margin-left: auto; margin-right: auto;">
+
 
 ### C. Sistema Incompatible (SI)
 * **Solución:** No tiene solución.
 * **En la matriz:** Llegas a una contradicción del tipo $0 = k$ (donde $k \neq 0$).
 * **Gráficamente:** Las rectas o planos son paralelos y nunca se tocan.
 
+
+  <img src="/mat/algebra/incompatible.png" alt="sistema incompatible" style="display: block; margin-left: auto; margin-right: auto;">
 
 
 ---

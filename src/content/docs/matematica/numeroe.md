@@ -24,6 +24,8 @@ Si los periodos de tiempo se vuelven infinitamente pequeños (interés continuo)
 
 $$e = \lim_{n \to \infty} \left( 1 + \frac{1}{n} \right)^n$$
 
+![Euler](/mat/euler.png)
+
 
 
 ---

@@ -171,7 +171,7 @@ window.dataLayer = window.dataLayer || [];
   {
     label: "Física",
     items: [
-      'fisica/biblografia',
+      'fisica/bibliografia',
 
       { label: "Conceptos básicos",  items: [
         
@@ -230,7 +230,7 @@ window.dataLayer = window.dataLayer || [];
         
         
          'quimica/general/inicio',
-         'quimica/general/biblografia',
+         'quimica/general/bibliografia',
 
          'quimica/general/herramientas',
          'quimica/general/seguridad', 
