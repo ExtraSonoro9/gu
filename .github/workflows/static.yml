@@ -52,8 +52,6 @@ jobs:
         if: steps.cache-tina.outputs.cache-hit != 'true'
         run: npm run build:tina
       - name: Remove Tina auto gitignore
-
-
         run: rm -f admin/.gitignore
 
           # O el comando específico para compilar TinaCMS, si es separado
