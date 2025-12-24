@@ -20,9 +20,12 @@ Se ocupa de los objetos que se desplazan a lo largo de una trayectoria recta.
 ### Tipos de Movimiento:
 1.  **MRU (Movimiento Rectilíneo Uniforme):** Velocidad constante, aceleración cero.
     $$x = x_0 + v \cdot t$$
+      <img src="/fisica/mru.png" alt="mru" style="display: block; margin-left: auto; margin-right: auto;">
+
 2.  **MRUA (Movimiento Rectilíneo Uniformemente Acelerado):** Aceleración constante.
     $$v = v_0 + a \cdot t$$
     $$x = x_0 + v_0 \cdot t + \frac{1}{2} a \cdot t^2$$
+  <img src="/fisica/mruv.png" alt="mruv" style="display: block; margin-left: auto; margin-right: auto;">
 
 
 
@@ -39,6 +42,8 @@ Se ocupa de los objetos que giran alrededor de un eje central. Aquí no medimos 
 ### Tipos de Movimiento:
 1.  **MCU (Movimiento Circular Uniforme):** Velocidad de giro constante.
     $$\theta = \theta_0 + \omega \cdot t$$
+  <img src="/fisica/movcircular.png" alt="movimiento angular" style="display: block; margin-left: auto; margin-right: auto;">
+
 2.  **MCUA (Movimiento Circular Uniformemente Acelerado):** El objeto gira cada vez más rápido o más lento.
     $$\omega = \omega_0 + \alpha \cdot t$$
     $$\theta = \theta_0 + \omega_0 \cdot t + \frac{1}{2} \alpha \cdot t^2$$
