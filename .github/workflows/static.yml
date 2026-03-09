@@ -67,5 +67,5 @@ jobs:
         with:
             github_token: ${{ secrets.TOKEN }}
             
-            cname: guiauniversal.net
+            cname: www.guiauniversal.net
             publish_dir: ./dist
