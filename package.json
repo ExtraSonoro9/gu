@@ -8,24 +8,18 @@
   
   "scripts": {
   
-    
   "dev": "astro dev",
   
-    
   "build:astro": "astro build",
-  
     
-  "build:tina": "tinacms build && rm -f public/admin/.gitignore && rm -f dist/admin/.gitignore",
+  "build:tina": "npx tina-build && rm -f public/admin/.gitignore && rm -f dist/admin/.gitignore",
     
   "build": "npm run build:astro",
   
-    
   "start": "astro dev",
   
-    
   "preview": "astro preview",
   
-    
   "astro": "astro"
   
   },
