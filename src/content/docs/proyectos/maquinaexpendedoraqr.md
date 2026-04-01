@@ -1,5 +1,0 @@
----
-title: Máquina expendedora QR
-
-
----

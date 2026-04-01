@@ -107,6 +107,8 @@ window.dataLayer = window.dataLayer || [];
     ],},
 
     { label: "Algoritmos",  items: [
+
+          'programacioneinformatica/algoritmos/concepto',
           'programacioneinformatica/algoritmos/busqueda',
           'programacioneinformatica/algoritmos/ordenacion',
          
@@ -175,6 +177,7 @@ window.dataLayer = window.dataLayer || [];
 
       { label: "Conceptos básicos",  items: [
         
+        'fisica/conceptosbasicos/conceptos',
         'fisica/conceptosbasicos/cifrasignmagnitudesherramientas',
         'fisica/conceptosbasicos/cinematica',
         'fisica/conceptosbasicos/arquimedesyflotabilidad',
@@ -197,6 +200,8 @@ window.dataLayer = window.dataLayer || [];
     ],},
 
     { label: "Electricidad",  items: [
+      'fisica/electricidad/concepto',
+
       'fisica/electricidad/campo',
       'fisica/electricidad/voltajeamperajeyresistencia',
       'fisica/electricidad/diodos',
@@ -206,10 +211,13 @@ window.dataLayer = window.dataLayer || [];
          ],},
     
     { label: "Termodinámica",  items: [
+      'fisica/termodinamica/concepto',
       'fisica/termodinamica/calor',
+
          
     ],},
     { label: "Ondas y particulas",  items: [
+      'fisica/ondasyparticulas/concepto',
       'fisica/ondasyparticulas/ondas',
 
       'fisica/ondasyparticulas/electromagneticas',
@@ -230,6 +238,7 @@ window.dataLayer = window.dataLayer || [];
         
         
          'quimica/general/inicio',
+         'quimica/general/concepto',
          'quimica/general/bibliografia',
 
          'quimica/general/herramientas',
@@ -256,12 +265,14 @@ window.dataLayer = window.dataLayer || [];
     
     { label: "Inorgánica",  items: [
          { label: "Metales Alcalinos",  items: [
+         'quimica/inorganica/metalesalcalinos/concepto',
          'quimica/inorganica/metalesalcalinos/sodio',
          'quimica/inorganica/metalesalcalinos/potasio',
          
          
     ],},{ label: "Metales Transicionales",  items: [
       { label: "Metales Nobles",  items: [
+         'quimica/inorganica/metalestransicionales/metalesnobles/concepto',
          'quimica/inorganica/metalestransicionales/metalesnobles/cobre',
          'quimica/inorganica/metalestransicionales/metalesnobles/plata',
          'quimica/inorganica/metalestransicionales/metalesnobles/oro',
@@ -270,6 +281,7 @@ window.dataLayer = window.dataLayer || [];
          'quimica/inorganica/metalestransicionales/hierro',
          
     ],},{ label: "No Metales",  items: [
+         'quimica/inorganica/nometales/concepto',
          'quimica/inorganica/nometales/carbono',
          'quimica/inorganica/nometales/cloro',
          'quimica/inorganica/nometales/hidrogeno',
@@ -279,6 +291,7 @@ window.dataLayer = window.dataLayer || [];
     ],},
     
     { label: "Orgánica",  items: [
+         'quimica/organica/concepto',
          'quimica/organica/alcholcetonayaldehidos',
          'quimica/organica/carbonoygruposfuncionales',
 
@@ -324,6 +337,8 @@ window.dataLayer = window.dataLayer || [];
         }, {
           label: 'Geometría',
           items: [
+            'matematica/geometria/concepto',
+
             'matematica/geometria/poligono',
             'matematica/geometria/triangulos',
 
@@ -345,6 +360,7 @@ window.dataLayer = window.dataLayer || [];
         },{
           label: 'Álgebra',
           items: [
+            'matematica/algebra/concepto',
             'matematica/algebra/vectores',
             'matematica/algebra/nimaginarios',
             'matematica/algebra/matrices',
@@ -372,6 +388,7 @@ window.dataLayer = window.dataLayer || [];
           label: 'Análisis Matemático',
           items: [
    
+            'matematica/analisis-matematico/concepto',
             'matematica/analisis-matematico/funcionesycorrespondencias',
             'matematica/analisis-matematico/inecuaciones',
             'matematica/analisis-matematico/limites',
@@ -411,6 +428,8 @@ window.dataLayer = window.dataLayer || [];
         },{
           label: 'Discreta',
           items: [
+            'matematica/discreta/concepto',
+
             'matematica/discreta/grafos',
             'matematica/discreta/permutacioncombinacion',
            
