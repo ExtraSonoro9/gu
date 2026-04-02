@@ -1,6 +1,0 @@
----
-
-title: Concepto
----
-
-## Concepto

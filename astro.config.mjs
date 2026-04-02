@@ -94,7 +94,7 @@ window.dataLayer = window.dataLayer || [];
     label: "Informática",
     items: [
       { label: "Conceptos básicos",  items: [
-          'programacioneinformatica/introduccion',
+          'programacioneinformatica/concepto',
           'programacioneinformatica/biblografia',
           'programacioneinformatica/buclesfor',
           'programacioneinformatica/diagramadeflujo',
@@ -177,7 +177,7 @@ window.dataLayer = window.dataLayer || [];
 
       { label: "Conceptos básicos",  items: [
         
-        'fisica/conceptosbasicos/conceptos',
+        'fisica/conceptosbasicos/concepto',
         'fisica/conceptosbasicos/cifrasignmagnitudesherramientas',
         'fisica/conceptosbasicos/cinematica',
         'fisica/conceptosbasicos/arquimedesyflotabilidad',
@@ -199,7 +199,7 @@ window.dataLayer = window.dataLayer || [];
 
     ],},
 
-    { label: "Electricidad",  items: [
+    { label: "Electricidad y Magnetismo",  items: [
       'fisica/electricidad/concepto',
 
       'fisica/electricidad/campo',
@@ -271,8 +271,10 @@ window.dataLayer = window.dataLayer || [];
          
          
     ],},{ label: "Metales Transicionales",  items: [
+      'quimica/inorganica/metalestransicionales/concepto',
+         
       { label: "Metales Nobles",  items: [
-         'quimica/inorganica/metalestransicionales/metalesnobles/concepto',
+        
          'quimica/inorganica/metalestransicionales/metalesnobles/cobre',
          'quimica/inorganica/metalestransicionales/metalesnobles/plata',
          'quimica/inorganica/metalestransicionales/metalesnobles/oro',
