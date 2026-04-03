@@ -8,6 +8,9 @@ title: Teorema de Tales
 El Teorema de Tales establece que si tres o más rectas paralelas son cortadas por dos transversales, los segmentos determinados en una de ellas son proporcionales a los segmentos correspondientes en la otra.
 
 ---
+![thales](/mat/geo/teoremadetales1.png)
+
+![thales](/mat/geo/teoremadetales2.png)
 
 ## 1. Fundamento Teórico
 
@@ -15,6 +18,7 @@ Si tenemos tres paralelas $L_1, L_2, L_3$ y dos transversales $r$ y $s$ que las 
 
 $$\frac{AB}{BC} = \frac{A'B'}{B'C'} \quad \text{o también} \quad \frac{AB}{AC} = \frac{A'B'}{A'C'}$$
 
+![thales](/mat/geo/teoremathales3.png)
 
 
 ---
@@ -24,6 +28,8 @@ $$\frac{AB}{BC} = \frac{A'B'}{B'C'} \quad \text{o también} \quad \frac{AB}{AC} 
 Una consecuencia directa del teorema es que toda recta paralela a un lado de un triángulo que corta a los otros dos lados, determina un triángulo más pequeño **semejante** al original.
 
 * **Condición de semejanza:** Dos triángulos son semejantes si sus ángulos son iguales y sus lados homólogos son proporcionales.
+
+![thales](/mat/geo/teoremadethales4.png)
 
 ---
 

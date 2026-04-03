@@ -9,11 +9,13 @@ Toda función cuadrática de la forma $f(x) = ax^2 + bx + c$ representa gráfica
 
 
 
-![párabola](/mat/geo/parabola.png)
 
 ---
 
 ## 1. Los Componentes Clave
+
+![párabola](/mat/geo/parabola.png)
+*párabola*
 
 Para entender la relación entre el álgebra y el dibujo, debemos mirar los coeficientes:
 

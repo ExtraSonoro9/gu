@@ -15,6 +15,9 @@ Independientemente de su tipo, todo triángulo cumple estas tres leyes:
 1.  **Suma de Ángulos Internos:** La suma de los tres ángulos siempre es exactamente $180^\circ$.
 2.  **Desigualdad Triangular:** La suma de dos lados siempre debe ser mayor que el tercer lado ($a + b > c$). Si no se cumple, el triángulo no puede cerrarse.
 3.  **Ángulo Exterior:** Un ángulo exterior es igual a la suma de los dos ángulos interiores no adyacentes a él.
+   
+
+
 
 ---
 
@@ -28,7 +31,8 @@ Independientemente de su tipo, todo triángulo cumple estas tres leyes:
 
 
 
-[Image of triangles classified by sides: equilateral, isosceles, and scalene]
+![triángulos](/mat/geo/triangulossegunlados.png)
+
 
 
 ---
@@ -41,8 +45,7 @@ Independientemente de su tipo, todo triángulo cumple estas tres leyes:
 | **Rectángulo** | Tiene un ángulo de exactamente $90^\circ$. | Se aplica el **Teorema de Pitágoras**. |
 | **Obtusángulo** | Tiene un ángulo obtuso (mayor a $90^\circ$). | El lado opuesto al ángulo obtuso es siempre el más largo. |
 
-
-
+![triángulo](/mat/geo/triangulossegunsusangulos.png)
 ---
 
 ## 4. Puntos y Rectas Notables

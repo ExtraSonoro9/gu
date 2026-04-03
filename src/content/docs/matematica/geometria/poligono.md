@@ -26,6 +26,9 @@ $$S = (n - 2) \times 180^\circ$$
 ## 2. El Triángulo: El Rey de la Rigidez
 El triángulo es el único polígono que **no se deforma** cuando se le aplica presión en sus vértices. Por eso es la base de la ingeniería estructural.
 
+![puente](/mat/geo/puentetriangular.jpg)
+
+
 ### Por qué se usa en construcción:
 * **Triangulación:** Al dividir cualquier estructura en triángulos, se garantiza estabilidad.
 * **Cerchas (Trusses):** Las estructuras de los techos y puentes usan triángulos para distribuir el peso hacia los apoyos sin doblar las vigas.
@@ -41,6 +44,7 @@ El hexágono regular es la forma más eficiente de cubrir una superficie sin dej
 * **Panales de abeja (Honeycombs):** En la industria aeroespacial y civil, se usan paneles con núcleo hexagonal porque ofrecen una **resistencia altísima con un peso mínimo**.
 * **Distribución de fuerzas:** Un hexágono distribuye las tensiones de forma más uniforme que un cuadrado, evitando puntos de ruptura en las esquinas.
 
+![panal de abejas](/mat/geo/panaldeabejas.jpg)
 
 
 ---

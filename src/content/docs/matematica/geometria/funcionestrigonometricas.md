@@ -14,8 +14,15 @@ Basadas en el **Círculo Unitario** ($x^2 + y^2 = 1$). Relacionan ángulos con c
 
 ### Definiciones
 * **Seno:** $\sin(x)$
+![seno](/mat/geo/graficoseno.png)
+
 * **Coseno:** $\cos(x)$
+![coseno](/mat/geo/graficocoseno.png)
+
 * **Tangente:** $\tan(x) = \frac{\sin(x)}{\cos(x)}$
+
+![seno](/mat/geo/graficotangente.png)
+
 
 ### Propiedades Clave
 * **Periodicidad:** Se repiten cada $2\pi$ (Seno y Coseno) o $\pi$ (Tangente).
