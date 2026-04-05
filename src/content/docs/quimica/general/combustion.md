@@ -7,6 +7,10 @@ title: Reacción de Combustión
 
 La combustión es una reacción química **exotérmica** (libera energía en forma de calor y luz) entre una sustancia combustible y un comburente (generalmente oxígeno).
 
+
+![](/quimica/combustion.jpg)
+
+
 ## El Triángulo del Fuego
 Para que una combustión ocurra y se mantenga, deben coincidir tres elementos:
 1.  **Combustible:** La sustancia que se oxida (carbón, madera, gasolina).

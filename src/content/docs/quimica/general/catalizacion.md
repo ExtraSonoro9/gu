@@ -39,7 +39,7 @@ Donde:
 
 Un ejemplo clásico es el **convertidor catalítico** de los automóviles. Utiliza metales preciosos como platino ($Pt$) y paladio ($Pd$) para transformar gases tóxicos en sustancias menos nocivas:
 
-![catalizador de auto](quimica/catalizador1.jpg)
+![catalizador de auto](/quimica/catalizador1.jpg)
 *Catalizador de autos y motos tienen platino, rodio y paladio para acelerar la transformación de monoxido de carbono en dioxido de carbono y otros gases peligrosos en otros menos nocivos.*
 
 $$ 2CO + O_2 \xrightarrow{Pt/Pd} 2CO_2 $$
@@ -47,8 +47,9 @@ $$ 2CO + O_2 \xrightarrow{Pt/Pd} 2CO_2 $$
 
 
 En este caso, el platino permite que el monóxido de carbono ($CO$) reaccione con el oxígeno mucho más rápido de lo que lo haría normalmente, evitando que salga gas venenoso por el escape.
+En este caso, el platino permite que el monóxido de carbono ($CO$) reaccione con el oxígeno mucho más rápido de lo que lo haría normalmente, evitando que salga gas venenoso por el escape.
 
-![paladio](quimica/paladio.png)
+![paladio](/quimica/paladio.png)
 
 ---
 

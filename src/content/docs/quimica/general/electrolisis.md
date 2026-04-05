@@ -71,5 +71,5 @@ Donde:
 3.  **Producción de Aluminio:** Proceso Hall-Héroult, que utiliza electrólisis de óxido de aluminio disuelto en criolita fundida.
 
 
-![](quimica/oroelectrolisis.jpeg)
+![](/quimica/oroelectrolisis.jpeg)
 *Electrolisis de sales de cobre (azul) para conseguir cobre metálico*

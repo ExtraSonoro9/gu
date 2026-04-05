@@ -7,7 +7,7 @@ title: Pirólisis
 
 La pirólisis es la descomposición química de materiales orgánicos (que contienen carbono) mediante la aplicación de **altas temperaturas en ausencia total de oxígeno**. A diferencia de la combustión, aquí no hay "fuego" porque no hay comburente; el material simplemente se "rompe" por el calor.
 
-![pirólisis](quimica/autoabasura.png)
+![pirólisis](/quimica/autoabasura.png)
 *Auto a basura funcionando con pirolisis*
 ## Diferencias Clave: Pirólisis vs. Combustión
 
@@ -39,7 +39,7 @@ Dependiendo de la velocidad y la temperatura, el proceso se clasifica en:
 
 ---
 
-![pirólisis de plasticos](quimica/pirolisis.jpeg)
+![pirólisis de plasticos](/quimica/pirolisis.jpeg)
 *Aparato casero de pirólisis de plasticos en ausencia de oxigeno para conseguir gasolina*
 
 ## Aplicaciones y Medio Ambiente
@@ -53,3 +53,7 @@ El biocarbón producido es una forma muy estable de almacenar carbono en el suel
 ### 3. Ejemplo de Reacción (Celulosa)
 Aunque es compleja, una simplificación de la pirólisis de la madera (celulosa) se vería así:
 $$ (C_6H_{10}O_5)_n \xrightarrow{\Delta} C (\text{sólido}) + CO + CH_4 + H_2 (\text{gases}) + \text{alquitrán} (\text{líquido}) $$
+
+## El espiritú de la madera
+
+Una forma interesante de conseguir vingare de madera (ácido etanoico) y otros productos es el calentamiento sin oxigeno de la madera y la posterior captura de los gases generados en agua.
