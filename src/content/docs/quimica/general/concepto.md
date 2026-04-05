@@ -16,6 +16,8 @@ Durante siglos, la química fue **Alquimia**. Los alquimistas buscaban la "Piedr
 
 ### Antoine Lavoisier: El Padre de la Química Moderna
 A finales del siglo XVIII, el francés **Antoine Lavoisier** cambió todo. Desmintió la teoría del "flogisto" y demostró que en una reacción química la masa no se crea ni se destruye, solo se transforma. 
+![Antoine Lavoisier](quimica/Lavoisier.jpg)
+*Antoine Lavoisier*
 * **Hito:** Escribió el primer sistema lógico de nomenclatura química y el primer libro de texto moderno.
 
 
@@ -26,7 +28,8 @@ Propuso la primera teoría atómica científica, imaginando los átomos como esf
 ### Michael Faraday: El Puente entre Química y Electricidad
 Aunque es famoso por la física, **Faraday** revolucionó la química con la **Electrólisis**. Demostró que la electricidad podía separar compuestos químicos, lo que permitió descubrir nuevos elementos y entender que la materia tiene una naturaleza eléctrica. 
 
-
+![Faraday](quimica/Faraday.jpg)
+*Faraday*
 
 ### Dmitri Mendeléyev y la Tabla Periódica (1869)
 Organizó los elementos conocidos según sus propiedades y peso atómico. Fue tan visionario que dejó espacios vacíos para elementos que aún no se habían descubierto, prediciendo sus propiedades con éxito.

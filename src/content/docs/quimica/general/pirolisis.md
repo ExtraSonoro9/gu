@@ -7,8 +7,8 @@ title: Pirólisis
 
 La pirólisis es la descomposición química de materiales orgánicos (que contienen carbono) mediante la aplicación de **altas temperaturas en ausencia total de oxígeno**. A diferencia de la combustión, aquí no hay "fuego" porque no hay comburente; el material simplemente se "rompe" por el calor.
 
-
-
+![pirólisis](quimica/autoabasura.png)
+*Auto a basura funcionando con pirolisis*
 ## Diferencias Clave: Pirólisis vs. Combustión
 
 | Característica | Combustión | Pirólisis |
@@ -38,6 +38,9 @@ Dependiendo de la velocidad y la temperatura, el proceso se clasifica en:
 * **Flash:** Temperaturas extremas en milisegundos. Maximiza la obtención de **gases**.
 
 ---
+
+![pirólisis de plasticos](quimica/pirolisis.jpeg)
+*Aparato casero de pirólisis de plasticos en ausencia de oxigeno para conseguir gasolina*
 
 ## Aplicaciones y Medio Ambiente
 

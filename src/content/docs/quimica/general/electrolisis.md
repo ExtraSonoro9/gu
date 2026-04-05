@@ -45,7 +45,7 @@ $$2H_2O_{(l)} \longrightarrow 2H_{2(g)} + O_{2(g)}$$
 
 
 
-[Image of Hoffman voltameter for water electrolysis]
+
 
 
 ---
@@ -69,3 +69,7 @@ Donde:
 1.  **Galvanoplastia (Electroplating):** Recubrir objetos con una capa delgada de metal (ej: bañar una joya de cobre en oro o plata).
 2.  **Electrorrefinación:** Purificación de metales como el cobre hasta alcanzar un $99.9\%$.
 3.  **Producción de Aluminio:** Proceso Hall-Héroult, que utiliza electrólisis de óxido de aluminio disuelto en criolita fundida.
+
+
+![](quimica/oroelectrolisis.jpeg)
+*Electrolisis de sales de cobre (azul) para conseguir cobre metálico*
