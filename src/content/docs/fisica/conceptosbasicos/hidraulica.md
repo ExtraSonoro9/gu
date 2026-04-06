@@ -72,9 +72,11 @@ Donde $W_h$ es la potencia (en Watts), $P$ la presión y $Q$ el caudal.
 3.  **Válvulas:** Controlan la dirección, la presión y el caudal del líquido.
 4.  **Depósito (Tanque):** Almacena el líquido y ayuda a enfriarlo.
 
+![gatohidraulico](/fisica/gato.jpg)
 
 
-[Image of a basic hydraulic circuit: Pump, Valve, and Cylinder]
+![pistón](/fisica/hidraulica.jpg)
+
 
 
 ---

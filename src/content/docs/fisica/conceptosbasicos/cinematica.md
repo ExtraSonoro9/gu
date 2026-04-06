@@ -12,6 +12,35 @@ El movimiento puede ocurrir en línea recta o siguiendo una trayectoria circular
 ## 1. Cinemática Lineal (Rectilínea)
 Se ocupa de los objetos que se desplazan a lo largo de una trayectoria recta.
 
+Nuestro universo está lleno de objetos en movimiento. Desde las
+estrellas, planetas y galaxias; al movimiento de personas y animales;
+hasta la escala microscópica de átomos y moléculas: todo en nuestro
+universo está en movimiento. Podemos describir el movimiento
+usando las dos disciplinas de cinemática y dinámica. Estudiamos la
+dinámica, que se ocupa de las causas del movimiento, en las Leyes del
+movimiento de Newton.
+Pero, hay mucho que aprender sobre el movimiento sin referirse a lo
+que lo causa, y este es el estudio de la cinemática. La cinemática
+implica describir el movimiento a través de propiedades tales como la
+posición, el tiempo, la velocidad y la aceleración.
+Un tratamiento completo de la cinemática considera el movimiento en
+dos y tres dimensiones.
+
+![tren magnetico](/fisica/tren.jpg)
+Por ahora, discutimos el movimiento en una dimensión, que nos
+proporciona las herramientas necesarias para estudiar el movimiento
+multidimensional. Un buen ejemplo de un objeto sometido a
+movimiento unidimensional es el tren de levitación magnética. A medida que viajas,
+digamos, de Tokio a Kioto, te encuentras en diferentes posiciones a lo
+largo de la ruta en varios momentos de su recorrido y, por lo tanto,
+tienes desplazamientos o cambios de posición. También tienes una
+variedad de velocidades a lo largo de tu camino y experimentas
+aceleraciones (cambios en la velocidad).
+Con las habilidades aprendidas en este capítulo, podemos calcular
+estas cantidades y la velocidad promedio. Todas estas cantidades
+pueden describirse usando cinemática, sin conocer la masa del tren o
+las fuerzas involucradas.
+
 ### Magnitudes Principales:
 * **Posición ($x$):** Lugar donde se encuentra el objeto (metros, $m$).
 * **Velocidad ($v$):** Cambio de posición respecto al tiempo ($m/s$).

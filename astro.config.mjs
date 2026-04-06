@@ -253,6 +253,8 @@ window.dataLayer = window.dataLayer || [];
 
          'quimica/general/nomenclatura',
          'quimica/general/basesyacidos',
+         'quimica/general/cianoacrilato',
+         'quimica/general/diluyentes',
 
          'quimica/general/azeotropoypuntoeutectico',
          'quimica/general/pirolisis',

@@ -33,6 +33,7 @@ El **Punto de Apoyo** se encuentra entre la Fuerza y la Resistencia.
     * **Alicates:** Permiten multiplicar la fuerza de la mano para cortar o apretar.
     * **Cuerpo Humano:** La articulación del cuello (el cráneo es la resistencia, la columna el apoyo y los músculos de la nuca la fuerza).
 
+![palanca primer grado](/fisica/palancaprimerg.png)
 
 
 ---
@@ -45,6 +46,7 @@ La **Resistencia** se encuentra entre el Punto de Apoyo y la Fuerza.
     * **Cascanueces:** La nuez (resistencia) está entre el eje y nuestras manos.
     * **Cuerpo Humano:** Al ponerse de puntillas (el apoyo son los dedos, el peso del cuerpo es la resistencia y los gemelos ejercen la fuerza hacia arriba).
 
+![palanca segundo grado](/fisica/palancasegundog.png)
 
 
 ---
@@ -56,6 +58,9 @@ La **Fuerza** se encuentra entre el Punto de Apoyo y la Resistencia.
     * **Pinzas de depilar o de cocina:** El apoyo está en el extremo unido, presionamos en el medio y la punta es la resistencia.
     * **Caña de pescar:** Una mano hace de apoyo en el extremo, la otra tira en el medio y el pez es la resistencia.
     * **Cuerpo Humano:** El bíceps al levantar una pesa (el codo es el apoyo, el bíceps se inserta cerca del codo y la pesa está en la mano).
+
+![palanca tercer grado](/fisica/palancatercerg.png)
+![palanca tercer grado](/fisica/martillo.png)
 
 
 

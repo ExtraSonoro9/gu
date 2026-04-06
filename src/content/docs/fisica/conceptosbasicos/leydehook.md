@@ -19,6 +19,7 @@ Donde:
 * **$k$:** Constante elástica del resorte (en $N/m$). Representa la "rigidez": cuanto mayor es $k$, más duro es el resorte.
 * **$\Delta x$:** Elongación o desplazamiento desde la posición de equilibrio ($x - x_0$).
 
+![ley de hooke](/fisica/hooke.png)
 
 
 ---

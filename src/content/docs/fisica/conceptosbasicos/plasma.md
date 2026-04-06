@@ -16,6 +16,7 @@ El plasma se forma cuando un gas se calienta tanto o se somete a campos eléctri
 
 A diferencia de un gas normal (que es aislante), el plasma es un **conductor excelente de la electricidad** y reacciona con extrema precisión a los **campos magnéticos**.
 
+![rayo](/fisica/plasmarayo.jpg)
 
 
 ---

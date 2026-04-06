@@ -12,7 +12,7 @@ Estos sistemas son la base de la ingeniería mecánica. Su función principal es
 ## 1. Poleas y Correas: Transmisión Flexible
 
 Las poleas transmiten movimiento entre ejes distantes mediante una correa. Son ideales porque absorben vibraciones y actúan como "fusible" mecánico (si el sistema se bloquea, la correa patina en lugar de romper el motor).
-
+![polea](/fisica/polea1.png)
 ### A. La Relación de Diámetros
 La velocidad de giro es inversamente proporcional al diámetro de la polea:
 $$D_1 \cdot n_1 = D_2 \cdot n_2$$
@@ -21,7 +21,7 @@ $$D_1 \cdot n_1 = D_2 \cdot n_2$$
 
 ### B. Polipastos: Multiplicadores de Fuerza
 En elevación de cargas, el polipasto es el rey. La ventaja mecánica depende de cuántos tramos de cuerda sostienen la carga móvil.
-
+![polipasto](/fisica/polipasto.png)
 * **Aparejo Factorial:** Combinación de $n$ poleas fijas y $n$ móviles en ejes distintos.
   $$F = \frac{R}{2n}$$
 * **Aparejo Potencial:** Una polea fija y varias móviles "en cascada". Es mucho más potente.
