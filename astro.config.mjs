@@ -246,6 +246,8 @@ window.dataLayer = window.dataLayer || [];
          'quimica/general/masaymolesavogadro',
          'quimica/general/metodosdeseparacion',
          'quimica/general/balanceyestequiometria',
+         'quimica/general/tablaperiodica',
+
          'quimica/general/redox',
          'quimica/general/endotermiaexotermia',
          'quimica/general/combustion',

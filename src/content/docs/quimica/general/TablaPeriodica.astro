@@ -1,0 +1,263 @@
+---
+
+---
+
+<style is:global>
+:root[data-theme="dark"] .elemento{
+  color:#000; /* texto negro SIEMPRE */
+}
+#tabla-wrapper{
+  overflow-x:auto;
+  width:100%;
+  padding:10px;
+}
+
+#tabla{
+  display:grid;
+  grid-template-columns:repeat(18,75px);
+  grid-auto-rows:75px;
+  gap:4px;
+  justify-content:start;
+}
+
+.elemento{
+  border:1px solid #000;
+  padding:3px;
+  border-radius:4px;
+
+  display:flex;
+  flex-direction:column;
+
+  align-items:center;
+
+  height:100%;
+  overflow:hidden;
+  position:relative;
+}
+.numero{
+  position:absolute;
+  top:2px;
+  left:4px;
+  font-size:8px;
+}
+.simbolo{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+.nombre{
+  font-size:8px;
+  text-align:center;
+  margin-top:-2px;
+  line-height:1;
+}
+.extra{
+  font-size:7px;
+  line-height:1;
+  margin-top:auto;
+  margin-top:-0.2px;
+}
+/* colores */
+.alcalino{background:#ff6666;}
+.alcalinoterreo{background:#ffdead;}
+.transicion{background:#ffc0c0;}
+.no-metal{background:#a0ffa0;}
+.gas{background:#a0e0ff;}
+.halogeno{background:#ffff99;}
+.lant{background:#ffbfff;}
+.act{background:#ff99cc;}
+
+#info{
+  margin-top:20px;
+  padding:10px;
+  border:2px solid black;
+}
+.elemento:hover{
+  transform:scale(1.1);
+  z-index:10;
+  box-shadow:2px 2px 6px rgba(0,0,0,0.5);
+}
+#tabla{
+  margin-bottom:25px;
+}
+</style>
+
+<div id="tabla-wrapper">
+  <div id="tabla"></div>
+</div>
+
+<div id="info">Click en un elemento</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+const tabla = document.getElementById("tabla");
+const info = document.getElementById("info");
+if (!tabla || !info) return;
+
+// ⚡ DATOS BASE
+const simbolos = [
+"H","He","Li","Be","B","C","N","O","F","Ne",
+"Na","Mg","Al","Si","P","S","Cl","Ar",
+"K","Ca","Sc","Ti","V","Cr","Mn","Fe","Co","Ni","Cu","Zn",
+"Ga","Ge","As","Se","Br","Kr",
+"Rb","Sr","Y","Zr","Nb","Mo","Tc","Ru","Rh","Pd","Ag","Cd",
+"In","Sn","Sb","Te","I","Xe",
+"Cs","Ba","La","Ce","Pr","Nd","Pm","Sm","Eu","Gd","Tb","Dy","Ho","Er","Tm","Yb","Lu",
+"Hf","Ta","W","Re","Os","Ir","Pt","Au","Hg",
+"Tl","Pb","Bi","Po","At","Rn",
+"Fr","Ra","Ac","Th","Pa","U","Np","Pu","Am","Cm","Bk","Cf","Es","Fm","Md","No","Lr",
+"Rf","Db","Sg","Bh","Hs","Mt","Ds","Rg","Cn",
+"Nh","Fl","Mc","Lv","Ts","Og"
+];
+
+const nombres = [
+"Hidrógeno","Helio","Litio","Berilio","Boro","Carbono","Nitrógeno","Oxígeno","Flúor","Neón",
+"Sodio","Magnesio","Aluminio","Silicio","Fósforo","Azufre","Cloro","Argón",
+"Potasio","Calcio","Escandio","Titanio","Vanadio","Cromo","Manganeso","Hierro","Cobalto","Níquel","Cobre","Zinc",
+"Galio","Germanio","Arsénico","Selenio","Bromo","Kriptón",
+"Rubidio","Estroncio","Itrio","Circonio","Niobio","Molibdeno","Tecnecio","Rutenio","Rodio","Paladio","Plata","Cadmio",
+"Indio","Estaño","Antimonio","Telurio","Yodo","Xenón",
+"Cesio","Bario","Lantano","Cerio","Praseodimio","Neodimio","Prometio","Samario","Europio","Gadolinio","Terbio","Disprosio","Holmio","Erbio","Tulio","Iterbio","Lutecio",
+"Hafnio","Tantalio","Wolframio","Renio","Osmio","Iridio","Platino","Oro","Mercurio",
+"Talio","Plomo","Bismuto","Polonio","Astato","Radón",
+"Francio","Radio","Actinio","Torio","Protactinio","Uranio","Neptunio","Plutonio","Americio","Curio","Berkelio","Californio","Einstenio","Fermio","Mendelevio","Nobelio","Lawrencio",
+"Rutherfordio","Dubnio","Seaborgio","Bohrio","Hassio","Meitnerio","Darmstadtio","Roentgenio","Copernicio",
+"Nihonio","Flerovio","Moscovio","Livermorio","Tenesino","Oganesón"
+];
+const masa = [
+1.008,4.0026,6.94,9.0122,10.81,12.011,14.007,15.999,18.998,20.180,
+22.990,24.305,26.982,28.085,30.974,32.06,35.45,39.948,
+39.098,40.078,44.956,47.867,50.942,51.996,54.938,55.845,58.933,58.693,63.546,65.38,
+69.723,72.630,74.922,78.971,79.904,83.798,
+85.468,87.62,88.906,91.224,92.906,95.95,98,101.07,102.91,106.42,107.87,112.41,
+114.82,118.71,121.76,127.60,126.90,131.29,
+132.91,137.33,138.91,140.12,140.91,144.24,145,150.36,151.96,157.25,158.93,162.50,164.93,167.26,168.93,173.05,174.97,
+178.49,180.95,183.84,186.21,190.23,192.22,195.08,196.97,200.59,
+204.38,207.2,208.98,209,210,222,
+223,226,227,232.04,231.04,238.03,237,244,243,247,247,251,252,257,258,259,266,
+267,270,271,270,277,278,281,282,285,
+286,289,290,293,294,294
+];
+const electroneg = [
+2.20,0,0.98,1.57,2.04,2.55,3.04,3.44,3.98,0,
+0.93,1.31,1.61,1.90,2.19,2.58,3.16,0,
+0.82,1.00,1.36,1.54,1.63,1.66,1.55,1.83,1.88,1.91,1.90,1.65,
+1.81,2.01,2.18,2.55,2.96,3.00,
+0.82,0.95,1.22,1.33,1.60,2.16,1.90,2.20,2.28,2.20,1.93,1.69,
+1.78,1.96,2.05,2.10,2.66,2.60,
+0.79,0.89,1.10,1.12,1.13,1.14,0,1.17,1.20,1.20,1.10,1.22,1.23,1.24,1.25,1.10,1.27,
+1.30,1.50,2.36,1.90,2.20,2.20,2.28,2.54,2.00,
+1.62,2.33,2.02,2.00,2.20,0,
+0.70,0.90,1.10,1.30,1.50,1.38,1.36,1.28,1.30,1.30,1.30,1.30,1.30,1.30,1.30,1.30,1.30,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0
+];
+// ⚡ datos científicos simplificados (reales aproximados)
+const densidad = [
+0.000089,0.000178,0.534,1.85,2.34,2.26,0.00125,0.00143,0.00170,0.00090,
+0.97,1.74,2.70,2.33,1.82,2.07,0.0032,0.00178,
+0.86,1.54,2.99,4.54,6.11,7.15,7.44,7.87,8.90,8.91,8.96,7.14,
+5.91,5.32,5.73,4.81,3.12,0.0037,
+1.53,2.64,4.47,6.52,8.57,10.28,11.50,12.37,12.41,12.02,10.49,8.65,
+7.31,7.29,6.68,6.24,4.93,0.0059,
+1.93,3.62,6.15,6.77,6.77,7.01,7.26,7.52,5.24,7.90,8.23,8.55,8.80,9.07,9.32,6.97,9.84,
+13.31,16.65,19.25,21.02,22.59,22.56,21.45,19.32,13.53,
+11.85,11.34,9.78,9.20,7.00,0.0097,
+1.87,5.50,10.07,11.72,15.37,18.95,20.45,19.84,13.67,13.51,14.78,15.10,8.84,9.70,10.30,9.90,15.60,
+23,29,35,37,41,41,34,28,23,
+16,14,13,12,11,10
+];
+// ⚡ posiciones reales (clave)
+const posiciones = {
+1:[1,1], 2:[18,1],
+
+3:[1,2],4:[2,2],5:[13,2],6:[14,2],7:[15,2],8:[16,2],9:[17,2],10:[18,2],
+
+11:[1,3],12:[2,3],13:[13,3],14:[14,3],15:[15,3],16:[16,3],17:[17,3],18:[18,3],
+
+19:[1,4],20:[2,4],
+21:[3,4],22:[4,4],23:[5,4],24:[6,4],25:[7,4],26:[8,4],27:[9,4],28:[10,4],
+29:[11,4],30:[12,4],
+31:[13,4],32:[14,4],33:[15,4],34:[16,4],35:[17,4],36:[18,4],
+
+37:[1,5],38:[2,5],
+39:[3,5],40:[4,5],41:[5,5],42:[6,5],43:[7,5],44:[8,5],45:[9,5],46:[10,5],
+47:[11,5],48:[12,5],
+49:[13,5],50:[14,5],51:[15,5],52:[16,5],53:[17,5],54:[18,5],
+
+55:[1,6],56:[2,6],
+
+// 👉 LANTÁNIDOS separados
+57:[3,6],
+58:[4,8],59:[5,8],60:[6,8],61:[7,8],62:[8,8],63:[9,8],64:[10,8],
+65:[11,8],66:[12,8],67:[13,8],68:[14,8],69:[15,8],70:[16,8],71:[17,8],
+
+72:[4,6],73:[5,6],74:[6,6],75:[7,6],76:[8,6],77:[9,6],78:[10,6],
+79:[11,6],80:[12,6],
+81:[13,6],82:[14,6],83:[15,6],84:[16,6],85:[17,6],86:[18,6],
+
+87:[1,7],88:[2,7],
+
+// 👉 ACTÍNIDOS separados
+89:[3,7],
+90:[4,9],91:[5,9],92:[6,9],93:[7,9],94:[8,9],95:[9,9],96:[10,9],
+97:[11,9],98:[12,9],99:[13,9],100:[14,9],101:[15,9],102:[16,9],103:[17,9],
+
+104:[4,7],105:[5,7],106:[6,7],107:[7,7],108:[8,7],109:[9,7],110:[10,7],
+111:[11,7],112:[12,7],
+113:[13,7],114:[14,7],115:[15,7],116:[16,7],117:[17,7],118:[18,7]
+}
+
+// ⚡ categoría
+function categoria(n){
+  if([1,6,7,8,15,16].includes(n)) return "no-metal";
+  if([9,17,35,53,85,117].includes(n)) return "halogeno";
+  if([2,10,18,36,54,86,118].includes(n)) return "gas";
+  if(n>=57 && n<=71) return "lant";
+  if(n>=89 && n<=103) return "act";
+  if([3,11,19,37,55,87].includes(n)) return "alcalino";
+  if([4,12,20,38,56,88].includes(n)) return "alcalinoterreo";
+  return "transicion";
+}for(let i=0;i<118;i++){
+  const n=i+1;
+  const [g,p] = posiciones[n];
+
+  const el={
+    n,
+    s:simbolos[i],
+    nom:nombres[i],
+    en:electroneg[i] || "-",
+    dens:densidad[i] || "-",
+    masa:masa[i] || "-"
+  };
+
+  const d=document.createElement("div");
+  d.className="elemento";
+  d.classList.add(categoria(n));
+
+  d.style.gridColumn=g;
+  d.style.gridRow=p;
+
+  d.innerHTML=`
+    <div class="numero">${n}</div>
+    <div class="simbolo">${el.s}</div>
+    <div class="nombre">${el.nom}</div>
+    <div class="extra">${el.masa}</div>
+  `;
+
+  d.onclick=()=>{
+    info.innerHTML=`
+      <h2>${el.nom} (${el.s})</h2>
+      <p>Número atómico: ${n}</p>
+      <p>Masa: ${el.masa}</p>
+      <p>Electronegatividad: ${el.en}</p>
+      <p>Densidad: ${el.dens}</p>
+      <a href="https://es.wikipedia.org/wiki/${el.nom}" target="_blank">Wikipedia</a>
+    `;
+  };
+
+  tabla.appendChild(d);
+}
+
+});
+</script>
