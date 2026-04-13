@@ -98,6 +98,7 @@ window.dataLayer = window.dataLayer || [];
           'programacioneinformatica/biblografia',
           'programacioneinformatica/principaleslenguajes',
           'programacioneinformatica/sistemasoperativos',
+          'programacioneinformatica/terminalcmd',
           'programacioneinformatica/ide',
           'programacioneinformatica/compiladores',
           'programacioneinformatica/estructuras',
@@ -136,10 +137,18 @@ window.dataLayer = window.dataLayer || [];
     ],},
 
      { label: "Apps híbridas y web",  items: [
+        'programacioneinformatica/hibridosyweb/wordpress',
+        'programacioneinformatica/hibridosyweb/frameworks',
         
     ],},
 
     { label: "Videojuegos",  items: [
+
+         
+    ],}, 
+    { label: "Android",  items: [
+    'programacioneinformatica/android/androidstudio',
+    'programacioneinformatica/android/proyecto',
          
     ],},
      { label: "Bases de Datos",  items: [
@@ -230,6 +239,7 @@ window.dataLayer = window.dataLayer || [];
       'fisica/electricidad/motorelectrico',
       'fisica/electricidad/panelessolares',
       'fisica/electricidad/peltier',
+      'fisica/electricidad/induccion',
 
       'fisica/electricidad/capacitores',
       'fisica/electricidad/baterias',

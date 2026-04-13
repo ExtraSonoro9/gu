@@ -16,10 +16,11 @@ Habrá que instalar de las paginas oficiales opencv y zbar (ádemas de configura
 
 # Si estás en Ubuntu  
 
-Entra a la siguiente página y descarga Qt Designer para Linux x64: https://www.qt.io/development/download-qt-installer-oss
+Entra a la siguiente página y descarga Qt Designer para Linux x64: https://www.qt.io/development/download-qt-installer-oss y correr el siguiente comando
 
 ```Terminal
-    sudo apt install build-essential
+    sudo apt-get update && apt-get install -y 
+    build-essential cmake  qt6-base-dev  libgl1-mesa-dev libmariadb-dev libopencv-dev libzbar-dev wget file libfuse2 libglib2.0-0 patchelf  binutils 
 ```
 
 ## Si estás en Void Linux (como yo) 

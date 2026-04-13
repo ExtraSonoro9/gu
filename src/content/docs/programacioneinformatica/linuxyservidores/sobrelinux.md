@@ -63,3 +63,4 @@ cd       # Cambiar de directorio
 sudo     # Ejecutar como superusuario (SuperUser DO)
 grep     # Buscar texto dentro de archivos (usa lógica de patrones)
 chmod    # Cambiar permisos de archivos
+```

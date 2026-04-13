@@ -8,7 +8,7 @@ title: C++ y Qt
 
 
 
-## Qt?
+## Qt
 
 Es un IDE con Constructor de aplicaciones gráficas de "arrastrar y soltar" de C++ y python aunque ahora solo lo usaremos con C++.
 
