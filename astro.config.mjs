@@ -96,10 +96,16 @@ window.dataLayer = window.dataLayer || [];
       { label: "Conceptos básicos",  items: [
           'programacioneinformatica/concepto',
           'programacioneinformatica/biblografia',
-          'programacioneinformatica/buclesfor',
+          'programacioneinformatica/principaleslenguajes',
+          'programacioneinformatica/sistemasoperativos',
+          'programacioneinformatica/ide',
+          'programacioneinformatica/compiladores',
+          'programacioneinformatica/estructuras',
+          'programacioneinformatica/arreglos',
+         
           'programacioneinformatica/diagramadeflujo',
           'programacioneinformatica/condicionalesif',
-
+          'programacioneinformatica/buclesfor',
     ],},
     
     { label: "Arduino y Sistemas Embebidos",  items: [
@@ -116,10 +122,16 @@ window.dataLayer = window.dataLayer || [];
     
     { label: "Linux",  items: [
           'programacioneinformatica/linuxyservidores/sobrelinux',
-
+          
     ],}, 
     
     { label: "Ejecutables de Escritorio",  items: [
+          'programacioneinformatica/escritorio/cppyqt',
+          'programacioneinformatica/escritorio/instalacion',
+          'programacioneinformatica/escritorio/proyecto',
+          'programacioneinformatica/escritorio/ejecutableportable',
+         
+
          
     ],},
 
@@ -131,6 +143,9 @@ window.dataLayer = window.dataLayer || [];
          
     ],},
      { label: "Bases de Datos",  items: [
+          'programacioneinformatica/basesdedatos/concepto',
+          'programacioneinformatica/basesdedatos/instalacion',
+          
          
     ],}
     ],

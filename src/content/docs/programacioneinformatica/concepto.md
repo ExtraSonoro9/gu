@@ -1,6 +1,6 @@
 ---
 
-title: Concepto de Informática
+title: Conceptos y consideraciones importantes 
 ---
 # Diferencias entre Informática y Programación
 
@@ -59,3 +59,12 @@ La **Programación** es la actividad de crear un conjunto de instrucciones detal
 ---
 
 > **Resumen:** La informática es el escenario donde sucede todo el mundo digital; la programación es la escritura de los guiones que dicen qué debe pasar en ese escenario.
+
+## Consideraciones importantes
+
+En mi experiencia a la hora de crear herramientas eficientes y eficaces lo más importante es saber manejar las librerias, evitar conflictos entre ellas y asegurar la portabilidad de los programas. Conocer como exportar tu proyecto a diferentes plataformas como Windows, Linux, Android a sabiendas que lo mas probable es que la computadora del destinatario no tendrá Java instalado y este no querrá o le dara pereza instalarlo y por ello busque una alternativa mejor. Los clientes quieren interfaz gráfica y portabilidad si le presentas un programa que se ejecuta en una consola lo más probable es que no quieran usarlo o que le da error de dll porque "lo que funciona en mi computadora no funcionará en otras si no tienen las todas las librerias y capaz que la tiene pero una versión más nueva o más vieja". Con eso en mente planeo mostrar como crear un programa de escritorio hecho en c++ con interfaz gráfica Qt, que maneje OpenCv, se pueda conectar y editar en una base de datos con botones (tipo sistema de caja de supermercado), prepararlo para mandar ordenes decompra a los Api-Rest de los sistemas de pago y saber cuando se realizo un cobro adecuadamente y si hablemos de un robot pues que pueda establecer comunicacion serial con un Arduino o ESP32 para poder mover un motor o encender luces. A posteriori hare lo mismo en un apk con Android Studio y Kotlin o c++ nativo si concidero vale la pena.
+
+Lo mejor de todo es que para entender todo esto solo requeriras dos o tres días ¡nada de 5, 10 años!
+Ejemplos: 
+
+<video src="/informatica/escritorio/tomates2.mp4" controls="controls" width="300" height="200"></video>
