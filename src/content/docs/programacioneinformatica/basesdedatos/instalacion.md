@@ -1,5 +1,5 @@
 ---
-title: Instalación
+title: Instalación de MariaDB
 
 
 ---
@@ -40,4 +40,4 @@ sudo mariadb-secure-installation
 
 ## Extra: DBeaver
 
-Es un editor de bases de datos con interfaz gráfica: https://dbeaver-io.translate.goog/download/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc
+Es un editor de bases de datos con interfaz gráfica: https://dbeaver.io/

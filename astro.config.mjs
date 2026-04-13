@@ -154,6 +154,7 @@ window.dataLayer = window.dataLayer || [];
      { label: "Bases de Datos",  items: [
           'programacioneinformatica/basesdedatos/concepto',
           'programacioneinformatica/basesdedatos/instalacion',
+          'programacioneinformatica/basesdedatos/comandossql',
           
          
     ],}
