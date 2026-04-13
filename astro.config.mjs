@@ -220,14 +220,28 @@ window.dataLayer = window.dataLayer || [];
       'fisica/electricidad/campo',
       'fisica/electricidad/voltajeamperajeyresistencia',
       'fisica/electricidad/diodos',
+      'fisica/electricidad/bobinas',
+      'fisica/electricidad/estatica',
+      'fisica/electricidad/corrientes',
+      'fisica/electricidad/resistencias',
+      'fisica/electricidad/superconductor',
       'fisica/electricidad/transistores',
+      'fisica/electricidad/transformadores',
+      'fisica/electricidad/motorelectrico',
+      'fisica/electricidad/panelessolares',
+      'fisica/electricidad/peltier',
 
+      'fisica/electricidad/capacitores',
+      'fisica/electricidad/baterias',
+      
 
          ],},
     
     { label: "Termodinámica",  items: [
       'fisica/termodinamica/concepto',
       'fisica/termodinamica/calor',
+      'fisica/termodinamica/sistemasdemedicion',
+      'fisica/termodinamica/criogenia',
 
          
     ],},
