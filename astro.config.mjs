@@ -226,13 +226,19 @@ window.dataLayer = window.dataLayer || [];
 
     { label: "Electricidad y Magnetismo",  items: [
       'fisica/electricidad/concepto',
+      'fisica/electricidad/bibliografia',
 
       'fisica/electricidad/campo',
       'fisica/electricidad/voltajeamperajeyresistencia',
+      
+      'fisica/electricidad/estatica',
+      'fisica/electricidad/seguridad',
+      
+      'fisica/electricidad/corrientes',
+      'fisica/electricidad/circuitos',
       'fisica/electricidad/diodos',
       'fisica/electricidad/bobinas',
-      'fisica/electricidad/estatica',
-      'fisica/electricidad/corrientes',
+      
       'fisica/electricidad/resistencias',
       'fisica/electricidad/superconductor',
       'fisica/electricidad/transistores',
@@ -244,8 +250,8 @@ window.dataLayer = window.dataLayer || [];
 
       'fisica/electricidad/capacitores',
       'fisica/electricidad/baterias',
-      
-
+      'fisica/electricidad/datasheet',
+      'fisica/electricidad/esquematicos',
          ],},
     
     { label: "Termodinámica",  items: [

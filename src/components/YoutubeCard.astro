@@ -1,0 +1,54 @@
+---
+// src/components/YoutubeCard.astro
+const { account, name = "YouTube" } = Astro.props;
+
+// Intentamos obtener el ID si es que lo tenemos, o usamos el handle
+const isFullId = account.startsWith('UC');
+
+// TRUCO TÉCNICO: Usamos un servicio de terceros o el proxy de YouTube para la imagen
+// Nota: Esta URL suele funcionar para obtener el avatar de un canal
+const avatarUrl = isFullId 
+  ? `https://www.youtube.com/s/desktop/9963959b/img/logos/favicon_144x144.png` // Fallback
+  : `https://unavatar.io/youtube/${account}`; // API gratuita que busca el avatar por ti
+---
+
+<div class="yt-card-tecnica">
+  <div class="header">
+    <img src={avatarUrl} alt={name} onerror="this.src='https://www.youtube.com/favicon.ico';" />
+    <div class="meta">
+      <strong>{name}</strong>
+      <span>Canal de YouTube</span>
+    </div>
+  </div>
+  
+  <a href={`https://www.youtube.com/${account.startsWith('UC') ? 'channel/' : '@'}${account}?sub_confirmation=1`} target="_blank" class="btn-sub">
+    VER CANAL
+  </a>
+</div>
+
+<style>
+  .yt-card-tecnica {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #fff;
+  }
+  .header { display: flex; align-items: center; gap: 10px; }
+  .header img { width: 40px; height: 40px; border-radius: 50%; border: 1px solid #eee; }
+  .meta { display: flex; flex-direction: column; }
+  .meta strong { font-size: 14px; color: #000; }
+  .meta span { font-size: 11px; color: #666; }
+  .btn-sub {
+    background: #cc0000;
+    color: white;
+    text-align: center;
+    padding: 6px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+  }
+</style>
