@@ -14,9 +14,14 @@ Un **IDE** combina todas las herramientas necesarias en un solo programa: un edi
 
 * **Visual Studio Code (VS Code):** Actualmente es el estándar de la industria. No es un IDE completo por sí solo, sino un editor ligero que se vuelve ultrapotente mediante extensiones. Es el más versátil para Python, Rust, C++ y Web.
 * **PyCharm:** El IDE especializado para Python. Ofrece herramientas avanzadas de análisis de código que VS Code no tiene de forma nativa.
-* **CLion / Visual Studio:** Ideales para C y C++. Son robustos y están diseñados para manejar proyectos gigantescos con miles de archivos.
 
+<figure style="display: block; margin: 2rem auto; max-width: 500px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/informatica/visualstudiocode.png" alt="Logo Visual Studio" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
 
+  
+</figure>
 
 ---
 

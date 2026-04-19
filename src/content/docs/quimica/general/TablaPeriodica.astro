@@ -66,7 +66,8 @@
 .halogeno{background:#ffff99;}
 .lant{background:#ffbfff;}
 .act{background:#ff99cc;}
-
+.post{background:#b0c4de;}        /* gris azulado */
+.metaloide{background:#095309;}   /* verde claro distinto */
 #info{
   margin-top:20px;
   padding:10px;
@@ -80,6 +81,29 @@
 #tabla{
   margin-bottom:25px;
 }
+#leyenda{
+  margin-top:20px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  font-size:12px;
+}
+
+#leyenda .item{
+  display:flex;
+  align-items:center;
+  gap:5px;
+}
+:root[data-theme="dark"] #leyenda .color{
+  border:1px solid #fff;
+}
+#leyenda .color{
+  width:15px;
+  height:15px;
+  border:1px solid #000;
+  display:inline-block;
+
+}
 </style>
 
 <div id="tabla-wrapper">
@@ -87,6 +111,18 @@
 </div>
 
 <div id="info">Click en un elemento</div>
+<div id="leyenda">
+  <div class="item"><span class="color alcalino"></span> Metales alcalinos</div>
+  <div class="item"><span class="color alcalinoterreo"></span> Alcalinotérreos</div>
+  <div class="item"><span class="color transicion"></span> Metales de transición</div>
+  <div class="item"><span class="color lant"></span> Lantánidos</div>
+  <div class="item"><span class="color act"></span> Actínidos</div>
+  <div class="item"><span class="color no-metal"></span> No metales</div>
+  <div class="item"><span class="color halogeno"></span> Halógenos</div>
+  <div class="item"><span class="color gas"></span> Gases nobles</div>
+  <div class="item"><span class="color post"></span> Post-transición</div>
+<div class="item"><span class="color metaloide"></span> Metaloides</div>
+</div>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -210,14 +246,44 @@ const posiciones = {
 
 // ⚡ categoría
 function categoria(n){
-  if([1,6,7,8,15,16].includes(n)) return "no-metal";
-  if([9,17,35,53,85,117].includes(n)) return "halogeno";
+
+  // gases nobles
   if([2,10,18,36,54,86,118].includes(n)) return "gas";
-  if(n>=57 && n<=71) return "lant";
-  if(n>=89 && n<=103) return "act";
+
+  // halógenos
+  if([9,17,35,53,85,117].includes(n)) return "halogeno";
+
+  // no metales
+  if([1,6,7,8,15,16,34].includes(n)) return "no-metal";
+
+  // metaloides
+  if([5,14,32,33,51,52,84].includes(n)) return "metaloide";
+
+  // metales alcalinos
   if([3,11,19,37,55,87].includes(n)) return "alcalino";
+
+  // alcalinotérreos
   if([4,12,20,38,56,88].includes(n)) return "alcalinoterreo";
+
+  // lantánidos
+  if(n>=57 && n<=71) return "lant";
+
+  // actínidos
+  if(n>=89 && n<=103) return "act";
+
+  // metales de transición
+  if(
+    (n>=21 && n<=30) ||
+    (n>=39 && n<=48) ||
+    (n>=72 && n<=80) ||
+    (n>=104 && n<=112)
+  ) return "transicion";
+
+  // post-transición
+  if([13,31,49,50,81,82,83,84,114].includes(n)) return "post";
+
   return "transicion";
+
 }for(let i=0;i<118;i++){
   const n=i+1;
   const [g,p] = posiciones[n];

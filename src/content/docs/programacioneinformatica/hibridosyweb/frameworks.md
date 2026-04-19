@@ -26,7 +26,13 @@ El equilibrio perfecto. Toma lo mejor de Angular y React. Es muy progresivo; pue
 * **Características:** Sistema de plantillas muy limpio, **Composition API** (similar a React Hooks) y una documentación excelente.
 * **Ideal para:** Desarrolladores que buscan simplicidad sin sacrificar potencia.
 
-
+<figure style="display: block; margin: 2rem auto; max-width: 500px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/informatica/web/frames.jpg" alt="Frameworks más conocidos" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  
+  
+</figure>
 
 ---
 

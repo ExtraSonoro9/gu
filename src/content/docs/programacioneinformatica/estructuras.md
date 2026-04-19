@@ -14,6 +14,7 @@ Es lo primero que aparece. Aquí le decimos al programa qué herramientas extern
 
 
 ### En C++ (Directivas de Preprocesador)
+
 Se usan `#include`. El preprocesador copia el contenido de esa librería en tu archivo antes de compilar.
 ```
 #include <iostream>  // Para entrada/salida estándar
@@ -22,6 +23,7 @@ Se usan `#include`. El preprocesador copia el contenido de esa librería en tu a
 ```
 
 ### En Python (Módulos)
+
 Se usa `import`. Python busca el módulo y lo pone a disposición del script.
 ```
 import math          # Importa toda la librería
@@ -31,6 +33,7 @@ from datetime import date # Importa solo una función específica
 ---
 
 ## 2. Declaración de Variables y Ámbito (Scope)
+
 Las variables pueden vivir en diferentes niveles de "visibilidad":
 
 * **Globales:** Se declaran fuera de cualquier función. Todo el programa las ve (úsalas con cuidado, pueden causar errores difíciles de rastrear).
@@ -39,6 +42,7 @@ Las variables pueden vivir en diferentes niveles de "visibilidad":
 
 
 ---
+
 
 ## 3. Funciones (Procedimientos)
 Son bloques de código con un nombre que realizan una tarea específica. Ayudan a no repetir código.
@@ -49,6 +53,7 @@ Son bloques de código con un nombre que realizan una tarea específica. Ayudan 
 3. **Retorno:** El resultado que devuelve al programa principal.
 
 ### Ejemplo en C++
+
 ```
 int sumar(int a, int b) { // Recibe dos enteros
     return a + b;         // Devuelve un entero
@@ -56,6 +61,7 @@ int sumar(int a, int b) { // Recibe dos enteros
 ```
 
 ### Ejemplo en Python
+
 ```
 def sumar(a, b):
     return a + b
@@ -64,12 +70,14 @@ def sumar(a, b):
 ---
 
 ## 4. El "Constructor" o Punto de Entrada
+
 Es el lugar exacto donde el programa empieza a correr.
 
 * **C++:** Es obligatorio tener una función llamada `int main()`. Si no existe, el programa no compila.
 * **Python:** Es un lenguaje de script, corre de arriba a abajo. Sin embargo, se usa una "buena práctica" para definir el punto de inicio.
 
 ### Estructura en C++
+
 ```
 int main() {
     // Aquí empieza la ejecución
@@ -78,6 +86,7 @@ int main() {
 ```
 
 ### Estructura en Python
+
 ```
 if __name__ == "__main__":
     # Aquí empieza la ejecución principal

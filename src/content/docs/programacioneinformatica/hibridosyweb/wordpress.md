@@ -3,9 +3,20 @@ title: Wordpress y Woocommerce
 
 
 ---
+
 # El Gigante de los CMS
 
 WordPress es un software de código abierto basado en **PHP** y **MySQL**. Su éxito radica en su arquitectura extensible basada en temas (diseño) y plugins (funcionalidades).
+
+<figure style="display: block; margin: 2rem auto; max-width: 500px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/informatica/web/wordpress.png" alt="Logo Wordpress" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;">Logo de Wordpress</strong> 
+  </figcaption>
+  
+</figure>
 
 ---
 

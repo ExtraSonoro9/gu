@@ -35,7 +35,13 @@ Organizan los datos en **tablas** con filas y columnas. Se basan en relaciones l
     * **PostgreSQL:** Muy potente y avanzada para proyectos complejos.
     * **SQLite:** Una base de datos pequeña que vive en un solo archivo (ideal para apps móviles).
 
-
+<figure style="display: block; margin: 2rem auto; max-width: 500px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/informatica/basesdedatos/postgresmariadb.jpg" alt="Logo MariaDB y de PostgreSQL" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+ 
+  
+</figure>
 
 ### B. No Relacionales (NoSQL)
 No usan tablas fijas. Almacenan la información de formas más flexibles, como documentos, gráficos o listas. Son ideales para manejar volúmenes masivos de datos que cambian constantemente.

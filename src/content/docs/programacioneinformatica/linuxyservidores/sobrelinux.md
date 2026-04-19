@@ -27,9 +27,26 @@ Como el código es libre, diferentes grupos crean sus propias versiones optimiza
 Es una de las más antiguas y respetadas. Su prioridad es la **estabilidad** y el software libre.
 * **Gestor:** `.deb` (usando `apt`).
 * **Dato:** Es la base sobre la cual se construyen cientos de otras distros.
+<figure style="display: block; margin: 2rem auto; max-width: 500px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/informatica/servers/debian.png" alt="Logo Debian" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;">Logo de Debian</strong> 
+  </figcaption>
+  
+</figure>
 
 ### B. Ubuntu: Linux para seres humanos
 Basada en Debian, su objetivo es ser fácil de usar para el usuario común. Es la cara más conocida de Linux en computadoras de escritorio.
+
+<figure style="display: block; margin: 2rem auto; max-width: 500px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/informatica/servers/ubuntu.jpg" alt="Logo Ubuntu" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+
+  
+</figure>
 
 ### C. Arch Linux: Hazlo tú mismo (DIY)
 Diseñada para usuarios avanzados. El usuario instala todo desde cero por consola. Sigue el modelo **Rolling Release** (se actualiza constantemente sin versiones fijas).
@@ -67,12 +84,17 @@ chmod    # Cambiar permisos de archivos
 
 ## Void Linux
 El que uso como sistema operativo principal es el más veloz que conozco... En computadoras con menos de 4 gigas de ram casi triplica en velocidad y fluidez a Ubuntu, Debian, Arch y demás.
+<figure style="display: block; margin: 2rem auto; max-width: 500px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/informatica/servers/void.png" alt="Logo Windows" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
 
+</figure>
 ### Videos recomendados para instalar Ubuntu
 <div style="width: 100%; max-width: 800px; margin: 2rem auto; text-align: center;">
   <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
     <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-      src="https://www.youtube.com/watch?v=wIj7sHK0SkQ"
+      src="https://www.youtube.com/embed/wIj7sHK0SkQ"
       title="YouTube video player"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen>
@@ -90,7 +112,7 @@ Un poco más complicado que Ubuntu, si se va a usar como server o con Xfce para 
 <div style="width: 100%; max-width: 800px; margin: 2rem auto; text-align: center;">
   <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
     <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-      src="https://www.youtube.com/watch?v=BK1tztkgqnE"
+      src="https://www.youtube.com/embed/BK1tztkgqnE"
       title="YouTube video player"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen>

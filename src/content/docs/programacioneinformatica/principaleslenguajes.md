@@ -21,7 +21,15 @@ Creado en 1959, es el "abuelo" que se niega a jubilarse.
 * **C++:** Es la evolución de C. Añadió la "Programación Orientada a Objetos", permitiendo crear software masivo y complejo de forma organizada.
 * **Uso:** Videojuegos de alto rendimiento (Motores como Unreal Engine) y software profesional de edición.
 
-
+<figure style="display: block; margin: 2rem auto; max-width: 500px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/informatica/c++.jpg" alt="C++ logo" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;">C++ logo</strong> 
+  </figcaption>
+  
+</figure>
 
 ---
 
@@ -35,7 +43,12 @@ Rust es el lenguaje moderno que está empezando a reemplazar a C en sistemas cr�
 ## 4. Kotlin (El Ecosistema Android)
 * **Kotlin:** Es el sucesor moderno de Java. Es más limpio, evita errores de "punteros nulos" y es mucho más rápido de escribir.
 * **Uso:** Java domina el mundo de los servidores empresariales, mientras que Kotlin es el lenguaje oficial para apps de Android.
-
+<figure style="display: block; margin: 2rem auto; max-width: 500px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/informatica/java.png" alt="Logo Java" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  
+</figure>
 
 
 ---
@@ -44,6 +57,12 @@ Rust es el lenguaje moderno que está empezando a reemplazar a C en sistemas cr�
 Es el lenguaje más amigable para quien está aprendiendo, pero extremadamente potente para profesionales.
 * **Característica:** Es un lenguaje "interpretado", lo que significa que el código se ejecuta línea por línea. Esto lo hace más lento que Rust o C, pero increíblemente fácil de leer y probar.
 * **Uso:** Inteligencia Artificial, Ciencia de Datos y automatización de tareas.
+<figure style="display: block; margin: 2rem auto; max-width: 500px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/informatica/python.png" alt="Logo Python" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  
+</figure>
 
 ---
 

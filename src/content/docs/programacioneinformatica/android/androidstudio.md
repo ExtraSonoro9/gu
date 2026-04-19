@@ -7,7 +7,13 @@ title: Android Studio
 
 # Entorno de Desarrollo Integrado para Android
 
-Android Studio es el IDE (Integrated Development Environment) oficial para el desarrollo de aplicaciones en el ecosistema Android. Está construido sobre la plataforma IntelliJ IDEA de JetBrains y ofrece un conjunto de herramientas especializadas para optimizar la programación, depuración y diseño de interfaces móviles.
+Es el IDE (Integrated Development Environment) oficial para el desarrollo de aplicaciones en el ecosistema Android. Está construido sobre la plataforma IntelliJ IDEA de JetBrains y ofrece un conjunto de herramientas especializadas para optimizar la programación, depuración y diseño de interfaces móviles.
+
+<figure style="display: block; margin: 2rem auto; max-width: 500px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/informatica/android/androidstudio.png" alt="Logo Android Studio" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+</figure>
 
 ---
 
@@ -107,6 +113,14 @@ Android Studio centraliza la gestión de librerías externas mediante **Gradle**
 * **Repositorios (Maven/Google):** Las librerías no se descargan manualmente; el IDE las busca en repositorios remotos como Maven Central o el repositorio oficial de Google.
 * **Project Structure Dialog:** Es la herramienta visual para buscar e insertar dependencias. Permite explorar librerías disponibles, verificar si hay versiones más recientes y resolver conflictos de compatibilidad entre diferentes paquetes.
 * **Implementación:** Las dependencias se declaran en los archivos `build.gradle.kts`, lo que garantiza que cualquier desarrollador que descargue el proyecto obtenga automáticamente las mismas versiones de las librerías necesarias.
+
+<figure style="display: block; margin: 2rem auto; max-width: 500px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/informatica/android/gradle.png" alt="Logo Gradle" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  
+  
+</figure>
 
 ---
 

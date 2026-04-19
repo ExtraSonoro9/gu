@@ -28,21 +28,22 @@ Son los ladrillos básicos de cualquier programa.
 
 ### En C++ (Tipado Estático)
 Debes decirle al compilador exactamente qué tipo de dato vas a guardar. Una vez declarado, no puede cambiar.
----
+
+```
 int cantidad = 10;
 float precio = 15.50;
 bool es_valido = true;
 string nombre = "Sensor ESP32";
----
+```
 
 ### En Python (Tipado Dinámico)
 El intérprete deduce el tipo automáticamente y puedes cambiarlo después si quieres.
----
+```
 cantidad = 10
 precio = 15.50
 es_valido = True
 nombre = "Sensor ESP32"
----
+```
 
 ---
 
@@ -52,17 +53,19 @@ Un arreglo es una colección de elementos del mismo tipo almacenados en posicion
 
 ### Arreglos en C++
 Tienen un tamaño fijo que debe definirse al principio.
----
+
+```
 int numeros[5] = {10, 20, 30, 40, 50};
 // Para acceder al primer elemento: numeros[0]
----
+```
 
 ### Listas en Python
 Son mucho más potentes: pueden cambiar de tamaño y guardar diferentes tipos de datos a la vez.
----
+
+```
 mi_lista = [10, "Texto", 3.14, True]
 mi_lista.append(100) # Añade un elemento al final
----
+```
 
 
 
@@ -72,19 +75,21 @@ mi_lista.append(100) # Añade un elemento al final
 
 ### Vectores (C++)
 Es la versión moderna de los arreglos en C++. Pueden cambiar de tamaño dinámicamente como las listas de Python.
----
+
+```
 #include <vector>
 std::vector<int> v = {1, 2, 3};
 v.push_back(4);
----
+```
 
 ### Diccionarios (Python) / Maps (C++)
 Guardan información en pares de **Llave : Valor**. Es lo que mencionábamos para búsquedas rápidas.
----
+
+```
 # Python
 precios = {"Manzana": 1.5, "Pera": 2.0}
 print(precios["Manzana"])
----
+```
 
 ---
 
