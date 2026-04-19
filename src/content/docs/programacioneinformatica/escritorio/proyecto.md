@@ -3,7 +3,7 @@ title: Proyecto
 
 
 ---
-El objetivo es crear una base de datos con una tabla de productos cada uno con un código que lo identifique que pueda ser editada y leida por un programa con GUI, openCV y zBar para leer codigo de barras a partir de una imagen y poder buscar el producto a partir del valor obtenido.
+El objetivo es crear una base de datos con una tabla de productos cada uno con un código que lo identifique que pueda ser editada y leida por un programa con GUI, openCV y zBar para leer codigo de barras a partir de una imagen y poder buscar el producto a partir del valor obtenido. 
 
 ![](/informatica/escritorio/muestra.png)
 
@@ -52,7 +52,7 @@ Jerarquía de Objetos en MainWindow.ui (puedes añadirlos en QT Designer)
 
 
 
-Para crear la base de datos (puedes acceder a la sección de bases de datos para instalar MariaDB):
+Para crear la base de datos (puedes acceder a la sección de bases de datos para instalar MariaDB [aquí](/programacioneinformatica/basesdedatos/concepto) ):
 
 ![](/informatica/escritorio/mariadb.png)
 

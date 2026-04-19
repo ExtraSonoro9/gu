@@ -5,7 +5,7 @@ title: Android Studio
 ---
 
 
-# Android Studio: Entorno de Desarrollo Integrado para Android
+# Entorno de Desarrollo Integrado para Android
 
 Android Studio es el IDE (Integrated Development Environment) oficial para el desarrollo de aplicaciones en el ecosistema Android. Está construido sobre la plataforma IntelliJ IDEA de JetBrains y ofrece un conjunto de herramientas especializadas para optimizar la programación, depuración y diseño de interfaces móviles.
 

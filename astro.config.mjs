@@ -149,6 +149,7 @@ window.dataLayer = window.dataLayer || [];
     { label: "Android",  items: [
     'programacioneinformatica/android/androidstudio',
     'programacioneinformatica/android/proyecto',
+    'programacioneinformatica/android/tensorflow',
          
     ],},
      { label: "Bases de Datos",  items: [
@@ -289,6 +290,11 @@ window.dataLayer = window.dataLayer || [];
 
          'quimica/general/herramientas',
          'quimica/general/seguridad', 
+         'quimica/general/atomos', 
+         'quimica/general/plasticos', 
+         'quimica/general/isotoposisobaros', 
+         'quimica/general/espiritu', 
+
          'quimica/general/masaymolesavogadro',
          'quimica/general/metodosdeseparacion',
          'quimica/general/balanceyestequiometria',
@@ -328,9 +334,11 @@ window.dataLayer = window.dataLayer || [];
          'quimica/inorganica/metalestransicionales/metalesnobles/cobre',
          'quimica/inorganica/metalestransicionales/metalesnobles/plata',
          'quimica/inorganica/metalestransicionales/metalesnobles/oro',
+        
          
     ],},
          'quimica/inorganica/metalestransicionales/hierro',
+         'quimica/inorganica/metalestransicionales/plomo',
          
     ],},{ label: "No Metales",  items: [
          'quimica/inorganica/nometales/concepto',

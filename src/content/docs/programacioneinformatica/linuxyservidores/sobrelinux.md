@@ -64,3 +64,39 @@ sudo     # Ejecutar como superusuario (SuperUser DO)
 grep     # Buscar texto dentro de archivos (usa lógica de patrones)
 chmod    # Cambiar permisos de archivos
 ```
+
+## Void Linux
+El que uso como sistema operativo principal es el más veloz que conozco... En computadoras con menos de 4 gigas de ram casi triplica en velocidad y fluidez a Ubuntu, Debian, Arch y demás.
+
+### Videos recomendados para instalar Ubuntu
+<div style="width: 100%; max-width: 800px; margin: 2rem auto; text-align: center;">
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+      src="https://www.youtube.com/watch?v=wIj7sHK0SkQ"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+Si no tienes potencia en tu pc puedes instalar Xubuntu, o si quieres algo mas parecido a Windows, Kubuntu, y si necesitas un server sin interfaz gráfica que funcione a comandos Ubuntu server.
+
+## Instalación de Void Linux
+
+Un poco más complicado que Ubuntu, si se va a usar como server o con Xfce para programar es preferible para evitar errores en videojuegos y de algunos programas como Blender elegir la versión de glibc.
+
+
+<div style="width: 100%; max-width: 800px; margin: 2rem auto; text-align: center;">
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+      src="https://www.youtube.com/watch?v=BK1tztkgqnE"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+
+
