@@ -28,6 +28,16 @@ Un transformador básico consta de tres componentes principales:
 
 
 
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/trafomicro.jpg" alt="transformador de microondas" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Transformador de microondas (de voltaje medio a muy alto) </strong> 
+  </figcaption>
+</figure>
+
+
 ---
 
 ## 3. Relación de Vueltas y Fórmulas
@@ -62,6 +72,24 @@ $$N_s = N_p \cdot \left(\frac{V_s}{V_p}\right)$$
 * **De Aislamiento:** Tienen el mismo número de vueltas ($1:1$). Se usan por seguridad, para separar eléctricamente un equipo de la red eléctrica.
 * **Autotransformadores:** Usan una sola bobina con una "toma intermedia". Son más pequeños pero no ofrecen aislamiento galvánico.
 
+
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/trafofuente.jpg" alt="transformador trafo de fuente conmutada" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Transformador de fuentes conmutadas y cargadores </strong> 
+  </figcaption>
+</figure>
+
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/flyback.jpg" alt="flyback" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Transformador Flyback de televisores CRT </strong> 
+  </figcaption>
+</figure>
 ---
 
 ## 5. Formas de Medición y Fallos
@@ -69,5 +97,15 @@ $$N_s = N_p \cdot \left(\frac{V_s}{V_p}\right)$$
 * **Prueba de Continuidad:** Con el multímetro en modo continuidad o resistencia baja ($\Omega$), verificamos que los bobinados no estén cortados.
 * **Aislamiento:** Medimos entre el bobinado y el núcleo de hierro. No debería haber continuidad; si la hay, el transformador está "a masa" y es peligroso.
 * **Relación de Voltaje:** Conectamos el primario a la red y medimos con el multímetro en AC el voltaje de salida.
+
+
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/trafodealta.jpg" alt="transformador de alta tension" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Transformador de Alta-Media tensión </strong> 
+  </figcaption>
+</figure>
 
 > **Dato de Seguridad:** Nunca conectes un transformador diseñado para $110$V a una red de $220$V, el núcleo se saturará, el bobinado se calentará rápidamente y se quemará el aislante, provocando un incendio o cortocircuito.

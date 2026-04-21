@@ -7,6 +7,24 @@ title: Resistencias y resistores
 
 Una **Resistencia** es un componente que se opone al paso de la corriente eléctrica. Se mide en **Ohmios ($\Omega$)**. Su funcionamiento se basa en la fricción de los electrones al intentar atravesar un material conductor con alta resistividad.
 
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/resistor.jpg" alt="resistor" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Resistor (resistencia que se usa para limitar el flujo de corriente más que para generar calor). </strong> 
+  </figcaption>
+</figure>
+
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/resistencia.jpg" alt="resistencia" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Resistencia usada para generar calor y hervir agua. </strong> 
+  </figcaption>
+</figure>
+
 ---
 
 ## 1. Materiales: El Grafito y los Aislantes

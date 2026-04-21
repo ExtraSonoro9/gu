@@ -17,6 +17,14 @@ El corazón de un panel es el **Silicio**, un material semiconductor. Para que f
 
 Cuando los fotones del sol golpean la celda, bombardean los átomos de silicio y liberan electrones. Debido al campo eléctrico creado entre las dos capas, estos electrones son obligados a fluir en una sola dirección, creando **Corriente Continua (DC)**.
 
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/panelsolar.jpg" alt="panel solar" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Panel Solar </strong> 
+  </figcaption>
+</figure>
 
 
 ---

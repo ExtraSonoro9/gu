@@ -58,6 +58,14 @@ Como reparador de PC, la estática es tu mayor enemigo. Una descarga que tú ni 
 * **Electroscopio:** Es el instrumento clásico. Consiste en dos láminas delgadas de metal que se separan cuando reciben una carga, demostrando la repulsión entre cargas iguales.
 * **Voltímetro Electrostático:** Mide el potencial sin necesidad de contacto directo, evitando que la carga se descargue en el aparato.
 
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/estatica.jpg" alt="globo con estatica" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> La estática es capaz de cambiar la dirección de un chorro de agua. </strong> 
+  </figcaption>
+</figure>
 
 
 ---

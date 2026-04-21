@@ -17,6 +17,25 @@ El diodo tiene dos terminales: **Ánodo (+)** y **Cátodo (-)**.
 
 > **La Barrera de Potencial:** Para que un diodo de silicio común empiece a conducir, necesita un "empujón" de aproximadamente **0.7V**.
 
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/diodo.jpg" alt="diodo" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Diodos </strong> 
+  </figcaption>
+</figure>
+
+
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/diodosimbolo.jpg" alt="diodo simbolo" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Símbolo de diodos en diagramas </strong> 
+  </figcaption>
+</figure>
+
 
 
 ---
@@ -33,9 +52,30 @@ Es el más común. Se usa para convertir **Corriente Alterna (AC)** de los enchu
 Un diodo que emite fotones cuando la corriente pasa a través de él.
 * *Uso:* Pantallas, indicadores y alumbrado doméstico.
 
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/diodoled.jpg" alt="diodo led" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Diodo led </strong> 
+  </figcaption>
+</figure>
+
+
 ### C. Diodo Zener
 A diferencia de los demás, este puede conducir en sentido inverso cuando se alcanza un voltaje específico.
 * *Uso:* Regulación de voltaje (mantiene un voltaje constante en un circuito).
+
+
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/diodozener.jpg" alt="diodo zener" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Diodo zener</strong> 
+  </figcaption>
+</figure>
+
 
 ### D. Fotodiodo
 Sensible a la luz. Cuando recibe fotones, permite o genera el paso de corriente.

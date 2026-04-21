@@ -1,5 +1,5 @@
 ---
-title: Calor 
+title: Bobinas
 
 
 ---
@@ -20,6 +20,16 @@ La respuesta está en la **Inductancia** y la **Ley de Lenz**:
 
 ---
 
+
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/bobinapequeña.jpg" alt="bobina mediana" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Bobina de una fuente conmutada </strong> 
+  </figcaption>
+</figure>
+
 ## 2. Electroimanes: Potencia y Fuerza
 
 Un electroimán es una bobina con un núcleo ferromagnético que concentra las líneas de campo. 
@@ -38,6 +48,17 @@ Donde:
 
 > **Regla de oro:** Para más potencia, o aumentas el amperaje ($I$) o aumentas el número de vueltas ($N$). Esto se conoce como **Amperios-vuelta**.
 
+
+
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/bobinasmultiples.jpg" alt="bobinas smd" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Bobina SMD generalmente encontrada en placas madre </strong> 
+  </figcaption>
+</figure>
+
 ---
 
 ## 3. Usos Cruciales en Electrónica
@@ -51,6 +72,8 @@ Donde:
 5.  **Carga Inalámbrica:** Tu celular tiene una bobina que recibe energía por inducción de otra bobina en la base de carga.
 
 ---
+
+
 
 ## 4. Comportamiento y Fórmulas de Energía
 

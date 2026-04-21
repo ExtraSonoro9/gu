@@ -29,11 +29,28 @@ Todo motor funciona bajo el principio de repulsión y atracción magnética. El 
 Son los motores clásicos. El cambio de polaridad es mecánico (rozamiento de las escobillas).
 * **Pros:** Control de velocidad muy simple (solo varías el voltaje), baratos.
 * **Contras:** Las escobillas se desgastan, generan chispas (ruido eléctrico) y calor por fricción.
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/motorcito.jpg" alt="motorcito" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Motor de autos de juguete e impresoras </strong> 
+  </figcaption>
+</figure>
 
 ### Sin Escobillas (Brushless / BLDC)
 No hay contacto físico. El cambio de polaridad lo hace un controlador electrónico (ESC).
 * **Pros:** Mucho más eficientes, mayor vida útil, alcanzan altísimas RPM ($+50,000$).
 * **Contras:** Requieren un controlador complejo y son más caros.
+
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/motordron.jpg" alt="motor dron" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Motor de dron. </strong> 
+  </figcaption>
+</figure>
 
 
 
@@ -47,6 +64,16 @@ Es común confundirlos, pero en ingeniería son cosas muy distintas:
 * **Potencia:** Es la rapidez con la que se entrega ese torque. Determina la **velocidad** con la que se mueve la carga. Se mide en Watts (W) o Caballos de Fuerza (HP).
 
 > **Analogía:** El torque es la fuerza de un buey tirando de un arado; la potencia es qué tan rápido el buey puede cruzar el campo.
+
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/motorpasoapaso.jpg" alt="motor paso a paso" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Motor paso a paso </strong> 
+  </figcaption>
+</figure>
+
 
 ---
 
@@ -63,6 +90,16 @@ Si tienes una carga (masa) colgando de un eje:
 $F = 2 \cdot 9.8 = 19.6 \text{ N}$
 $T = 19.6 \cdot 0.05 = 0.98 \text{ Nm}$
 *Si tu motor tiene un torque menor a $0.98 \text{ Nm}$, no podrá levantar la carga.*
+
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/motortrifase.jpg" alt="motor trifasico" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Motor trifásico </strong> 
+  </figcaption>
+</figure>
+
 
 ### B. Potencia en Caballos de Fuerza (HP)
 La relación entre potencia, torque y velocidad (RPM) es:

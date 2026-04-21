@@ -24,8 +24,27 @@ Cuando un conductor sólido (como un bloque de hierro o aluminio) se expone a un
 Aunque se llaman "parásitas", hemos aprendido a usarlas a nuestro favor:
 
 1.  **Cocinas de Inducción:** Generan corrientes de Foucault directamente en la base de la olla. La resistencia de la olla al paso de estas corrientes genera el calor para cocinar.
+
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/anafeinductivo.jpg" alt="anafe inductivo" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Anáfe inductivo. </strong> 
+  </figcaption>
+</figure>
+
 2.  **Frenos Magnéticos:** Se usan en trenes de alta velocidad y montañas rusas. Un imán potente cerca de un disco de metal en movimiento genera corrientes parásitas que crean un campo magnético opuesto, frenando el disco sin necesidad de contacto físico (sin desgaste).
 3.  **Detectores de Metales:** El aparato induce corrientes en el objeto metálico enterrado, y luego detecta el campo magnético que esas mismas corrientes devuelven.
+
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/soldadorinduccion.jpg" alt="soldador induccion" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Se calientan piezas metálicas hasta el rojo vivo gracias a corrientes parásitas. </strong> 
+  </figcaption>
+</figure>
 
 ---
 

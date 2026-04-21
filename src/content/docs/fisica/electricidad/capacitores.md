@@ -8,6 +8,15 @@ title: Capacitores
 Un **Capacitor** es un componente electrónico pasivo que almacena energía en forma de un campo eléctrico. Está formado por dos placas conductoras separadas por un material aislante llamado **dieléctrico**.
 
 
+<figure style="display: block; margin: 2rem auto; max-width: 500px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/capacitor.jpg" alt="capacitor" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Capacitor Electrolítico </strong> 
+  </figcaption>
+</figure>
+
 
 ---
 
@@ -24,9 +33,40 @@ Existen muchos tipos según su material y construcción, cada uno para una tarea
 
 * **Electrolíticos (Aluminio/Tántalo):** Tienen polaridad (un polo $+$ y uno $-$). Ofrecen mucha capacidad en poco espacio. *Cuidado: si los conectas al revés, pueden explotar.*
 * **Cerámicos (Lenteja):** No tienen polaridad. Son excelentes para filtrar ruidos de alta frecuencia y son muy económicos.
+  
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/capacitorlenteja.jpg" alt="capacitor lenteja ceramico" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Capacitor cerámico </strong> 
+  </figcaption>
+</figure>
+
 * **De Poliéster/Película:** Muy estables y resistentes al calor, ideales para circuitos de audio o donde se necesite precisión.
 * **Supercapacitores:** Tienen una capacidad inmensa (varios Faradios). Se usan como baterías de carga ultra rápida.
 
+
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/capacitorsmd.jpg" alt="capacitor smd" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Capacitor </strong> 
+  </figcaption>
+</figure>
+
+
+
+
+
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/ceramicosmd.png" alt="capacitor smd" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Capacitor smd (no confundir con bobinas que suelen ser negras) </strong> 
+  </figcaption>
+</figure>
 
 
 ---
@@ -39,6 +79,17 @@ Existen muchos tipos según su material y construcción, cada uno para una tarea
 4.  **Arranque de Motores:** Dan un "empujón" inicial de energía a motores eléctricos potentes.
 
 ---
+
+
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/capacitormicroondas.jpg" alt="capacitor de microondas" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Capacitor de microondas </strong> 
+  </figcaption>
+</figure>
+
 
 ## 4. Cómo Medir un Capacitor
 

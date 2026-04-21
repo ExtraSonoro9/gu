@@ -9,6 +9,16 @@ Un superconductor es un material que, al ser enfriado por debajo de una temperat
 
 ---
 
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/levitacion.jpg" alt="superconductor" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Superconductor levitando sobre imánes </strong> 
+  </figcaption>
+</figure>
+
+
 ## 1. El Efecto Meissner: ¿Por qué levitan?
 
 La levitación que vemos en los experimentos no es magnetismo común (como dos imanes repeliéndose). Se debe al **Efecto Meissner**.

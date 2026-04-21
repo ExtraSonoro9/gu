@@ -24,6 +24,16 @@ Su función es proteger la **instalación y los cables**.
 * **Protección Magnética:** Actúa ante cortocircuitos (unión directa de fase y neutro).
 * **Importancia:** Evita que los cables se sobrecalienten e inicien un incendio dentro de las paredes.
 
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/disyuntor.jpg" alt="fisyuntor y termica" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Disyuntor y Térmica </strong> 
+  </figcaption>
+</figure>
+
+
 ### El Fusible
 Es un dispositivo de sacrificio. Contiene un filamento diseñado para fundirse cuando la corriente supera un nivel seguro.
 * **Advertencia Crítica:** Jamás debe reemplazarse un fusible por un "puente" de alambre o un clavo. Esto anula la protección y garantiza daños catastróficos ante la próxima falla.

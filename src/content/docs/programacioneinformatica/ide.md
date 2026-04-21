@@ -41,6 +41,14 @@ Es una alternativa clásica a Qt. Su principal ventaja es que usa los controles 
 * **wxFormBuilder / wxSmith:** Son los constructores gráficos para wxWidgets.
 * **Code::Blocks:** Un IDE clásico para C++ que suele venir con wxSmith integrado para facilitar la creación de programas con ventanas.
 
+<figure style="display: block; margin: 2rem auto; max-width: 500px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/informatica/escritorio/codeblocks.jpg" alt="Logo OpenCV" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Logo de CodeBlocks</strong> 
+  </figcaption>
+
 ---
 
 ## 3. El Ecosistema de Python: Las mejores GUIs
@@ -62,6 +70,7 @@ Python tiene opciones para todos los niveles de dificultad:
 | **wxPython** | Media | Nativo (clásico) | Apps que deben verse como el sistema. |
 | **Tkinter** | Baja | Antiguo | Herramientas simples y rápidas. |
 | **Flet (Flutter)** | Media | Muy Moderno | Apps multiplataforma (PC y Móvil). |
+
 
 
 

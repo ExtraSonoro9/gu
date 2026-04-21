@@ -16,6 +16,14 @@ Para que el efecto sea aprovechable en refrigeradores, se utilizan semiconductor
 * **Lado Frío:** Los electrones pasan de un nivel de energía bajo a uno alto, absorbiendo calor del entorno.
 * **Lado Caliente:** Los electrones liberan esa energía térmica al pasar a un nivel de energía inferior.
 
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/celdapeltier.png" alt="Celda Peltier" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Celda Peltier </strong> 
+  </figcaption>
+</figure>
 
 
 ---

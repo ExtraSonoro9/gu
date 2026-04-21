@@ -12,6 +12,23 @@ El éxito en la reparación o el diseño de circuitos depende de la calidad y el
 ## 1. El Multímetro (Tester): El Ojo del Técnico
 
 El multímetro es la herramienta de diagnóstico primordial. Traduce magnitudes físicas invisibles en datos cuantificables para el análisis.
+ <figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/testerbarato.jpg" alt="tester multimetro barato" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Tester o multímetro barato </strong> 
+  </figcaption>
+</figure>
+
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/puntatester.jpg" alt="punta de tester" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Es absolutamente relevante tener puntas de buena calidad. </strong> 
+  </figcaption>
+</figure>
 
 ### Funciones Principales y Aplicaciones
 * **Voltaje (V):** Medición de tensión en DC (etapas lógicas) y AC (entrada de línea). Es vital para verificar la caída de tensión en nodos críticos.
@@ -21,6 +38,14 @@ El multímetro es la herramienta de diagnóstico primordial. Traduce magnitudes 
 * **Capacitancia (F):** Mide la capacidad de almacenamiento de los capacitores. Crucial para diagnosticar fallas de filtrado en fuentes que presentan "ruido" o rizado excesivo.
 * **Frecuencímetro (Hz):** Utilizado para verificar cristales de cuarzo o señales de reloj básicas.
 
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/pinzaamperimetrica.jpg" alt="pinza amperimétrica" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Pinza Amperimétrica </strong> 
+  </figcaption>
+</figure>
 
 
 ### El Factor Crítico: Calidad y Finura de las Puntas
@@ -35,6 +60,14 @@ La precisión del mejor multímetro del mercado queda anulada si se utilizan pun
 A diferencia del multímetro, que entrega un promedio de la señal, el osciloscopio permite visualizar la forma de onda en función del tiempo.
 * **Diagnóstico Avanzado:** Es la única forma de observar señales PWM (Modulación por Ancho de Pulsos) en fuentes, analizar buses de datos (I2C, SPI) o detectar picos de tensión transitorios que el multímetro no logra registrar.
 
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/osiloscopio.jpg" alt="osiloscopio" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Osiloscopio </strong> 
+  </figcaption>
+</figure>
 
 
 ---
@@ -49,6 +82,15 @@ La soldadura es la unión mecánica y eléctrica que mantiene el circuito funcio
     * **Punta de Aguja (I):** Para trabajos de máxima precisión en componentes SMD.
     * **Punta de Cincel (D):** Ideal para soldar cables gruesos o terminales que disipan mucho calor.
     * **Punta de Cuchillo (K):** La mejor opción para limpiar puentes de estaño en integrados de muchos pines (*drag soldering*).
+
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/puntascautin.jpg" alt="diodo zener" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Lo más importante de un cautín es su punta... para evitar arruinar o quemar componenes debe elegirse con cuidado pues de nada sirve que caliente mucho si la temperatura no se transmite correctamente o se caen gotas de estaño que no logró pegarse encima de un componente importante. </strong> 
+  </figcaption>
+</figure>
 
 ### Consumibles y Complementos
 * **Estaño:** Se prefiere la aleación **60/40** (60% estaño, 40% plomo) por su bajo punto de fusión y acabado brillante. El estaño *Lead-Free* (sin plomo) es más ecológico pero requiere mayores temperaturas y es más propenso a fisuras.
@@ -70,6 +112,14 @@ La soldadura es la unión mecánica y eléctrica que mantiene el circuito funcio
 
 * **Corte Lateral de Precisión:** Deben tener un acabado "Flush Cut" (corte raso) para que el alambre sobrante quede plano contra la placa. Su filo está diseñado solo para cobre y estaño; cortar acero las arruina inmediatamente.
 * **Pinzas de Agarre (Brucelas):** Necesarias para posicionar componentes diminutos. Se clasifican por su forma (rectas, curvas) y deben ser **Antiestáticas (ESD)** para no dañar memorias o microcontroladores con electricidad estática.
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/pinzaantiest.jpg" alt="pinza anti estatica" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> pinza de relojero antiestática </strong> 
+  </figcaption>
+</figure>
 
 ---
 

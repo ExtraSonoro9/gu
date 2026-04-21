@@ -6,6 +6,8 @@ title: Transistores
 
 Un transistor es un dispositivo semiconductor utilizado para entregar una señal de salida en respuesta a una señal de entrada. Cumple dos funciones principales: **Interruptor** (deja pasar corriente o no) o **Amplificador** (aumenta una señal débil).
 
+
+
 ---
 
 ## 1. Breve Historia
@@ -28,12 +30,28 @@ Funcionan mediante **corriente**. Se usan mucho en amplificadores de audio y ele
 * **PNP:** La corriente fluye cuando la base es negativa.
 * **Pines:** Base (B), Colector (C) y Emisor (E).
 
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/transistor.png" alt="transistor" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+
+</figure>
+
+
+<figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/fisica/electric/transistor.jpeg" alt="transistor" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+
+</figure>
 
 
 ### B. MOSFET (Transistor de Efecto de Campo)
 Funcionan mediante **voltaje**. Son la base de la computación digital porque consumen muy poca energía y se pueden hacer extremadamente pequeños.
 * Es el "interruptor" que crea los **0 y 1** en tu procesador.
 * **Pines:** Puerta (Gate), Drenador (Drain) y Fuente (Source).
+
+
 
 ---
 

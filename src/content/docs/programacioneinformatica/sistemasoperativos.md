@@ -61,7 +61,14 @@ Más que un sistema, es un "núcleo" (kernel) sobre el cual se crean diferentes 
 * **Ubuntu:** Es la distribución más famosa por ser fácil de usar para principiantes.
 * **Uso Ideal:** Servidores, desarrollo de software y revivir computadoras viejas.
 
-
+<figure style="display: block; margin: 2rem auto; max-width: 500px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
+  
+  <img src="/informatica/tux.jpg" alt="Tux" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  
+  <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
+    <strong style="color: #000;"> Tux mascota de las distros basadas en el Kernel de Linux </strong> 
+  </figcaption>
+</figure>
 
 ---
 
