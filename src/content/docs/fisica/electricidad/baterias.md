@@ -54,7 +54,7 @@ Utilizan el movimiento de iones de litio entre un ánodo y un cátodo.
   <img src="/fisica/electric/bateriaalcalina.jpg" alt="bateria alcalina" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
   
   <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
-    <strong style="color: #000;"> Batería alcalina </strong> 
+    <strong style="color: #000;"> Batería alcalina. </strong> 
   </figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ Utilizan el movimiento de iones de litio entre un ánodo y un cátodo.
   <img src="/fisica/electric/bateriascarbonzinc.jpg" alt="bateria carbon zinc" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
   
   <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
-    <strong style="color: #000;"> Pila de carbón-zinc </strong> 
+    <strong style="color: #000;"> Pila de carbón-zinc. </strong> 
   </figcaption>
 </figure>
 <figure style="display: block; margin: 2rem auto; max-width: 400px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
@@ -71,7 +71,7 @@ Utilizan el movimiento de iones de litio entre un ánodo y un cátodo.
   <img src="/fisica/electric/piladeplata.png" alt="pila de plata" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
   
   <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
-    <strong style="color: #000;"> Pila de óxido de plata muy comun en relojería </strong> 
+    <strong style="color: #000;"> Pila de óxido de plata muy comun en relojería. </strong> 
   </figcaption>
 </figure>
 
@@ -118,7 +118,7 @@ Consiste en usar el excedente de energía solar/eólica para subir bloques de ho
   <img src="/fisica/electric/bateriadegravedad.jpg" alt="Almacenador de energia bateria de gravedad" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
   
   <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
-    <strong style="color: #000;"> Edificio en China que se usa como almacén de energía gravitatoria transformable en electricidad </strong> 
+    <strong style="color: #000;"> Edificio en China que se usa como almacén de energía gravitatoria transformable en electricidad. </strong> 
   </figcaption>
 </figure>
 
@@ -131,7 +131,7 @@ Es un disco pesado que gira a velocidades altísimas (hasta 50,000 RPM) en cáma
   <a href="https://commons.wikimedia.org/w/index.php?curid=475478"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/G2_front2.jpg/500px-G2_front2.jpg" alt="Flywheel"></a>
   
   <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
-    <strong style="color: #000;"> el Flywheel o volante de inercia G2 de la NASA y similares, al encontrarse al vacío con levitación magnética, es lo mas cerca que se está del movimiento perpetuo </strong> 
+    <strong style="color: #000;"> el Flywheel o volante de inercia G2 de la NASA y similares, al encontrarse al vacío con levitación magnética, es lo mas cerca que se está del movimiento perpetuo. </strong> 
   </figcaption>
 </figure>
 

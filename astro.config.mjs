@@ -103,14 +103,19 @@ window.dataLayer = window.dataLayer || [];
           'programacioneinformatica/compiladores',
           'programacioneinformatica/estructuras',
           'programacioneinformatica/arreglos',
+          
          
           'programacioneinformatica/diagramadeflujo',
           'programacioneinformatica/condicionalesif',
           'programacioneinformatica/buclesfor',
+          'programacioneinformatica/webhook',
+          'programacioneinformatica/apirestful',
+          
+
     ],},
     
     { label: "Arduino y Sistemas Embebidos",  items: [
-         
+          'programacioneinformatica/embebido/embebido'
     ],},
 
     { label: "Algoritmos",  items: [

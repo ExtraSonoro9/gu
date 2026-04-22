@@ -30,7 +30,7 @@ Aunque se llaman "parásitas", hemos aprendido a usarlas a nuestro favor:
   <img src="/fisica/electric/anafeinductivo.jpg" alt="anafe inductivo" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
   
   <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
-    <strong style="color: #000;"> Anáfe inductivo. </strong> 
+    <strong style="color: #000;"> Anafe inductivo. </strong> 
   </figcaption>
 </figure>
 

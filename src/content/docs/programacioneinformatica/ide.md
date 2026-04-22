@@ -43,12 +43,12 @@ Es una alternativa clásica a Qt. Su principal ventaja es que usa los controles 
 
 <figure style="display: block; margin: 2rem auto; max-width: 500px; border: 1px solid #ddd; padding: 10px; background: #fff; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); border-radius: 4px;">
   
-  <img src="/informatica/escritorio/codeblocks.jpg" alt="Logo OpenCV" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+  <img src="/informatica/codeblocks.jpg" alt="Logo codeblocks" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
   
   <figcaption style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; font-family: 'Georgia', serif; font-size: 0.85rem; color: #444; line-height: 1.5; text-align: left;">
     <strong style="color: #000;"> Logo de CodeBlocks</strong> 
   </figcaption>
-
+</figure>
 ---
 
 ## 3. El Ecosistema de Python: Las mejores GUIs
